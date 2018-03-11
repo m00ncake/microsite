@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Features</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');    
+    
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+    }
+    /****************************************/    
+    /*************** Header *****************/
+    /****************************************/    
+    .header-container {
+        height: 445px;
+        background-color: #5A7088;
+        font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 100;
+        font-size: 12px;
+    }
+    /*********** Navigation Bar *************/
+    .nav-left {
+        position: relative;
+        float: left;
+        text-transform: uppercase;
+        margin-top: 45px;
+        margin-left: 8vw;
+    }
+    .nav-right {
+        float: right;
+    }
+    .ez-logo {
+        width: 210px;
+        display: inline-block;
+    }
+    .ez-logo img {
+        width: 100%;
+    }
+    .nav-list {
+        position: absolute;
+        display: inline-block;
+        top: 1px;
+        left: 206px;
+        width: 450px;
+    }
+    .nav-list ul li {
+        display: inline-block;
+        margin: 0 1.3vw 0 1.3vw;
+        letter-spacing: 2px;
+    }
+    .nav-list ul li:nth-child(1) {
+        margin-left: 0px;
+    }
+    .nav-list ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    .nav-right {
+        position: relative;
+        margin-top: 45px;
+        margin-right: 8vw;
+        padding-right: 60px;
+    }
+    .nav-right div,
+    .nav-right button {
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    .nav-right div a {
+        text-decoration: none;
+        color: white;
+        letter-spacing: 2px;
+        padding: 10px 55px 10px 50px;
+    }
+    .sign-up-btn {
+        width: 175px;
+        height: 40px;
+        background-color: #2FCA80;
+        border: none;
+        border-radius: 3px;
+        margin: 0 2.5vw 0 -25px;
+        text-align: center;
+    }
+    .sign-up-btn a {
+        font-size: 14px;
+        line-height: 40px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: white;
+    }
+    .nav-right .search-icon {
+        position: absolute;
+        display: inline-block;
+        right: -45px;
+        top: 9px;
+    }
+    @media screen and (max-width: 1600px) {
+        .nav-left {
+            margin-left: 6vw;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .nav-left {
+            margin-left: 4vw;
+        }
+        .nav-right {
+            margin-right: 1.5vw;
+        } 
+        .nav-right .search-icon {
+            right: -20px;
+        }
+    }
+    /*********** Header Titles ***********/
+   .header-titles {
+        clear: both;
+        width: 60vw;
+        margin: 0 auto;
+        color: white;
+    }
+    .main-title {
+        display: inline-block;
+        width: 100%;
+        font-size: 73px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        margin: 70px 0 30px 0;
+        text-align: center;
+    }
+    .sub-title {
+        text-align: center;
+        font-size: 21px;
+        font-weight: 200;
+        letter-spacing: 0.5px;
+        line-height: 38px;
+    } 
+
+    @media screen and (max-width: 1600px) {
+        .main-title {
+            font-size: 60px;
+        }
+        .sub-title {
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 1280px){
+        .header-titles {
+            width: 80vw;
+        }
+        .main-title {
+            font-size: 50px;
+        }
+        .sub-title {
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        .header-titles {
+            width: 85vw;
+        }
+    }
+    @media screen and (max-width: 880px) {
+        .header-titles {
+            width: 95vw;
+        }
+        .main-title {
+            font-size: 48px;
+        }
+        .sub-title {
+            font-size: 16px;
+        }
+    }
+    /*********************************************/
+    /********* Acquire, Engage, Provide **********/
+    /*********************************************/
+    .sect-acquire, .sect-engage, .sect-provide, .sect-more-features {
+        position: relative;
+        width: 100%;
+        height: 615px;
+        box-sizing: border-box;
+        border: 1px solid aliceblue;
+        font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-size: 0px;        
+    }
+    .sect-engage {
+        background-color: #F7F8FA;
+    }
+    .sect-acquire h1, .sect-engage h1, .sect-provide h1, .sect-more-features h1 {
+        font-size: 33px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 150px;
+        margin: 0;
+        height: 25%;
+        color: rgb(67, 66, 78);
+    }
+    .sect-acquire .photo-feat-container,
+    .sect-engage .photo-feat-container,
+    .sect-provide .photo-feat-container {
+        font-size: 0px;
+        width: 85vw;
+        margin: 0 auto;
+        height: 75%;
+    }
+    .sect-engage .photo-feat-container {
+        position: relative;
+    }
+
+    @media screen and (max-width: 1280px) {
+        .sect-acquire .photo-feat-container,
+        .sect-engage .photo-feat-container,
+        .sect-provide .photo-feat-container {
+            width: 90vw;
+        }
+    }
+    @media screen and (max-width: 880px) {
+        .sect-acquire .photo-feat-container,
+        .sect-engage .photo-feat-container,
+        .sect-provide .photo-feat-container {
+            width: 98vw;
+        }
+    }
+    /***************** Photo Container ******************/
+    .sect-acquire .photo-feat-container .cell-photo,
+    .sect-engage .photo-feat-container .cell-photo,
+    .sect-provide .photo-feat-container .cell-photo {
+        display: inline-block;
+        height: 100%;
+        width: 35%;
+        background-repeat: no-repeat;
+        background-size: 370px;
+        background-position: top 0px right 5vw;
+    }
+    .sect-acquire .photo-feat-container .cell-photo {
+        background-image: url('./assets/images/features-page-assets/iphone-acquire-contacts.png');
+    }
+    .sect-engage .photo-feat-container .cell-photo {
+        position: absolute;
+        right: 0px;
+        background-image: url('./assets/images/features-page-assets/iphone-engage-audience.png');
+        background-position: top 0px left 6vw;
+    }
+    .sect-provide .photo-feat-container .cell-photo {
+        background-image: url('./assets/images/features-page-assets/iphone-provide-service.png');
+    }
+
+    @media screen and (max-width: 1280px) {
+        .sect-acquire .photo-feat-container .cell-photo,
+        .sect-engage .photo-feat-container .cell-photo,
+        .sect-provide .photo-feat-container .cell-photo {
+            width: 31%;
+            background-size: 90%;
+            background-position: top 0px right 3vw;
+        }
+        .sect-engage .photo-feat-container .cell-photo {
+            background-position: top 0px left 0vw;
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        .sect-acquire .photo-feat-container .cell-photo,
+        .sect-engage .photo-feat-container .cell-photo,
+        .sect-provide .photo-feat-container .cell-photo {
+            width: 40%;
+            background-size: 95%;
+            background-position: top 0px right 2vw;
+        }
+    }
+    @media screen and (max-width: 880px) {
+        .sect-acquire .photo-feat-container .cell-photo,
+        .sect-engage .photo-feat-container .cell-photo,
+        .sect-provide .photo-feat-container .cell-photo {
+            width: 40%;
+            background-size: 300px;
+            background-position: top 0px right 2vw;
+        }
+        .sect-engage .photo-feat-container .cell-photo {
+            background-position: top 0px left 0vw;
+        }
+    }
+
+    /***************** Features Container ****************/
+    .sect-acquire .photo-feat-container .feat-container,
+    .sect-engage .photo-feat-container .feat-container,
+    .sect-provide .photo-feat-container .feat-container {
+        display: inline-block;
+        width: 65%;
+        height: 100%;
+    }
+    .sect-acquire .photo-feat-container .feat-container .feat-left,
+    .sect-engage .photo-feat-container .feat-container .feat-left,
+    .sect-provide .photo-feat-container .feat-container .feat-left {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        font-size: 0px;
+        /* background-color: rgba(255, 255, 0, 0.171); */
+    }
+    .sect-acquire .photo-feat-container .feat-container .feat-right,
+    .sect-engage .photo-feat-container .feat-container .feat-right,
+    .sect-provide .photo-feat-container .feat-container .feat-right {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        /* background-color: rgba(0, 128, 0, 0.171); */
+    }
+    .sect-acquire .photo-feat-container .feat-container .feat-left--top,
+    .sect-engage .photo-feat-container .feat-container .feat-left--top,
+    .sect-provide .photo-feat-container .feat-container .feat-left--top {
+        display: block;
+        height: 50%;
+        /* background-color: rgba(0, 0, 255, 0.11); */
+        font-size: 0px;
+    }
+    .sect-acquire .photo-feat-container .feat-container .feat-left--bottom,
+    .sect-engage .photo-feat-container .feat-container .feat-left--bottom,
+    .sect-provide .photo-feat-container .feat-container .feat-left--bottom {
+        display: block;
+        height: 50%;
+        /* background-color: rgba(255, 0, 0, 0.103); */
+    }
+    .sect-acquire .photo-feat-container .feat-container .feat-right--top,
+    .sect-engage .photo-feat-container .feat-container .feat-right--top,
+    .sect-provide .photo-feat-container .feat-container .feat-right--top {
+        display: block;
+        height: 50%;
+        /* background-color: rgba(0, 0, 255, 0.24); */
+    }
+    .sect-acquire .photo-feat-container .feat-container .feat-right--bottom,
+    .sect-engage .photo-feat-container .feat-container .feat-right--bottom,
+    .sect-provide .photo-feat-container .feat-container .feat-right--bottom {
+        display: block;
+        height: 50%;
+        /* background-color: rgba(255, 0, 0, 0.274); */
+    }
+
+    @media screen and (max-width: 1080px) {
+        .sect-acquire .photo-feat-container .feat-container,
+        .sect-engage .photo-feat-container .feat-container,
+        .sect-provide .photo-feat-container .feat-container {
+            display: inline-block;
+            width: 60%;
+            height: 100%;
+        }
+        .sect-acquire .photo-feat-container .feat-container .feat-left,
+        .sect-engage .photo-feat-container .feat-container .feat-left,
+        .sect-provide .photo-feat-container .feat-container .feat-left {
+            width: 100%;
+            height: 50%;
+        }
+        .sect-acquire .photo-feat-container .feat-container .feat-right,
+        .sect-engage .photo-feat-container .feat-container .feat-right,
+        .sect-provide .photo-feat-container .feat-container .feat-right {
+            width: 100%;
+            height: 50%;
+        }
+    }
+    /**************** Feature Content *******************/
+    .feat-left--top-img,
+    .feat-left--bottom-img,
+    .feat-right--top-img,
+    .feat-right--bottom-img {
+        display: inline-block;
+        height: 100%;
+        width: 25%;
+        background-repeat: no-repeat;
+        background-position: top 52px right 2vw;
+    }
+
+    .sect-acquire .feat-left--top-img {
+        background-image: url('./assets/images/features-page-assets/keywords-icon.png');
+    }
+    .sect-acquire .feat-left--bottom-img {
+        background-image: url('./assets/images/features-page-assets/forms-icon.png');
+    }
+    .sect-acquire .feat-right--top-img {
+        background-image: url('./assets/images/features-page-assets/check-icon.png');
+    }
+    .sect-acquire .feat-right--bottom-img {
+        background-image: url('./assets/images/features-page-assets/keywords-play-btn.png');
+    }
+
+    .sect-engage .feat-left--top-img {
+        background-image: url('./assets/images/features-page-assets/reminders-icon.png');
+    }
+    .sect-engage .feat-left--bottom-img {
+        background-image: url('./assets/images/features-page-assets/polls-icon.png');
+    }
+    .sect-engage .feat-right--top-img {
+        background-image: url('./assets/images/features-page-assets/mms-icon.png');
+    }
+    .sect-engage .feat-right--bottom-img {
+        background-image: url('./assets/images/features-page-assets/keywords-play-btn.png');
+    }
+
+    .sect-provide .feat-left--top-img {
+        background-image: url('./assets/images/features-page-assets/chat-icon.png');
+    }
+    .sect-provide .feat-left--bottom-img {
+        background-image: url('./assets/images/features-page-assets/short-code-icon.png');
+    }
+    .sect-provide .feat-right--top-img {
+        background-image: url('./assets/images/features-page-assets/landline-icon.png');
+    }
+    .sect-provide .feat-right--bottom-img {
+        background-image: url('./assets/images/features-page-assets/keywords-play-btn.png');
+    }
+
+    .sect-acquire .feat-left--top-content span {
+        text-transform: uppercase;
+    }
+
+    .feat-left--top-content,
+    .feat-left--bottom-content,
+    .feat-right--top-content,
+    .feat-right--bottom-content {
+        vertical-align: top;
+        font-size: 1rem;
+        display: inline-block;
+        height: 100%;
+        width: 75%;
+    }
+    .feat-left--top-content h2,
+    .feat-left--bottom-content h2,
+    .feat-right--top-content h2,
+    .feat-right--bottom-content h2 {
+        padding-top: 50px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .feat-right--bottom-content h2 {
+        padding-top: 60px;
+    }
+    .feat-right--bottom-content h2:hover {
+        cursor: pointer;
+    }
+    .feat-right--bottom-content a {
+        text-decoration: none;
+        color: #5A7088;
+    }
+    .feat-left--top-content p,
+    .feat-left--bottom-content p,
+    .feat-right--top-content p,
+    .feat-right--bottom-content p {
+        font-size: 14px;
+        color: #5A7088;
+        letter-spacing: 0.5px;
+        width: 75%;
+    }
+    @media screen and (max-width: 1600px) {
+        .feat-left--top-content p,
+        .feat-left--bottom-content p,
+        .feat-right--top-content p,
+        .feat-right--bottom-content p {
+            width: 90%;
+        } 
+    }
+    @media screen and (max-width: 1280px) {
+        .feat-left--top-content p,
+        .feat-left--bottom-content p,
+        .feat-right--top-content p,
+        .feat-right--bottom-content p {
+            width: 92%;
+        } 
+    }
+    @media screen and (max-width: 1080px) {
+        .feat-left--top-img,
+        .feat-left--bottom-img,
+        .feat-right--top-img,
+        .feat-right--bottom-img {
+            background-position: top 30px right 40px;
+        }
+        .feat-left--top-content h2,
+        .feat-left--bottom-content h2,
+        .feat-right--top-content h2,
+        .feat-right--bottom-content h2 {
+            padding-top: 31px;
+        }
+        .feat-right--bottom-content h2 {
+            padding-top: 39px;
+        }
+    }
+    /**************************************************/
+    /******************** iFrames *********************/
+    /**************************************************/
+    .iframe-container {
+        display: none;
+        position: absolute;
+        background-color: aliceblue;
+        height: 355px;
+        width: 600px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 1rem;
+        z-index: 50;
+    }
+    .iframe-exit-btn {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background-color: pink;
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+        color: black;
+        z-index: 60;
+    }
+    .iframe-exit-btn:hover {
+        cursor: pointer;
+    }
+    .iframe-exit-btn span {
+        position: absolute;
+        left: 10px;
+        top: 4px;
+        color: white;
+    }
+    
+    iframe.video-keyword,
+    iframe.video-reminder,
+    iframe.video-chat {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    /**************************************************/
+    /************* More Great Features ****************/
+    /**************************************************/
+
+    .sect-more-features {
+        height: 550px;
+        background-color: #F7F8FA;
+    }
+    .sect-more-features .more-feat-container {
+        width: 95vw;
+        height: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sect-more-features .box-messaging,
+    .sect-more-features .box-analytic,
+    .sect-more-features .box-contact {
+        display: inline-block;
+        width: 27%;
+        max-width: 415px;
+        height: 235px;
+        font-size: 1rem;
+        text-align: center;
+        margin: 25px 2.86vw;
+        border: 1px solid grey;
+    }
+    .sect-more-features .box-messaging--img,
+    .sect-more-features .box-analytic--img,
+    .sect-more-features .box-contact--img {
+        height: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .sect-more-features .box-messaging--img {
+        background-image: url('./assets/images/features-page-assets/messaging-icon.png');
+    }
+    .sect-more-features .box-analytic--img {
+        background-image: url('./assets/images/features-page-assets/analytic-icon.png');
+    }
+    .sect-more-features .box-contact--img {
+        background-image: url('./assets/images/features-page-assets/contact-icon.png');
+    }
+    @media screen and (max-width: 1280px) {
+        .sect-more-features .more-feat-container {
+            width: 97vw;
+            text-align: center;
+        }
+        .sect-more-features .box-messaging,
+        .sect-more-features .box-analytic,
+        .sect-more-features .box-contact {
+            width: 27%;
+            margin: 25px 1vw;
+        }
+    }
+    /************************************************/
+    /******************* Footer *********************/
+    /************************************************/
+    .footer {
+        height: 585px;
+        background-color: #3D4351;
+    }
+    </style>
+</head>
+<body>
+    <div class="header-container" id="head">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="ez-logo">
+                    <a href="#"><img alt="eztexting logo" src="./assets/images/eztexting-logo.png" /></a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="./pricing_page.html">pricing</a></li>
+                        <li><a href="./features_page.html">features</a></li>
+                        <li><a href="#">resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="login-btn"><a href="">login</a></div>
+                <div class="sign-up-btn"><a href="https://eztexting.com/ez-start">sign up</a></div>
+                <div class="search-icon">
+                    <a href="#"><img alt="search icon" src="./assets/images/search-icon.png"></a> 
+                </div>    
+            </div>
+        </div>
+        <div class="header-titles">
+            <div class="main-title">Features</div>
+            <div class="sub-title">EZ Texting makes it simple to communicate with your contacts via sms messages.</br>Here are special features that help you accomplish your goals.</div>
+        </div>
+    </div>
+    <div class="section sect-acquire">
+        <div class="iframe-container">
+            <div class="iframe-exit-btn"><span>X</span></div>
+            <iframe class="video-keyword" width="560" height="315" src="https://www.youtube.com/embed/40IL5X2WtU4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <h1>Acquire Contacts</h1>
+        <div class="photo-feat-container">
+            <div class="cell-photo"></div>
+            <div class="feat-container">
+                <div class="feat-left">
+                    <div class="feat-left--top">
+                        <div class="feat-left--top-img"></div>
+                        <div class="feat-left--top-content">
+                            <h2>key words</h2>
+                            <p>Build your list when customer text a word like <span>subscribe</span> to a short code such as 313131</p>
+                        </div>
+                    </div>
+                    <div class="feat-left--bottom">
+                        <div class="feat-left--bottom-img"></div>
+                        <div class="feat-left--bottom-content">
+                            <h2>sign up forms (widgets)</h2>
+                            <p>Use these simple forms on your website or on social media to capture new subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feat-right">
+                    <div class="feat-right--top">
+                        <div class="feat-right--top-img"></div>
+                        <div class="feat-right--top-content">
+                            <h2>advanced messaging features</h2>
+                            <p>Ready for more? Set up drip campaigns, text forwarding, recurring messages, and more.</p>
+                        </div>
+                    </div>
+                    <div class="feat-right--bottom">
+                        <div class="feat-right--bottom-img"></div>
+                        <div class="feat-right--bottom-content">
+                            <!-- <a href="#"></a><h2>watch keywords video</h2></a> -->
+                            <h2>watch keywords video</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section sect-engage">
+        <div class="iframe-container">
+            <div class="iframe-exit-btn"><span>X</span></div>
+            <iframe class="video-reminder" width="560" height="315" src="https://www.youtube.com/embed/J381a8OTwD4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <h1>Engage Audience</h1>
+        <div class="photo-feat-container">
+            <div class="cell-photo"></div>
+            <div class="feat-container">
+                <div class="feat-left">
+                    <div class="feat-left--top">
+                        <div class="feat-left--top-img"></div>
+                        <div class="feat-left--top-content">
+                            <h2>reminders</h2>
+                            <p>Schedule personalized reminders to ensure your contacts make appointments and meet deadlines</p>
+                        </div>
+                    </div>
+                    <div class="feat-left--bottom">
+                        <div class="feat-left--bottom-img"></div>
+                        <div class="feat-left--bottom-content">
+                            <h2>text to vote sms polls</h2>
+                            <p>The fastest and the easiest way to get feedback from customers via text.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feat-right">
+                    <div class="feat-right--top">
+                        <div class="feat-right--top-img"></div>
+                        <div class="feat-right--top-content">
+                            <h2>mms picture messages</h2>
+                            <p>Make your SMS messages pop with a photo, video or expanded text length</p>
+                        </div>
+                    </div>
+                    <div class="feat-right--bottom">
+                        <div class="feat-right--bottom-img"></div>
+                        <div class="feat-right--bottom-content">
+                            <!-- <a href="#" target="_blank"><h2>watch reminder video</h2></a> -->
+                            <h2>watch reminder video</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section sect-provide">
+        <div class="iframe-container">
+            <div class="iframe-exit-btn"><span>X</span></div>
+            <iframe class="video-chat" width="560" height="315" src="https://www.youtube.com/embed/2dCtZF2EEU8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <h1>Provide Service</h1>
+        <div class="photo-feat-container">
+            <div class="cell-photo"></div>
+            <div class="feat-container">
+                <div class="feat-left">
+                    <div class="feat-left--top">
+                        <div class="feat-left--top-img"></div>
+                        <div class="feat-left--top-content">
+                            <h2>ez chat</h2>
+                            <p>Provide personalized, one-on-one service via text chats – even from your landline</p>
+                        </div>
+                    </div>
+                    <div class="feat-left--bottom">
+                        <div class="feat-left--bottom-img"></div>
+                        <div class="feat-left--bottom-content">
+                            <h2>dedicated short code services</h2>
+                            <p>Get your own short code when you've got high volume or multiple clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feat-right">
+                    <div class="feat-right--top">
+                        <div class="feat-right--top-img"></div>
+                        <div class="feat-right--top-content">
+                            <h2>text to landline</h2>
+                            <p>Recieve and reply to text messages on your existing business phone number, even if it's a landline</p>
+                        </div>
+                    </div>
+                    <div class="feat-right--bottom">
+                        <div class="feat-right--bottom-img"></div>
+                        <div class="feat-right--bottom-content">
+                            <!-- <a href="#" target="_blank"><h2>watch ez chat video</h2></a> -->
+                            <h2>watch ez chat video</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sect-more-features">
+        <h1>More Great Features</h1>
+        <div class="more-feat-container">
+            <div class="box-messaging">
+                <div class="box-messaging--img"></div>
+                <div class="box-messaging--content">on-the-go messaging</div>
+            </div>
+            <div class="box-analytic">
+                <div class="box-analytic--img"></div>
+                <div class="box-analytic--content">reporting and analytics</div>
+            </div>
+            <div class="box-contact">
+                <div class="box-contact--img"></div>
+                <div class="box-contact--content">contact list creation</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        $( document ).ready(function() {
+            console.log( "ready!" );
+        
+            $('.section').on('click', '.feat-right--bottom-content h2', function() {
+                console.log("link clicked");
+                console.log(this);
+                $(this).parent().parent().parent().parent().parent().siblings('.iframe-container').show();
+            });
+            $('.section').on('click', '.iframe-exit-btn', function() {
+                console.log("exit button clicked");
+                console.log(this);
+                $(this).parent('.iframe-container').hide();
+            });
+        });
+    </script>
+</body>
