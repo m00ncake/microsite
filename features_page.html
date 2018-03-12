@@ -487,12 +487,21 @@
     /**************************************************/
     /******************** iFrames *********************/
     /**************************************************/
-    .iframe-container {
+    .iframe-full-bg {
         display: none;
         position: absolute;
-        background-color: aliceblue;
-        height: 355px;
-        width: 600px;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.616);
+        z-index: 50;
+    }
+    .iframe-container {
+        position: absolute;
+        background-color: white;
+        height: 430px;
+        width: 740px;
         top: 50%;
         left: 50%;
         -webkit-transform: translateX(-50%) translateY(-50%);
@@ -501,7 +510,6 @@
         -o-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
         font-size: 1rem;
-        z-index: 50;
     }
     .iframe-exit-btn {
         position: absolute;
@@ -535,6 +543,16 @@
         -ms-transform: translateX(-50%) translateY(-50%);
         -o-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
+    }
+    @media screen and (max-width: 780px) {
+        .iframe-container {
+            width: 90%;
+            height: 50vw;
+        }
+        iframe {
+            width: 95% !important;
+            height: 46.5vw;
+        }
     }
 
     /**************************************************/
@@ -630,9 +648,11 @@
         </div>
     </div>
     <div class="section sect-acquire">
-        <div class="iframe-container">
-            <div class="iframe-exit-btn"><span>X</span></div>
-            <iframe class="video-keyword" width="560" height="315" src="https://www.youtube.com/embed/40IL5X2WtU4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="iframe-full-bg">
+            <div class="iframe-container">
+                <div class="iframe-exit-btn"><span>X</span></div>
+                <iframe class="video video-keyword" width="700" height="393.5" src="https://www.youtube.com/embed/40IL5X2WtU4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
         <h1>Acquire Contacts</h1>
         <div class="photo-feat-container">
@@ -665,7 +685,6 @@
                     <div class="feat-right--bottom">
                         <div class="feat-right--bottom-img"></div>
                         <div class="feat-right--bottom-content">
-                            <!-- <a href="#"></a><h2>watch keywords video</h2></a> -->
                             <h2>watch keywords video</h2>
                         </div>
                     </div>
@@ -674,9 +693,12 @@
         </div>
     </div>
     <div class="section sect-engage">
-        <div class="iframe-container">
-            <div class="iframe-exit-btn"><span>X</span></div>
-            <iframe class="video-reminder" width="560" height="315" src="https://www.youtube.com/embed/J381a8OTwD4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="iframe-full-bg">
+            <div class="iframe-container">
+                <div class="iframe-exit-btn"><span>X</span></div>
+                <!-- <iframe class="video-reminder" width="560" height="315" src="https://www.youtube.com/embed/J381a8OTwD4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                <iframe class="video video-reminder" width="700" height="393.5" src="https://www.youtube.com/embed/J381a8OTwD4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
         <h1>Engage Audience</h1>
         <div class="photo-feat-container">
@@ -709,7 +731,6 @@
                     <div class="feat-right--bottom">
                         <div class="feat-right--bottom-img"></div>
                         <div class="feat-right--bottom-content">
-                            <!-- <a href="#" target="_blank"><h2>watch reminder video</h2></a> -->
                             <h2>watch reminder video</h2>
                         </div>
                     </div>
@@ -718,9 +739,11 @@
         </div>
     </div>
     <div class="section sect-provide">
-        <div class="iframe-container">
-            <div class="iframe-exit-btn"><span>X</span></div>
-            <iframe class="video-chat" width="560" height="315" src="https://www.youtube.com/embed/2dCtZF2EEU8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="iframe-full-bg">
+            <div class="iframe-container">
+                <div class="iframe-exit-btn"><span>X</span></div>
+                <iframe class="video video-chat" width="700" height="393.5" src="https://www.youtube.com/embed/2dCtZF2EEU8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
         <h1>Provide Service</h1>
         <div class="photo-feat-container">
@@ -753,7 +776,6 @@
                     <div class="feat-right--bottom">
                         <div class="feat-right--bottom-img"></div>
                         <div class="feat-right--bottom-content">
-                            <!-- <a href="#" target="_blank"><h2>watch ez chat video</h2></a> -->
                             <h2>watch ez chat video</h2>
                         </div>
                     </div>
@@ -788,12 +810,16 @@
             $('.section').on('click', '.feat-right--bottom-content h2', function() {
                 console.log("link clicked");
                 console.log(this);
-                $(this).parent().parent().parent().parent().parent().siblings('.iframe-container').show();
+                $(this).parent().parent().parent().parent().parent().siblings('.iframe-full-bg').show('200');
+
             });
             $('.section').on('click', '.iframe-exit-btn', function() {
                 console.log("exit button clicked");
                 console.log(this);
-                $(this).parent('.iframe-container').hide();
+                $(this).parent('.iframe-container').parent('.iframe-full-bg').hide('100');
+                var video = $(this).siblings('.video').attr("src");
+                $(this).siblings('.video').attr('src','');
+                $(this).siblings('.video').attr('src',video);
             });
         });
     </script>
