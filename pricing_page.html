@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pricing Plans</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
     @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');    
     /****************************************/    
@@ -556,6 +557,50 @@
         height: 585px;
         background-color: #3D4351;
     }
+
+    /***********************************************/
+    /************* EZ Header Override **************/
+    /***********************************************/
+
+    /* .v7_backdrop {
+        background: #5A7088;
+        overflow: hidden;
+        height: 435px;
+    }
+    .landv7_hero {
+        background: #5d728a;
+        height: 508px;
+    }
+    .highlight_faq, .highlight_v7 {
+        height: 510px;
+    }
+    .navbar.scrolled {
+         background-color: #5d728a;
+    }
+    .wrapper_v7_int h1 {
+        font-family: "Open Sans";
+        font-size: 70px;
+        font-weight: 600;
+        padding: 235px 2em 20px 2em;
+    }
+    .wrapper_v7_int h2 {
+        font-size: 27px;
+        font-weight: 500;
+        font-family: "Open Sans";
+    }
+
+    @media only screen and (max-width: 1200px) and (min-width: 768px) {
+        .container .navbar-nav.navbar-right:last-child {
+            margin-right: -50px;
+        }
+    }
+    #content {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        padding: 0;
+    } */
+
     </style>
 </head>
 <body>
@@ -599,7 +644,6 @@
                 </label>
                 <div class="save-20-container">
                     <div class="save-20--bg-img"></div>
-                    <!-- <img src="./assets/images/price-page-assets/save20.png" -->
                     <div class="save-20">SAVE</br>20%</div>
                 </div>
             </div>
@@ -703,5 +747,22 @@
     <div class="footer">
 
     </div>
+    <script>
+        (function ($) {
+            console.log( "ready!" );
+            $('.radio-container.monthly').on('click', function() {
+                console.log("monthly button clicked");
+                $('.skinny-column .column-header--price').text('$10').append('<span>/month</span>');
+                $('.core-column .column-header--price').text('$20').append('<span>/month</span>');
+                $('.pro-column .column-header--price').text('$40').append('<span>/month</span>');
+            });
+            $('.radio-container.annual').on('click', function() {
+                console.log("annual button clicked");
+                $('.skinny-column .column-header--price').text('$8').append('<span>/month</span>');
+                $('.core-column .column-header--price').text('$16').append('<span>/month</span>');
+                $('.pro-column .column-header--price').text('$32').append('<span>/month</span>');
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>
