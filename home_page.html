@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+    /* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');     */
+    
+    body {
+        /* font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  */
+        font-family: 'Lato', sans-serif;
+    }
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+    }
+  
+    /****************************************/    
+    /*************** Header *****************/
+    /****************************************/    
+    .header-container {
+        height: 45vw;
+        background-image: url('./assets/images/home-page-assets/header-img.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-weight: 100;
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        .header-container {
+            height: 47vw;
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        .header-container {
+            height: 50vw;
+        }
+    }
+    /*********** Navigation Bar *************/
+    .nav-container {
+        height: 130px;
+    }
+    .nav-left {
+        position: relative;
+        float: left;
+        text-transform: uppercase;
+        margin-top: 45px;
+        margin-left: 8vw;
+    }
+    .nav-right {
+        float: right;
+    }
+    .ez-logo {
+        width: 210px;
+        display: inline-block;
+    }
+    .ez-logo img {
+        width: 100%;
+    }
+    .nav-list {
+        position: absolute;
+        display: inline-block;
+        top: 1px;
+        left: 206px;
+        width: 450px;
+    }
+    .nav-list ul li {
+        display: inline-block;
+        margin: 0 1.3vw 0 1.3vw;
+        letter-spacing: 2px;
+    }
+    .nav-list ul li:nth-child(1) {
+        margin-left: 0px;
+    }
+    .nav-list ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    .nav-right {
+        position: relative;
+        margin-top: 45px;
+        margin-right: 8vw;
+        padding-right: 60px;
+    }
+    .nav-right div,
+    .nav-right button {
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    .nav-right div a {
+        text-decoration: none;
+        color: white;
+        letter-spacing: 2px;
+        padding: 10px 55px 10px 50px;
+    }
+    .sign-up-btn {
+        width: 175px;
+        height: 40px;
+        background-color: #2FCA80;
+        border: none;
+        border-radius: 3px;
+        margin: 0 2.5vw 0 -25px;
+        text-align: center;
+    }
+    .sign-up-btn a {
+        font-size: 14px;
+        line-height: 40px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: white;
+    }
+    .nav-right .search-icon {
+        position: absolute;
+        display: inline-block;
+        right: -45px;
+        top: 9px;
+    }
+    @media screen and (max-width: 1600px) {
+        .nav-left {
+            margin-left: 6vw;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .nav-left {
+            margin-left: 4vw;
+        }
+        .nav-right {
+            margin-right: 1.5vw;
+        } 
+        .nav-right .search-icon {
+            right: -20px;
+        }
+    }
+    /************** Header Titles **************/
+   .header-titles {
+        width: 38vw;
+        margin: 0 0 0 8vw;
+        color: white;
+    }
+    .main-title {
+        display: inline-block;
+        width: 100%;
+        font-size: 5vmax;
+        line-height: 5.6vmax;
+        font-weight: 300;
+        margin: 6vw 0 30px 0;
+    }
+    .sub-title {
+        font-size: 1.9vmax;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        line-height: 2.5vmax;
+    } 
+    .sub-title span {
+        font-weight:500;
+    }
+
+    @media screen and (max-width: 1600px) {
+    }
+    @media screen and (max-width: 1280px){
+        .main-title {
+            margin: 4.5vw 0 2vw 0;
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        .main-title {
+            margin: 3vw 0 1vw 0;
+        }
+    }
+    @media screen and (max-width: 880px) {
+        .main-title {
+            margin: 1.5vw 0 0.5vw 0;
+        }
+    }
+
+
+    /*************** Header Buttons *****************/
+
+    .header-btns {
+        height: 90px;
+        width: 100%;
+    }
+    .header-btns a {
+        text-decoration: none;
+        font-size: 1.2vmax;
+        line-height: 4vw;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+    }
+
+    .header-btns--try-btn,
+    .header-btns--demo-btn {
+        display: inline-block;
+        height: 4vw;
+        border-radius: 4px;
+    }
+
+    .header-btns--try-btn {
+        width: 42%;
+        margin: 2vw 0 1vw 0px;
+        background-color: #2FCA80;
+    }
+    .header-btns--demo-btn {
+        width: 37%;
+        background-color: #4A90E2;
+        margin: 2vw 0 1vw 0.8vw;
+    }
+    /*************************************************/
+    /*********** Promote Notify Coordinate ***********/
+    /*************************************************/
+
+    .subheader.pro-not-coor {
+        height: 12vw;
+        width: 100%;
+        background-color: #F7F8FA;
+        font-size: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .subheader-sect.promote,
+    .subheader-sect.notify,
+    .subheader-sect.coordinate {
+        display: inline-block;
+        height: 100%;
+        width: 28%;
+        /* background-color:pink;  */
+        margin: 0 0.5vw;
+    }
+    .subheader-sect.promote .icon-side,
+    .subheader-sect.notify .icon-side,
+    .subheader-sect.coordinate .icon-side {
+        display: inline-block;
+        height: 100%;
+        width: 28%;
+        max-width: 110px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .subheader-sect.promote .icon-side {
+        background-image: url('./assets/images/home-page-assets/outline-circle-speaker.png');
+    }
+    .subheader-sect.notify .icon-side {
+        background-image: url('./assets/images/home-page-assets/outline-circle-calendar.png');
+    }
+    .subheader-sect.coordinate .icon-side {
+        background-image: url('./assets/images/home-page-assets/outline-circle-thumb.png');
+    }
+
+    .subheader-sect.promote .content-side,
+    .subheader-sect.notify .content-side,
+    .subheader-sect.coordinate .content-side {
+        display: inline-block;
+        height: 100%;
+        width: 72%;
+        font-size: 1rem;
+        vertical-align: top;
+        text-align: left;
+    }
+    .content-side .content-side--title {
+        height: 40%;
+        line-height: 7vw;
+        padding: 0 25px;
+        color: #434856;
+        font-size: 1.5vmax;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .content-side .content-side--content {
+        /* display: block; */
+        height: 60%;
+        /* width: 100%; */
+        padding: 0 25px;
+        color: #607286;
+        font-size: 1.1vmax;
+        font-weight: 100;
+    }
+
+    /************************************************/
+    /**************** CTA Section 01 ****************/
+    /************************************************/
+    .cta-sect1 {
+        height: 35vw;
+        font-size: 0px;
+    }
+    .cta-sect1 .right-image {
+        display: inline-block;
+        width:50%;
+        height: 100%;
+        background-image: url('./assets/images/home-page-assets/iphone.png'), url('./assets/images/home-page-assets/ipad.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 11vw bottom -200px, right 19vw top 3.5vw;
+        /* background-color: lightpink; */
+    }
+    .cta-sect1 .left-content {
+        display: inline-block;
+        width: 42%;
+        height: 100%;
+        vertical-align: top;
+        /* background-color: lightcyan; */
+        font-size: 1rem;
+    }
+    .cta-sect1 .left-content .top-row,
+    .cta-sect1 .left-content .middle-row,
+    .cta-sect1 .left-content .bottom-row {
+        height: 32%;
+        border-bottom: 1px solid #9B9B9B;
+    }
+    .cta-sect1 .left-content .bottom-row {
+        border-bottom: none;
+    }
+    .cta-sect1 .left-content .top-row .icon-side,
+    .cta-sect1 .left-content .middle-row .icon-side,
+    .cta-sect1 .left-content .bottom-row .icon-side {
+        display: inline-block;
+        height: 100%;
+        width: 20%;
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+    }
+    .cta-sect1 .left-content .top-row .icon-side {
+        background-image: url('./assets/images/home-page-assets/icon-time.png');
+    }
+    .cta-sect1 .left-content .middle-row .icon-side {
+        background-image: url('./assets/images/home-page-assets/icon-profile.png');
+    }
+    .cta-sect1 .left-content .bottom-row .icon-side {
+        background-image: url('./assets/images/home-page-assets/icon-star.png');
+    }
+
+    .cta-sect1 .left-content .top-row .content-side,
+    .cta-sect1 .left-content .middle-row .content-side,
+    .cta-sect1 .left-content .bottom-row .content-side {
+        display: inline-block;
+        height: 100%;
+        width: 68%;
+        vertical-align: top;
+    }
+    .cta-sect1 .left-content .top-row .content-side--title,
+    .cta-sect1 .left-content .middle-row .content-side--title,
+    .cta-sect1 .left-content .bottom-row .content-side--title {
+        height: 50%;
+        font-size: 1.1vmax;
+        line-height: 8.5vw;
+    }
+    .cta-sect1 .left-content .top-row .content-side--content,
+    .cta-sect1 .left-content .middle-row .content-side--content,
+    .cta-sect1 .left-content .bottom-row .content-side--content {
+        height: 50%;
+        font-size: 1vmax;
+    }
+    /* @media screen and (max-width: 1680px) {
+        .cta-sect1 .left-content .top-row .content-side--title,
+        .cta-sect1 .left-content .middle-row .content-side--title,
+        .cta-sect1 .left-content .bottom-row .content-side--title {
+            height: 50%;
+            font-size: 1.3vmax;
+            line-height: 10.5vw;
+        }
+        .cta-sect1 .left-content .top-row .content-side--content,
+        .cta-sect1 .left-content .middle-row .content-side--content,
+        .cta-sect1 .left-content .bottom-row .content-side--content {
+            height: 50%;
+            font-size: 1.1vmax;
+        }
+    } */
+
+    @media screen and (max-width: 1280px) {
+        .cta-sect1 {
+            height: 450px;
+        }
+        .cta-sect1 .right-image {
+            width:50%;
+            background-position: right 5vw bottom -200px, right 18vw top 2vw;
+        }
+        .cta-sect1 .left-content .top-row .content-side,
+        .cta-sect1 .left-content .middle-row .content-side,
+        .cta-sect1 .left-content .bottom-row .content-side {
+            width: 71%;
+        }
+        .cta-sect1 .left-content .top-row .content-side--title,
+        .cta-sect1 .left-content .middle-row .content-side--title,
+        .cta-sect1 .left-content .bottom-row .content-side--title {
+            font-size: 1.25vmax;
+            line-height: 8vw;
+        }
+        .cta-sect1 .left-content .top-row .content-side--content,
+        .cta-sect1 .left-content .middle-row .content-side--content,
+        .cta-sect1 .left-content .bottom-row .content-side--content {
+            font-size: 1.2vmax;
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        .cta-sect1 .right-image {
+            width: 45%;
+        }
+        .cta-sect1 .left-content {
+            width: 49%;
+        }
+        .cta-sect1 .left-content .top-row .content-side,
+        .cta-sect1 .left-content .middle-row .content-side,
+        .cta-sect1 .left-content .bottom-row .content-side {
+            width: 79%;
+        }
+        .cta-sect1 .left-content .top-row .content-side--title,
+        .cta-sect1 .left-content .middle-row .content-side--title,
+        .cta-sect1 .left-content .bottom-row .content-side--title {
+            font-size: 1.6vmax;
+            line-height: 10vw;
+        }
+        .cta-sect1 .left-content .top-row .content-side--content,
+        .cta-sect1 .left-content .middle-row .content-side--content,
+        .cta-sect1 .left-content .bottom-row .content-side--content {
+            font-size: 1.5vmax;
+        }
+    }
+
+    /************************************************/
+    /**************** CTA Section 2 *****************/
+    /************************************************/
+    .cta-sect2 {
+        border-top: 1px solid #E1E1E1;
+        border-bottom: 1px solid #E1E1E1;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 0;
+    }
+    .cta-sect2 .sect-title {
+        width: 50vw;
+        font-size: 2.4vmax;
+        font-weight: 300;
+        color: #3D4351;
+        margin: 4vw auto 2.5vw;
+    }
+    .cta-sect2 .sect-title span {
+        font-weight: 400;
+    }
+    .cta-sect2 .sect2--acquire,
+    .cta-sect2 .sect2--engage,
+    .cta-sect2 .sect2--retain {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .cta-sect2 .sect2--engage {
+        margin-left: 7.5vw;
+        border-top: 1px solid #E1E1E1;
+        border-bottom: 1px solid #E1E1E1;    
+    }
+    .cta-sect2 .sect2--acquire {
+        height: 20vw;
+    } 
+    .cta-sect2 .sect2--engage,
+    .cta-sect2 .sect2--retain {
+        height: 26.5vw;
+    }
+
+    .cta-sect2 .sect2--acquire .img-side,
+    .cta-sect2 .sect2--engage .img-side,
+    .cta-sect2 .sect2--retain .img-side {
+        display: inline-block;
+        height: 100%;
+        width: 45%;
+        max-width: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .cta-sect2 .sect2--acquire .img-side {
+        background-image: url('./assets/images/home-page-assets/phone-message-1.png');
+    }
+    .cta-sect2 .sect2--engage .img-side {
+        background-image: url('./assets/images/home-page-assets/phone-message-2.png');
+        margin-left: -4vw;
+    }
+    .cta-sect2 .sect2--retain .img-side {
+        background-image: url('./assets/images/home-page-assets/phone-message-3.png');
+    }
+    .cta-sect2 .sect2--acquire .content-side,
+    .cta-sect2 .sect2--engage .content-side,
+    .cta-sect2 .sect2--retain .content-side {
+        display: inline-block;
+        width: 39%;
+        height: 100%;
+        vertical-align: top;
+        text-align: left;
+        padding-left: 3.5vw;
+    }
+    .cta-sect2 .sect2--engage .content-side {
+        width: 31%;
+        padding-left: 2vw;
+    }
+
+    .cta-sect2 .sect2--acquire .content-side .content-number,
+    .cta-sect2 .sect2--engage .content-side .content-number,
+    .cta-sect2 .sect2--retain .content-side .content-number {
+        font-size: 3.1vmax;
+        color: #F5A623;
+        padding-top: 4vw;
+    }
+    .cta-sect2 .sect2--engage .content-side .content-number,
+    .cta-sect2 .sect2--retain .content-side .content-number {
+        padding-top: 7vw;
+    }
+     
+    .cta-sect2 .sect2--acquire .content-side h2,
+    .cta-sect2 .sect2--engage .content-side h2,
+    .cta-sect2 .sect2--retain .content-side h2 {
+        text-transform: uppercase;
+        font-size: 1.2vmax;
+        font-weight: 300;
+        color: #3D4351;
+        padding-top: 0.3vw;
+    }
+    .cta-sect2 .sect2--acquire .content-side .content-side--content,
+    .cta-sect2 .sect2--engage .content-side .content-side--content,
+    .cta-sect2 .sect2--retain .content-side .content-side--content {
+        width: 80%;
+        color: #708092;
+        font-size: 1vmax;
+        line-height: 1.5vmax;
+        font-weight: 100;
+        padding: 0.15vw 0;
+    }
+
+    /************************************************/
+    /******************* Footer *********************/
+    /************************************************/
+    .footer {
+        height: 585px;
+        background-color: #3D4351;
+    }
+    </style>
+</head>
+<body>
+    <div class="header-container" id="head">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="ez-logo">
+                    <a href="./home_page.html"><img alt="eztexting logo" src="./assets/images/eztexting-logo.png" /></a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="./pricing_page.html">pricing</a></li>
+                        <li><a href="./features_page.html">features</a></li>
+                        <li><a href="#">resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="login-btn"><a href="">login</a></div>
+                <div class="sign-up-btn"><a href="https://eztexting.com/ez-start">sign up</a></div>
+                <div class="search-icon">
+                    <a href="#"><img alt="search icon" src="./assets/images/search-icon.png"></a> 
+                </div>    
+            </div>
+        </div>
+        <div class="header-titles">
+            <div class="main-title">Text Marketing Drives Results</div>
+            <div class="sub-title">Reach your contacts. Grow your business.</br><span>We make it easy.</span></div>
+            <div class="header-btns">
+                <a href="/start">
+                    <div class="header-btns--try-btn" name="button" type="button">
+                        Try It For Free
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-btns--demo-btn" name="button" type="button">
+                        Free Demo
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="subheader pro-not-coor">
+        <div class="subheader-sect promote">
+            <div class="icon-side"></div>
+            <div class="content-side">
+                <div class="content-side--title">Promote</div>
+                <div class="content-side--content">Texting is a great way to send promotions, increase engagement, and generate leads.</div>
+            </div>
+        </div>
+        <div class="subheader-sect notify">
+            <div class="icon-side"></div>
+            <div class="content-side">
+                <div class="content-side--title">Notify</div>
+                <div class="content-side--content">Send notifications to thousands with the click of a button, or create automatic reminders.</div>
+            </div>
+        </div>
+        <div class="subheader-sect coordinate">
+            <div class="icon-side"></div>
+            <div class="content-side">
+                <div class="content-side--title">Coordinate</div>
+                <div class="content-side--content">Use mass texting to send your team alerts, auto-responses, or logical information.</div>
+            </div>
+        </div>
+    </div>
+    <div class="cta-sect1">
+        <div class="right-image">
+            <!-- <img class="img-ipad" src="./assets/images/home-page-assets/ipad.png" alt="ipad photo" />
+            <img class="img-iphone" src="./assets/images/home-page-assets/iphone.png" alt="iphone photo" /> -->
+        </div>
+        <div class="left-content">
+            <div class="top-row">
+                <div class="icon-side"></div>
+                <div class="content-side">
+                    <div class="content-side--title">Get Started in 5 minutes!</div>
+                    <div class="content-side--content">You don't need special knowledge or technology to start connecting with contacts. Sign up and send your first message today.</div>
+                </div>
+            </div>
+            <div class="middle-row">
+                <div class="icon-side"></div>
+                <div class="content-side">
+                    <div class="content-side--title">Let us do it for You</div>
+                    <div class="content-side--content">We're text marketing experts, so you don't have to be. We'll help you get set up and texting your audience in no time.</div>
+                </div>
+            </div>
+            <div class="bottom-row">
+                <div class="icon-side"></div>
+                <div class="content-side">
+                    <div class="content-side--title">Improve Customers Relationships</div>
+                    <div class="content-side--content">Better communications = better relationships. Our solutions help you connect more effectively.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cta-sect2">
+        <div class="sect-title">Text Marketing Helps You <span>Acquire</span>, <span>Engage</span>, and <span>Retain</span> Customers</div>
+        <div class="sect2--acquire">
+            <div class="img-side"></div>
+            <div class="content-side">
+                <div class="content-number">01</div>
+                <h2>acquire customers</h2>
+                <div class="content-side--content">Every business needs more traffic - whether it's online, brick and mortor or event planners. EZ Texting makes it easy to promote yourself to customers and prospective customers.</div>
+            </div>
+        </div>
+        <div class="sect2--engage">
+            <div class="content-side">
+                <div class="content-number">02</div>
+                <h2>engage our audience</h2>
+                <div class="content-side--content">Got a sale, special offer or cool event coming up? Let your fans and followers know fast.</div>
+            </div>
+            <div class="img-side"></div>
+        </div>
+        <div class="sect2--retain">
+                <div class="img-side"></div>
+                <div class="content-side">
+                    <div class="content-number">03</div>
+                    <h2>retain customers</h2>
+                    <div class="content-side--content">Whether you're a team of one or a thousand, it can be challenging to make sure stays in the loop. We've got tools to lighten the load!</div>
+                </div>
+            </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        $( document ).ready(function() {
+            console.log( "ready!" );
+        });
+    </script>
+</body>
