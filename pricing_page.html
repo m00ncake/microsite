@@ -167,6 +167,10 @@
         background-color: #F7F8FA;
         font-weight: 300;
     }
+    .fixed-position {
+        position: fixed;
+        bottom: 0;
+    }
     .sub-main-title {
         font-size: 52px;
         color: #5A7088;
@@ -744,12 +748,43 @@
             </div>
         </div>
     </div>
+    <!-- <div class="plan-select-section">
+        <div class="plan-select-section--top">
+            <div class="plan-select-section--top-inner">
+                <label class="radio-container monthly">Monthly
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark checkmark-monthly"></span>
+                </label>
+                <label class="radio-container annual">Annual
+                    <input type="radio" name="radio">
+                    <span class="checkmark checkmark-annual"></span>
+                </label>
+                <div class="save-20-container">
+                    <div class="save-20--bg-img"></div>
+                    <div class="save-20">SAVE</br>20%</div>
+                </div>
+            </div>
+        </div>
+        <div class="plan-select-section--bottom">
+            <p>Your plan will renew automatically each month/year. Messages are added separately to your plan. No refunds are issued for plan purchases.</p>
+        </div>
+    </div> -->
     <div class="footer">
 
     </div>
     <script>
         (function ($) {
             console.log( "ready!" );
+
+            // $(document).on('scroll', function(e) {
+                // console.log("scrolling");
+                // if ($(document).scrollTop() > 800) {
+                    // $('.plan-select-section').removeClass('fixed-position');
+                // } else {
+                    // $('.plan-select-section').addClass('fixed-position');
+                // }
+            // });
+
             $('.radio-container.monthly').on('click', function() {
                 console.log("monthly button clicked");
                 $('.skinny-column .column-header--price').text('$10').append('<span>/month</span>');

@@ -1251,6 +1251,10 @@
     <script>
         $( document ).ready(function() {
             console.log( "ready!" );
+            $(".nav-list li:first-child a").addClass('features-link');
+            console.log("class added");
+            $(".features-link").attr('href', './features_page.html');
+            console.log("href changed");
         });
     </script>
 </body>

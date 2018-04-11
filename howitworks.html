@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Features</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');    
+    
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        color: black;
+        font-family: "Open Sans", sans-serif;
+    }
+    /****************************************/    
+    /*************** Header *****************/
+    /****************************************/    
+    .header-container {
+        height: 445px;
+        background-color: #5A7088;
+        font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 100;
+        font-size: 12px;
+    }
+    /*********** Navigation Bar *************/
+    .nav-left {
+        position: relative;
+        float: left;
+        text-transform: uppercase;
+        margin-top: 45px;
+        margin-left: 8vw;
+    }
+    .nav-right {
+        float: right;
+    }
+    .ez-logo {
+        width: 210px;
+        display: inline-block;
+    }
+    .ez-logo img {
+        width: 100%;
+    }
+    .nav-list {
+        position: absolute;
+        display: inline-block;
+        top: 1px;
+        left: 206px;
+        width: 450px;
+    }
+    .nav-list ul li {
+        display: inline-block;
+        margin: 0 1.3vw 0 1.3vw;
+        letter-spacing: 2px;
+    }
+    .nav-list ul li:nth-child(1) {
+        margin-left: 0px;
+    }
+    .nav-list ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    .nav-right {
+        position: relative;
+        margin-top: 45px;
+        margin-right: 8vw;
+        padding-right: 60px;
+    }
+    .nav-right div,
+    .nav-right button {
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    .nav-right div a {
+        text-decoration: none;
+        color: white;
+        letter-spacing: 2px;
+        padding: 10px 55px 10px 50px;
+    }
+    .sign-up-btn {
+        width: 175px;
+        height: 40px;
+        background-color: #2FCA80;
+        border: none;
+        border-radius: 3px;
+        margin: 0 2.5vw 0 -25px;
+        text-align: center;
+    }
+    .sign-up-btn a {
+        font-size: 14px;
+        line-height: 40px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: white;
+    }
+    .nav-right .search-icon {
+        position: absolute;
+        display: inline-block;
+        right: -45px;
+        top: 9px;
+    }
+    @media screen and (max-width: 1600px) {
+        .nav-left {
+            margin-left: 6vw;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .nav-left {
+            margin-left: 4vw;
+        }
+        .nav-right {
+            margin-right: 1.5vw;
+        } 
+        .nav-right .search-icon {
+            right: -20px;
+        }
+    }
+    /*********** Header Titles ***********/
+   .header-titles {
+        clear: both;
+        width: 60vw;
+        margin: 0 auto;
+        color: white;
+    }
+    .main-title {
+        display: inline-block;
+        width: 100%;
+        font-size: 73px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        margin: 70px 0 30px 0;
+        text-align: center;
+    }
+    .sub-title {
+        text-align: center;
+        font-size: 21px;
+        font-weight: 200;
+        letter-spacing: 0.5px;
+        line-height: 38px;
+    } 
+
+    @media screen and (max-width: 1600px) {
+        .main-title {
+            font-size: 60px;
+        }
+        .sub-title {
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 1280px){
+        .header-titles {
+            width: 80vw;
+        }
+        .main-title {
+            font-size: 50px;
+        }
+        .sub-title {
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        .header-titles {
+            width: 85vw;
+        }
+    }
+    @media screen and (max-width: 880px) {
+        .header-titles {
+            width: 95vw;
+        }
+        .main-title {
+            font-size: 48px;
+        }
+        .sub-title {
+            font-size: 16px;
+        }
+    }
+    /************************************************/
+    /************ Step 1, Step 2, Step 3 ************/
+    /************************************************/
+    .step-1,.step-2,.step-3 {
+        font-family: "Open Sans";
+        font-size: 0;
+        height: 30vw;
+        width: 100%;
+    }
+    .step-1 .graphic, .step-3 .graphic {
+        float: right;
+    }    
+    .content-side {
+        display: inline-block;
+        width: 60%;
+        /* background-color: lightcyan; */
+        vertical-align: top;
+    }
+    .graphic {
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+        background-image: url('./assets/images/howitworks-page-assets/1.png'), url('./assets/images/howitworks-page-assets/bg-shadow.png');
+        background-size: contain, contain;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+    }
+    .content-side h2 {
+        font-size: 1.8vmax;
+        margin-top: 8vw;
+        padding: 0 3vw 0 10vw;
+        text-transform: uppercase;
+    }
+    .content-side p {
+        font-size: 1.2vmax;
+        padding: 0 3vw 0 10vw;
+        line-height: 2.2vmax;
+    }
+
+    .step-2 .content-side h2,
+    .step-2 .content-side p {
+        padding: 0 10vw 0 4vw;
+    }
+
+    /************************************************/
+    /******************* Footer *********************/
+    /************************************************/
+    .footer {
+        height: 585px;
+        background-color: #3D4351;
+    }
+    </style>
+</head>
+<body>
+    <div class="header-container" id="head">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="ez-logo">
+                    <a href="./home_page.html"><img alt="eztexting logo" src="./assets/images/eztexting-logo.png" /></a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="./pricing_page.html">pricing</a></li>
+                        <li><a href="./features_page.html">features</a></li>
+                        <li><a href="#">resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="login-btn"><a href="">login</a></div>
+                <div class="sign-up-btn"><a href="https://eztexting.com/start">sign up</a></div>
+                <div class="search-icon">
+                    <a href="#"><img alt="search icon" src="./assets/images/search-icon.png"></a> 
+                </div>    
+            </div>
+        </div>
+        <div class="header-titles">
+            <div class="main-title">How It Works</div>
+            <div class="sub-title">EZ Texting makes it simple to communicate with your contacts via sms messages.
+                </br>Here are special features that help you accomplish your goals.
+            </div>
+        </div>
+    </div>
+    <div class="step-1">
+        <div class="graphic"></div>
+        <div class="content-side">
+            <h2>1. advertise your keyword <br/>and short code</h2>
+            <p> Sign up for EZ Texting and reserve your own Keyword. We'll supply the short code. 
+                Then let the world know! Imagine a message like "Text DEALZ to 313131 to get monthly 
+                coupons" on your in-store signs, stationary, website, and email signatures. Pretty 
+                soon you'll have a big, opt-in list ready for your messages.
+            </p>
+        </div>
+    </div>
+    <div class="step-2">
+        <div class="graphic"></div>
+        <div class="content-side">
+            <h2>2. send promotions, reminders <br/>&amp; notifications</h2>
+            <p> Send your first message in minutes. Customers that texted your keyword will 
+                automatically be subscribers. Your can also easily upload your own list. Think
+                about what kind of message works best for your audience. Will it be a coupon,
+                an event notification, or a reminder? Texting works for any kind of message
+                you want read right away!
+            </p>
+        </div>
+    </div>
+    <div class="step-3">
+        <div class="graphic"></div>
+        <div class="content-side">
+            <h2>3. watch your sales &amp; <br/>engagement grow</h2>
+            <p> With a 98% open rate, texting can't be beat for engaging with your audience. 
+                Especially for millennials, texting is the preferred method of connecting with 
+                businesses. Texting is the communication tool of the future. Don't get left behind!
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        $( document ).ready(function() {
+
+        });
+    </script>
+</body>
