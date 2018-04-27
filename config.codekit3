@@ -7,7 +7,7 @@
 		"uuidString": "74EAEB55-008A-4DB0-9B0D-9419C07EDF3A"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/assets\/images\/eztexting-logo.png": {
 		"ft": 32768,
@@ -243,6 +243,7 @@
 	"\/assets\/images\/header-image.jpg": {
 		"ft": 16384,
 		"iS": 1024835,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/header-image.jpg",
 		"oF": 0,
@@ -374,6 +375,7 @@
 	"\/assets\/images\/home-page-assets\/header-img.jpg": {
 		"ft": 16384,
 		"iS": 150494,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/home-page-assets\/header-img.jpg",
 		"oF": 0,
@@ -696,7 +698,8 @@
 	"creationDate": 543799148,
 	"displayValue": "microsite",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-ron"
+	"iconImageName": "meme-ron",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2499,6 +2502,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

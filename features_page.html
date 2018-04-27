@@ -363,6 +363,10 @@
         }
     }
     /**************** Feature Content *******************/
+    .feat-right {
+        vertical-align: top;
+    }
+    
     .feat-left--top-img,
     .feat-left--bottom-img,
     .feat-right--top-img,
@@ -410,7 +414,8 @@
         background-image: url('./assets/images/features-page-assets/landline-icon.png');
     }
     .sect-provide .feat-right--bottom-img {
-        background-image: url('./assets/images/features-page-assets/keywords-play-btn.png');
+        /* background-image: url('./assets/images/features-page-assets/keywords-play-btn.png'); */
+        position: relative;
     }
 
     .sect-acquire .feat-left--top-content span {
@@ -456,6 +461,14 @@
         color: #5A7088;
         letter-spacing: 0.5px;
         width: 75%;
+    }
+    .feat-right--bottom-img:hover {
+        cursor: pointer;
+    }
+    .feat-right--bottom-img img.play-icon {
+        position: absolute;
+        right: 2vw;
+        top: 2.5vw;
     }
     @media screen and (max-width: 1600px) {
         .feat-left--top-content p,
@@ -566,14 +579,14 @@
     /**************************************************/
 
     .sect-more-features {
-        height: 550px;
+        height: 800px;
         background-color: #F7F8FA;
     }
     .sect-more-features .more-feat-container {
-        width: 95vw;
-        height: 75%;
-        margin: 0 auto;
-        text-align: center;
+        /* width: 95vw; */
+        /* height: 75%; */
+        /* margin: 0 auto; */
+        /* text-align: center; */
     }
 
     .sect-more-features .box-messaging,
@@ -604,8 +617,82 @@
     .sect-more-features .box-contact--img {
         background-image: url('./assets/images/features-page-assets/contact-icon.png');
     }
+
+
+
+    .more-feat-row1, .more-feat-row2 {
+        height: 260px;
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+        /* background-color: lightcyan; */
+    }
+    .more-feat-container {
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+        margin: 0 1vw;
+        /* background-color: pink;
+        border: 1px solid blue; */
+    }
+    .img-side {
+        display: inline-block;
+        width: 11%;
+        height: 100%;
+        /* background-color: green; */
+    }
+    .more-feat-row1 .left-more-feat .img-side,
+    .more-feat-row1 .mid-more-feat .img-side,
+    .more-feat-row1 .right-more-feat .img-side,
+    .more-feat-row2 .left-more-feat .img-side,
+    .more-feat-row2 .mid-more-feat .img-side,
+    .more-feat-row2 .right-more-feat .img-side {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top 6px right 0;
+    }
+
+
+    .more-feat-row1 .left-more-feat .img-side {
+        background-image: url('./assets/images/features-page-assets/more-tracking-and-reports.png');
+    }
+    .more-feat-row1 .mid-more-feat .img-side {
+        background-image: url('./assets/images/features-page-assets/more-link-shortener.png');
+    }
+    .more-feat-row1 .right-more-feat .img-side {
+        background-image: url('./assets/images/features-page-assets/more-create-contacts.png');
+    }
+    .more-feat-row2 .left-more-feat .img-side {
+        background-image: url('./assets/images/features-page-assets/more-poll-builder.png');
+    }
+    .more-feat-row2 .mid-more-feat .img-side {
+        background-image: url('./assets/images/features-page-assets/more-drip-campaigns.png');
+    }
+    .more-feat-row2 .right-more-feat .img-side {
+        background-image: url('./assets/images/features-page-assets/more-personalization.png');
+    }
+    .content-side {
+        height: 100%;
+        width: 83%;
+        font-size: 15px;
+        font-weight: 300;
+        vertical-align: top;
+        text-align: left;
+        display: inline-block;
+        padding-left: 1.5vw;
+        /* background-color: blue; */
+    }
+    .more-feat-container .content-side h3 {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 0 7px;
+    }
+
     @media screen and (max-width: 1280px) {
-        .sect-more-features .more-feat-container {
+        .more-feat-row1, .more-feat-row2 {
+            width: 90vw;
+        }
+        /* .sect-more-features .more-feat-container {
             width: 97vw;
             text-align: center;
         }
@@ -614,7 +701,7 @@
         .sect-more-features .box-contact {
             width: 27%;
             margin: 25px 1vw;
-        }
+        } */
     }
     /************************************************/
     /******************* Footer *********************/
@@ -779,7 +866,9 @@
                         </div>
                     </div>
                     <div class="feat-right--bottom">
-                        <div class="feat-right--bottom-img"></div>
+                        <div class="feat-right--bottom-img">
+                            <img class="play-icon" src="./assets/images/features-page-assets/keywords-play-btn.png" alt="play button"/>
+                        </div>
                         <div class="feat-right--bottom-content">
                             <h2>watch ez chat video</h2>
                         </div>
@@ -790,7 +879,7 @@
     </div>
     <div class="sect-more-features">
         <h1>More Great Features</h1>
-        <div class="more-feat-container">
+        <!-- <div class="more-feat-container">
             <div class="box-messaging">
                 <div class="box-messaging--img"></div>
                 <div class="box-messaging--content">on-the-go messaging</div>
@@ -802,6 +891,52 @@
             <div class="box-contact">
                 <div class="box-contact--img"></div>
                 <div class="box-contact--content">contact list creation</div>
+            </div>
+        </div> -->
+        <div class="more-feat-row1">
+            <div class="more-feat-container left-more-feat">
+                <div class="img-side"></div>
+                <div class="content-side">
+                    <h3>Tracking and Reports</h3>
+                    Our tracking and reporting features allow you to gather valuable information and develop and deeper understanding of your audience. View stats about texts sent, messages received, and overall up-to-date contact counts. Find spikes in engagement, see results, analyze, refine, repeat, and profit.
+                </div>
+            </div>
+            <div class="more-feat-container mid-more-feat">
+                <div class="img-side"></div>
+                <div class="content-side">
+                    <h3>Link Shortener</h3>
+                    Don't waste limited character space with long links. EZ Texting's Link Shortener tool enables you to shorten your links to tiny URLs, which means you'll have more space to convey your message when you use your shortened URLs in your text message marketing.
+                </div>
+            </div>
+            <div class="more-feat-container right-more-feat">
+                <div class="img-side"></div>
+                <div class="content-side">
+                    <h3>Create Contacts</h3>
+                    Creating your contact list with EZ Texting is easy. You can upload a list of numbers from a spreadsheet or add them manually, one by one. When you upload your opted-in contacts, you can include first and last name, among other fields, to customize outgoing messages. You may also sort, segment and update your list of unlimited contacts.
+                </div>
+            </div>
+        </div>
+        <div class="more-feat-row2">
+            <div class="more-feat-container left-more-feat">
+                <div class="img-side"></div>
+                <div class="content-side">
+                    <h3>Poll Builder</h3>
+                    Text to vote polling is an effective and inexpensive way to generate customer engagement, increase brand awareness and keep your finger on the pulse of your customers´ purchasing intent. User surveys, polls, or voting are simple to set up, cost pennies to run.
+                </div>
+            </div>
+            <div class="more-feat-container mid-more-feat">
+                <div class="img-side"></div>
+                <div class="content-side">
+                    <h3>Drip Campaigns</h3>
+                    Drip Campaigns allow you to automatically send a timed series of text messages to a group of contacts. While you don't need a Keyword for a Drip Campaign, most people connect a Drip Campaign to a group which someone can join by texting in a Keyword.
+                </div>
+            </div>
+            <div class="more-feat-container right-more-feat">
+                <div class="img-side"></div>
+                <div class="content-side">
+                    <h3>Personalization</h3>
+                    Every contact in your text marketing list is more than just a phone number. First and last name fields can be automatically merged into your mass text messages for a personal touch. Personalizing your mobile marketing campaigns with the recipients´ names is one of the best advanced messaging features for maximizing the impact of your message.
+                </div>
             </div>
         </div>
     </div>
@@ -816,8 +951,14 @@
                 console.log("link clicked");
                 console.log(this);
                 $(this).parent().parent().parent().parent().parent().siblings('.iframe-full-bg').show('200');
-
             });
+
+            $('.section').on('click', '.feat-right--bottom-img img.play-icon', function() {
+                console.log("link clicked");
+                console.log(this);
+                $(this).parent().parent().parent().parent().parent().siblings('.iframe-full-bg').show('200');
+            });
+
             $('.section').on('click', '.iframe-exit-btn', function() {
                 console.log("exit button clicked");
                 console.log(this);
