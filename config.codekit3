@@ -185,6 +185,138 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/images\/features-page-assets\/more-create-contacts.png": {
+		"ft": 32768,
+		"iS": 956,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-create-contacts.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-drip-campaigns.png": {
+		"ft": 32768,
+		"iS": 2635,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-drip-campaigns.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-free-incoming-messages.png": {
+		"ft": 32768,
+		"iS": 1019,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-free-incoming-messages.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-integrations.png": {
+		"ft": 32768,
+		"iS": 3651,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-integrations.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-link-shortener.png": {
+		"ft": 32768,
+		"iS": 551,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-link-shortener.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-message-template.png": {
+		"ft": 32768,
+		"iS": 2016,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-message-template.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-personalization.png": {
+		"ft": 32768,
+		"iS": 2287,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-personalization.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-poll-builder.png": {
+		"ft": 32768,
+		"iS": 1161,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-poll-builder.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-recurring-messages.png": {
+		"ft": 32768,
+		"iS": 1467,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-recurring-messages.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-scheduling.png": {
+		"ft": 32768,
+		"iS": 1080,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-scheduling.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-text-forwarding-service.png": {
+		"ft": 32768,
+		"iS": 1680,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-text-forwarding-service.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/features-page-assets\/more-tracking-and-reports.png": {
+		"ft": 32768,
+		"iS": 1715,
+		"oA": 0,
+		"oAP": "\/assets\/images\/features-page-assets\/more-tracking-and-reports.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/features-page-assets\/polls-icon.png": {
 		"ft": 32768,
 		"iS": 2668,
@@ -339,6 +471,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/images\/home-page-assets\/bg-shadow.png": {
+		"ft": 32768,
+		"iS": 20700,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/bg-shadow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/home-page-assets\/category-faith.png": {
+		"ft": 32768,
+		"iS": 17330,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/category-faith.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/home-page-assets\/category-food.png": {
+		"ft": 32768,
+		"iS": 12663,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/category-food.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/home-page-assets\/category-retail.png": {
+		"ft": 32768,
+		"iS": 12959,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/category-retail.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/home-page-assets\/circle-clock.png": {
 		"ft": 32768,
 		"iS": 3685,
@@ -359,6 +535,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/home-page-assets\/customer-collage.jpg": {
+		"ft": 16384,
+		"iS": 106480,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/customer-collage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/images\/home-page-assets\/customers.png": {
@@ -661,6 +848,13 @@
 		"oAP": "\/features_page.html",
 		"oF": 0
 		},
+	"\/features_page2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/features_page2.html",
+		"oF": 0
+		},
 	"\/home_page.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -674,6 +868,16 @@
 		"oA": 0,
 		"oAP": "\/howitworks.html",
 		"oF": 0
+		},
+	"\/js\/jquery.countTo.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery.countTo-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/pricing_page.html": {
 		"cB": 0,

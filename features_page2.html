@@ -624,14 +624,14 @@
 
 
 
-    .more-feat-row1, .more-feat-row2, .more-feat-row3, .more-feat-row4 {
+    .more-feat-outer-container {
         height: 260px;
         width: 85vw;
         margin: 0 auto;
         text-align: center;
         /* background-color: lightcyan; */
     }
-    .more-feat-container {
+    div.sect-more-features div.more-feat-container {
         display: inline-block;
         width: 30%;
         height: 100%;
@@ -645,61 +645,61 @@
         height: 100%;
         /* background-color: green; */
     }
-    .more-feat-row1 .left-more-feat .img-side,
-    .more-feat-row1 .mid-more-feat .img-side,
-    .more-feat-row1 .right-more-feat .img-side,
-    .more-feat-row2 .left-more-feat .img-side,
-    .more-feat-row2 .mid-more-feat .img-side,
-    .more-feat-row2 .right-more-feat .img-side,
-    .more-feat-row3 .left-more-feat .img-side,
-    .more-feat-row3 .mid-more-feat .img-side,
-    .more-feat-row3 .right-more-feat .img-side,
-    .more-feat-row4 .left-more-feat .img-side,
-    .more-feat-row4 .mid-more-feat .img-side,
-    .more-feat-row4 .right-more-feat .img-side {
+    .more-feat-outer-container .tracking-and-reports .img-side,
+    .more-feat-outer-container .link-shortener .img-side,
+    .more-feat-outer-container .create-contacts .img-side,
+    .more-feat-outer-container .poll-builder .img-side,
+    .more-feat-outer-container .drip-campaigns .img-side,
+    .more-feat-outer-container .personalization .img-side,
+    .more-feat-outer-container .integrations .img-side,
+    .more-feat-outer-container .free-incoming-messages .img-side,
+    .more-feat-outer-container .text-forwarding-service .img-side,
+    .more-feat-outer-container .scheduling .img-side,
+    .more-feat-outer-container .recurring-messages .img-side,
+    .more-feat-outer-container .message-template .img-side {
         background-size: 85%;
         background-repeat: no-repeat;
         background-position: top 6px right 0;
     }
 
 
-    .more-feat-row1 .left-more-feat .img-side {
+    .more-feat-outer-container .tracking-and-reports .img-side {
         background-image: url('./assets/images/features-page-assets/more-tracking-and-reports.png');
     }
-    .more-feat-row1 .mid-more-feat .img-side {
+    .more-feat-outer-container .link-shortener .img-side {
         background-image: url('./assets/images/features-page-assets/more-link-shortener.png');
     }
-    .more-feat-row1 .right-more-feat .img-side {
+    .more-feat-outer-container .create-contacts .img-side {
         background-image: url('./assets/images/features-page-assets/more-create-contacts.png');
     }
-    .more-feat-row2 .left-more-feat .img-side {
+    .more-feat-outer-container .poll-builder .img-side {
         background-image: url('./assets/images/features-page-assets/more-poll-builder.png');
     }
-    .more-feat-row2 .mid-more-feat .img-side {
+    .more-feat-outer-container .drip-campaigns .img-side {
         background-image: url('./assets/images/features-page-assets/more-drip-campaigns.png');
     }
-    .more-feat-row2 .right-more-feat .img-side {
+    .more-feat-outer-container .personalization .img-side {
         background-image: url('./assets/images/features-page-assets/more-personalization.png');
     }
-    .more-feat-row3 .left-more-feat .img-side {
+    .more-feat-outer-container .integrations .img-side {
         background-image: url('./assets/images/features-page-assets/more-integrations.png');
     }
-    .more-feat-row3 .mid-more-feat .img-side {
+    .more-feat-outer-container .free-incoming-messages .img-side {
         background-image: url('./assets/images/features-page-assets/more-free-incoming-messages.png');
         background-size: 70%;
     }
-    .more-feat-row3 .right-more-feat .img-side {
+    .more-feat-outer-container .text-forwarding-service .img-side {
         background-image: url('./assets/images/features-page-assets/more-text-forwarding-service.png');
     }
-    .more-feat-row4 .left-more-feat .img-side {
+    .more-feat-outer-container .scheduling .img-side {
         background-image: url('./assets/images/features-page-assets/more-scheduling.png');
     }
-    .more-feat-row4 .mid-more-feat .img-side {
+    .more-feat-outer-container .recurring-messages .img-side {
         background-image: url('./assets/images/features-page-assets/more-recurring-messages.png');
         background-size: 100%;
     }
-    .more-feat-row4 .right-more-feat .img-side {
-        background-image: url('./assets/images/features-page-assets/more-messages-template.png');
+    .more-feat-outer-container .message-template .img-side {
+        background-image: url('./assets/images/features-page-assets/more-message-template.png');
     }
     .content-side {
         height: 100%;
@@ -730,12 +730,15 @@
         margin: 0 auto 55px;
     }
     @media screen and (max-width: 1680px) {
-        .more-feat-row1, .more-feat-row2, .more-feat-row3, .more-feat-row4 {
+        .more-feat-outer-container {
             width: 90vw;
         }
     }
     @media screen and (max-width: 1480px) {
-        .more-feat-row1, .more-feat-row2, .more-feat-row3, .more-feat-row4 {
+        .sect-more-features {
+            height: 1450px;
+        }
+        .more-feat-outer-container {
             width: 92vw;
         }
         .more-feat-row-divider {
@@ -743,36 +746,92 @@
         }
     }
     @media screen and (max-width: 1280px) {
-        .more-feat-row1, .more-feat-row2, .more-feat-row3, .more-feat-row4 {
+        .sect-more-features {
+            height: 1590px;
+        }
+        .sect-more-features h1 {
+            height: 10%;
+        }
+        .more-feat-outer-container {
             width: 95vw;
         }
         .more-feat-row-divider {
             margin: 55px auto 55px;
         }
-        /* .sect-more-features .more-feat-container {
-            width: 97vw;
-            text-align: center;
-        }
-        .sect-more-features .box-messaging,
-        .sect-more-features .box-analytic,
-        .sect-more-features .box-contact {
-            width: 27%;
-            margin: 25px 1vw;
-        } */
     }
     @media screen and (max-width: 1080px) {
+        .sect-more-features {
+            height: 1800px;
+        }
+        .sect-more-features h1 {
+            height: 8%;
+        }
         .more-feat-row-divider {
             display: none;
         }
-        .more-feat-container {
-            display: inline-block;
+        div.sect-more-features div.more-feat-container {
             width: 45%;
-            height: 100%;
-            margin: 0 1vw;
-            /* background-color: pink;
-            border: 1px solid blue; */
         }
-
+    }
+    @media screen and (max-width: 880px) {
+        .sect-more-features {
+            height: 2400px;
+        }
+        .sect-more-features h1 {
+            height: 6%;
+        }
+        .more-feat-outer-container {
+            height: 185px;
+        }
+        div.sect-more-features div.more-feat-container {
+            width: 95%;
+        }
+        .img-side {
+            width: 7%;
+        }
+        .content-side {
+            padding: 0 3.5vw;
+        }
+    }
+    @media screen and (max-width: 680px) {
+        .sect-more-features {
+            height: 2650px;
+        }
+        .more-feat-outer-container {
+            height: 200px;
+        }
+        div.sect-more-features div.more-feat-container {
+            width: 100%;
+        }
+        
+        .more-feat-outer-container .more-feat-container.create-contacts,
+        .more-feat-outer-container .more-feat-container.personalization,
+        .more-feat-outer-container .more-feat-container.free-incoming-messages,
+        .more-feat-outer-container .more-feat-container.text-forwarding-service,
+        .more-feat-outer-container .more-feat-container.scheduling {
+            height: 115%;
+        }
+        .img-side {
+            width: 7%;
+        }
+        .content-side {
+            width: 80%;
+            padding: 0 3.5vw;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .sect-more-features {
+            width: 98vw;
+        }
+        .more-feat-outer-container{
+            width: 98vw;
+        }
+        .sect-more-features {
+            height: 2950px;
+        }
+        .more-feat-outer-container {
+            height: 220px;
+        }
     }
     /************************************************/
     /******************* Footer *********************/
@@ -964,94 +1023,88 @@
                 <div class="box-contact--content">contact list creation</div>
             </div>
         </div> -->
-        <div class="more-feat-row1">
-            <div class="more-feat-container left-more-feat">
+        <div class="more-feat-outer-container">
+            <div class="more-feat-container tracking-and-reports">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Tracking and Reports</h3>
                     Our tracking and reporting features allow you to gather valuable information and develop and deeper understanding of your audience. View stats about texts sent, messages received, and overall up-to-date contact counts. Find spikes in engagement, see results, analyze, refine, repeat, and profit.
                 </div>
             </div>
-            <div class="more-feat-container mid-more-feat">
+            <div class="more-feat-container link-shortener">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Link Shortener</h3>
                     Don't waste limited character space with long links. EZ Texting's Link Shortener tool enables you to shorten your links to tiny URLs, which means you'll have more space to convey your message when you use your shortened URLs in your text message marketing.
                 </div>
             </div>
-            <div class="more-feat-container right-more-feat">
+            <div class="more-feat-container create-contacts">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Create Contacts</h3>
                     Creating your contact list with EZ Texting is easy. You can upload a list of numbers from a spreadsheet or add them manually, one by one. When you upload your opted-in contacts, you can include first and last name, among other fields, to customize outgoing messages. You may also sort, segment and update your list of unlimited contacts.
                 </div>
             </div>
-        </div>
-        <div class="more-feat-row-divider"></div>
-        <div class="more-feat-row2">
-            <div class="more-feat-container left-more-feat">
+            <div class="more-feat-row-divider"></div>
+            <div class="more-feat-container poll-builder">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Poll Builder</h3>
                     Text to vote polling is an effective and inexpensive way to generate customer engagement, increase brand awareness and keep your finger on the pulse of your customers´ purchasing intent. User surveys, polls, or voting are simple to set up, cost pennies to run.
                 </div>
             </div>
-            <div class="more-feat-container mid-more-feat">
+            <div class="more-feat-container drip-campaigns">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Drip Campaigns</h3>
                     Drip Campaigns allow you to automatically send a timed series of text messages to a group of contacts. While you don't need a Keyword for a Drip Campaign, most people connect a Drip Campaign to a group which someone can join by texting in a Keyword.
                 </div>
             </div>
-            <div class="more-feat-container right-more-feat">
+            <div class="more-feat-container personalization">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Personalization</h3>
                     Every contact in your text marketing list is more than just a phone number. First and last name fields can be automatically merged into your mass text messages for a personal touch. Personalizing your mobile marketing campaigns with the recipients´ names is one of the best advanced messaging features for maximizing the impact of your message.
                 </div>
             </div>
-        </div>
-        <div class="more-feat-row-divider"></div>
-        <div class="more-feat-row3">
-            <div class="more-feat-container left-more-feat">
+            <div class="more-feat-row-divider"></div>
+            <div class="more-feat-container integrations">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Integrations</h3>
                     EZ Texting works seamlessly with marketing software so that you can operate at peak efficiency. Our texting platform integrates with Constant Contact, Zendesk, Pie Sync, MailChimp, AWeber and more. This is especially handy when you’re managing multiple outreach tactics with your contact list.
                 </div>
             </div>
-            <div class="more-feat-container mid-more-feat">
+            <div class="more-feat-container free-incoming-messages">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Free Incoming Messages</h3>
                     Whether you have a Keyword that people are texting in, or your contacts are replying to messages you sent, incoming messages are always free. Incoming texts are stored in your inbox and you can sort and export them whenever you'd like. After sending a message from a short code, your contacts have 12 hours to reply.
                 </div>
             </div>
-            <div class="more-feat-container right-more-feat">
+            <div class="more-feat-container text-forwarding-service">
                 <div class="img-side"></div>
                 <div class="content-side">
-                    <h3>Test Forwarding Service</h3>
+                    <h3>Text Forwarding Service</h3>
                     Want to keep an eye on incoming messages without logging into your EZ Texting account? Our text forwarding service allow you to do just that. Text forwarding allows you to automatically relay incoming texts to an email address or your mobile phone. Incoming texts forwarded to your phone require credits like any other text you send.
                 </div>
             </div>
-        </div>
-        <div class="more-feat-row-divider"></div>
-        <div class="more-feat-row4">
-            <div class="more-feat-container left-more-feat">
+            <div class="more-feat-row-divider"></div>
+            <div class="more-feat-container scheduling">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Scheduling</h3>
                     Need to send a message next week but already know what you're going to say? Schedule text message campaigns to go out at any date or time - down to the minute. You can even choose whether or not to send the message to people who join the contact group after you schedule the message but before it is sent.
                 </div>
             </div>
-            <div class="more-feat-container mid-more-feat">
+            <div class="more-feat-container recurring-messages">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Recurring Messages</h3>
                     Recurring Texts allow you to compose a text message that will be sent out on a regular basis – daily, weekly or monthly, with lots of scheduling options. They're great for messages such as recurring meeting reminders or weekly sales calls.
                 </div>
             </div>
-            <div class="more-feat-container right-more-feat">
+            <div class="more-feat-container message-template">
                 <div class="img-side"></div>
                 <div class="content-side">
                     <h3>Message Template</h3>

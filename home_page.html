@@ -7,6 +7,7 @@
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/jquery.countTo.js"></script>
     <style>
     /* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');     */
     
@@ -943,6 +944,61 @@
     }
 
     /*****************************************************/
+    /*************** Businesses Section ******************/
+    /*****************************************************/
+    #businesses.sect {
+        font-size: 0;
+        font-family: "Open Sans";
+    }
+    #businesses.sect h1 {
+        font-family: "Open Sans";
+        font-size: 2.5vw;
+        font-weight: 300;
+        text-align: center;
+        color: #3D4351;
+        margin: 2vw 0 1.5vw;
+    }
+    #businesses.sect .business-row {
+        height: 20vw;
+    }
+    #businesses.sect .image-side {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        background-size: 25%, 40%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .business-row.retail .image-side {
+        background-image: url('./assets/images/home-page-assets/category-retail.png'), url('./assets/images/home-page-assets/bg-shadow.png');
+    }
+    .business-row.faith .image-side {
+        background-image: url('./assets/images/home-page-assets/category-faith.png'), url('./assets/images/home-page-assets/bg-shadow.png');
+    }
+    .business-row.food .image-side {
+        background-image: url('./assets/images/home-page-assets/category-food.png'), url('./assets/images/home-page-assets/bg-shadow.png');
+    }
+    #businesses.sect .content-side {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    #businesses.sect .content-side h2 {
+        font-family: "Open Sans";
+        font-size: 1.9vw;
+        font-weight: 400;
+        margin: 4vw 0 1vw;
+        text-transform: uppercase;
+        color: #3D4351;
+    }
+    #businesses.sect .content-side .text {
+        font-size: 1.4vw;
+        font-weight: 300;
+        width: 60%;
+        color: #607286;
+    }
+
+    /*****************************************************/
     /***************** Form Section 8 ********************/
     /*****************************************************/
     .form-sect8 {
@@ -1093,6 +1149,10 @@
             </div>
         </div>
     </div>
+    <div class="counter">
+        <h2>Number of Texts Sent</h2>
+        <span class="timer" data-from="278023000" data-to="278123100" data-speed="10000" data-refresh-interval="10"></span>
+    </div>
     <div class="cta-sect1">
         <div class="right-image">
             <!-- <img class="img-ipad" src="./assets/images/home-page-assets/ipad.png" alt="ipad photo" />
@@ -1229,6 +1289,41 @@
             <img class="five-dots--set3" src="./assets/images/home-page-assets/5-dots.png" alt="5 dots"/>
         </div>
     </div>
+
+    <div class="sect" id="businesses">
+        <h1>EZ Texting is changing the way businesses communicate</h1>
+        <div class="business-row retail">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <h2>Retail</h2>
+                <div class="text">Reach out to customers with discounts, promotions, and in-store 
+                    events. Text marketing helps you stay visible and drives conversions with your 
+                    customers.
+                </div>
+            </div>
+        </div>
+        <div class="business-row faith">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <h2>Faith-Based</h2>
+                <div class="text">Increase donations, grow your membership base, and distribute 
+                    mission-critical information. SMS marketing helps you stay connected and keeps 
+                    your team focused on their goals.
+                </div>
+            </div>
+        </div>
+        <div class="business-row food">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <h2>Food and Hospitality</h2>
+                <div class="text">Reach food-lovers, travelers, and lifestyle experts with events, 
+                    messages, and promotions. Text message marketing can help you please customers 
+                    and drive more business.
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="form-sect8">
         <h1>Get started with EZ Texting, absolutely FREE!</h1>
         <div class="form-container">
@@ -1248,13 +1343,26 @@
     <div class="footer">
 
     </div>
-    <script>
+    <script type="text/javascript">
         $( document ).ready(function() {
             console.log( "ready!" );
             $(".nav-list li:first-child a").addClass('features-link');
             console.log("class added");
             $(".features-link").attr('href', './features_page.html');
             console.log("href changed");
+
+            $('.timer').countTo();
+
+            var iphoneImages = ['/sites/all/themes/ez/dist/images/micro-home/iphone-promote.jpg', '/sites/all/themes/ez/dist/images/micro-home/iphone-notify.jpg', '/sites/all/themes/ez/dist/images/micro-home/iphone-coordinate.jpg'];
+            var i = 0;
+            setInterval(function() {
+                $(".cta-sect1 .right-image").css('background-image', 'url(" + iphone-images[i] + ")');
+                i = i + 1;
+                if (i == iphone-images.length) {
+                    i =  0;
+                };
+            }, 3000);
+
         });
     </script>
 </body>
