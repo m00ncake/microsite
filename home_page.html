@@ -288,6 +288,99 @@
     }
 
     /************************************************/
+    /************** Actions Section *****************/
+    /************************************************/
+    #actions.sect {
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 0;
+    }
+    #actions.sect h1 {
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 2.5vw;
+        text-align: center;
+        margin: 2vw 0 2.5vw;
+    }
+    #actions.sect .action-row {
+        height: 30vw;
+        border-bottom: 1px solid #E1E1E1;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    #actions.sect .action-row .image-side {
+        display: inline-block;
+        height: 100%;
+        width: 45%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top -5vw right -6vw;
+    }
+    #actions.sect .action-row.promote .image-side {
+        background-image: url('./assets/images/home-page-assets/iphone-promote.jpg');
+    }
+    #actions.sect .action-row.notify .image-side {
+        background-image: url('./assets/images/home-page-assets/iphone-notify.jpg');
+        float: right;
+        background-position: top -4vw left -6vw;
+}
+    #actions.sect .action-row.coordinate .image-side {
+        background-image: url('./assets/images/home-page-assets/iphone-coordinate.jpg');
+    }
+    #actions.sect .action-row .content-side {
+        display: inline-block;
+        height: 100%;
+        width: 55%;
+        vertical-align: top;
+    }
+    #actions.sect .action-row.notify .content-side {
+        margin-left: 15%;
+        width: 35%;
+    }
+    #actions.sect .action-row .content-side--image {
+        display: inline-block;
+        height: 100%;
+        width: 12%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top 9.5vw right 0vw;
+    }
+    #actions.sect .action-row.promote .content-side--image {
+        background-image: url('./assets/images/home-page-assets/outline-circle-speaker.png');
+    }
+    #actions.sect .action-row.notify .content-side--image {
+        background-image: url('./assets/images/home-page-assets/outline-circle-calendar.png');
+        width: 20%;
+    }
+    #actions.sect .action-row.coordinate .content-side--image {
+        background-image: url('./assets/images/home-page-assets/outline-circle-thumb.png');
+    }
+    #actions.sect .action-row .content-side--content {
+        display: inline-block;
+        width: 84%;
+        vertical-align: top;
+        padding: 0 0 0 4%;
+    }
+    #actions.sect .action-row.notify .content-side--content {
+        width: 75%;
+        padding: 0 0 0 5%;
+    }
+
+    #actions.sect .action-row .content-side h2 {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 2.1vw;
+        margin-top: 9vw;
+        text-transform: uppercase;
+    }
+    #actions.sect .action-row .content-side .text {
+        width: 65%;
+        font-size: 1.6vw;
+    }
+    #actions.sect .action-row.notify .content-side .text {
+        width: 100%;
+    }
+    /************************************************/
     /**************** CTA Section 01 ****************/
     /************************************************/
     .cta-sect1 {
@@ -956,46 +1049,79 @@
         font-weight: 300;
         text-align: center;
         color: #3D4351;
-        margin: 2vw 0 1.5vw;
+        margin: 2vw 0 2.5vw;
     }
-    #businesses.sect .business-row {
-        height: 20vw;
+    #businesses .business-row {
+        height: 24vw;
+        width: 90vw;
+        margin: 0 auto;
+        border-bottom: 1px solid lightgray;
     }
-    #businesses.sect .image-side {
+    #businesses .image-side {
         display: inline-block;
         width: 50%;
         height: 100%;
-        background-size: 25%, 40%;
+        background-size: 27%, 50%;
         background-repeat: no-repeat;
         background-position: center;
     }
-    .business-row.retail .image-side {
+    #businesses .business-row.retail .image-side {
         background-image: url('./assets/images/home-page-assets/category-retail.png'), url('./assets/images/home-page-assets/bg-shadow.png');
+        float: right;
     }
-    .business-row.faith .image-side {
+    #businesses .business-row.faith .image-side {
         background-image: url('./assets/images/home-page-assets/category-faith.png'), url('./assets/images/home-page-assets/bg-shadow.png');
     }
-    .business-row.food .image-side {
+    #businesses .business-row.food .image-side {
+        background-image: url('./assets/images/home-page-assets/category-food.png'), url('./assets/images/home-page-assets/bg-shadow.png');
+        float: right;
+    }
+    #businesses .business-row.education .image-side {
+        background-image: url('./assets/images/home-page-assets/category-retail.png'), url('./assets/images/home-page-assets/bg-shadow.png');
+    }
+    #businesses .business-row.fitness .image-side {
+        background-image: url('./assets/images/home-page-assets/category-faith.png'), url('./assets/images/home-page-assets/bg-shadow.png');
+        float: right;
+    }
+    #businesses .business-row.health .image-side {
         background-image: url('./assets/images/home-page-assets/category-food.png'), url('./assets/images/home-page-assets/bg-shadow.png');
     }
-    #businesses.sect .content-side {
+    #businesses .content-side {
         display: inline-block;
         width: 50%;
         vertical-align: top;
     }
-    #businesses.sect .content-side h2 {
+    #businesses .business-row.retail .content-side,
+    #businesses .business-row.food .content-side,
+    #businesses .business-row.fitness .content-side {
+        width: 40%;
+        margin-left: 10%;
+    }
+    #businesses .content-side h2 {
         font-family: "Open Sans";
-        font-size: 1.9vw;
+        font-size: 2.1vw;
         font-weight: 400;
         margin: 4vw 0 1vw;
         text-transform: uppercase;
         color: #3D4351;
     }
-    #businesses.sect .content-side .text {
-        font-size: 1.4vw;
+    #businesses .content-side .text {
+        font-size: 1.7vw;
         font-weight: 300;
-        width: 60%;
+        width: 75%;
         color: #607286;
+    }
+    #businesses .business-row.retail .text,
+    #businesses .business-row.food .text,
+    #businesses .business-row.fitness .text {
+        width: 95%;
+    }
+    .see-more-btn {
+        font-size: 1rem;
+        text-align: center;
+    }
+    #businesses .business-row.hidden {
+        display: none;
     }
 
     /*****************************************************/
@@ -1153,6 +1279,42 @@
         <h2>Number of Texts Sent</h2>
         <span class="timer" data-from="278023000" data-to="278123100" data-speed="10000" data-refresh-interval="10"></span>
     </div>
+
+
+    <div class="sect" id="actions">
+        <h1>What does your business need?</h1>
+        <div class="action-row promote">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <div class="content-side--image"></div>
+                <div class="content-side--content">
+                    <h2>Promote</h2>
+                    <div class="text">Texting is a great way to send promotions, increase engagement, and generate leads.</div>
+                </div>
+            </div>
+        </div>
+        <div class="action-row notify">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <div class="content-side--image"></div>
+                <div class="content-side--content">
+                    <h2>Notify</h2>
+                    <div class="text">Send notifications to thousands with the click of a button, or create automatic reminders.</div>
+                </div>
+            </div>
+        </div>
+        <div class="action-row coordinate">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <div class="content-side--image"></div>
+                <div class="content-side--content">
+                    <h2>Coordinate</h2>
+                    <div class="text">Use mass texting to send your team alerts, auto-responses, or logical information.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="cta-sect1">
         <div class="right-image">
             <!-- <img class="img-ipad" src="./assets/images/home-page-assets/ipad.png" alt="ipad photo" />
@@ -1322,6 +1484,37 @@
                 </div>
             </div>
         </div>
+        <div class="business-row education hidden">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <h2>Education</h2>
+                <div class="text">Reach out to customers with discounts, promotions, and in-store 
+                    events. Text marketing helps you stay visible and drives conversions with your 
+                    customers.
+                </div>
+            </div>
+        </div>
+        <div class="business-row fitness hidden">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <h2>Fitness</h2>
+                <div class="text">Increase donations, grow your membership base, and distribute 
+                    mission-critical information. SMS marketing helps you stay connected and keeps 
+                    your team focused on their goals.
+                </div>
+            </div>
+        </div>
+        <div class="business-row health hidden">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <h2>Health</h2>
+                <div class="text">Reach food-lovers, travelers, and lifestyle experts with events, 
+                    messages, and promotions. Text message marketing can help you please customers 
+                    and drive more business.
+                </div>
+            </div>
+        </div>
+        <div class="see-more-btn">see more</div>
     </div>
 
     <div class="form-sect8">
@@ -1356,13 +1549,24 @@
             var iphoneImages = ['/sites/all/themes/ez/dist/images/micro-home/iphone-promote.jpg', '/sites/all/themes/ez/dist/images/micro-home/iphone-notify.jpg', '/sites/all/themes/ez/dist/images/micro-home/iphone-coordinate.jpg'];
             var i = 0;
             setInterval(function() {
-                $(".cta-sect1 .right-image").css('background-image', 'url(" + iphone-images[i] + ")');
+                $(".cta-sect1 .right-image").css('background-image', 'url(' + iphone-images[i] + ')');
                 i = i + 1;
                 if (i == iphone-images.length) {
                     i =  0;
                 };
             }, 3000);
 
+
+            $(".see-more-btn").on('click', function() {
+                $(".business-row.education, .business-row.fitness, .business-row.health").toggle(500);
+                if($(".see-more-btn").text() == "see more") {
+                    console.log("text is see more");
+                    $(".see-more-btn").text("see less");
+                } else if ($(".see-more-btn").text() == "see less") {
+                    console.log("text is see less");
+                    $(".see-more-btn").text("see more");
+                }
+            });
         });
     </script>
 </body>
