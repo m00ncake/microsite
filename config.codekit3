@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/academy_page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/academy_page.html",
+		"oF": 0
+		},
 	"\/assets\/images\/eztexting-logo.png": {
 		"ft": 32768,
 		"iS": 6218,
@@ -372,6 +379,39 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/images\/guide-page-assets\/1312x368-Header-Graphic-1.jpg": {
+		"ft": 16384,
+		"iS": 171064,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/images\/guide-page-assets\/1312x368-Header-Graphic-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/guide-page-assets\/post-01.jpg": {
+		"ft": 16384,
+		"iS": 148848,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/images\/guide-page-assets\/post-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/guide-page-assets\/post-02.jpg": {
+		"ft": 16384,
+		"iS": 84740,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/images\/guide-page-assets\/post-02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/images\/header-image.jpg": {
 		"ft": 16384,
 		"iS": 1024835,
@@ -658,6 +698,61 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/images\/home-page-assets\/logo-aquarium.png": {
+		"ft": 32768,
+		"iS": 3563,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/logo-aquarium.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/home-page-assets\/logo-fellowship.png": {
+		"ft": 32768,
+		"iS": 3175,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/logo-fellowship.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/home-page-assets\/logo-navy.png": {
+		"ft": 32768,
+		"iS": 6196,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/logo-navy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/home-page-assets\/logo-psc.png": {
+		"ft": 32768,
+		"iS": 3287,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/logo-psc.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/home-page-assets\/logo-walkabout.png": {
+		"ft": 32768,
+		"iS": 1493,
+		"oA": 0,
+		"oAP": "\/assets\/images\/home-page-assets\/logo-walkabout.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/home-page-assets\/outline-circle-calendar.png": {
 		"ft": 32768,
 		"iS": 5189,
@@ -888,6 +983,20 @@
 		"oAP": "\/features_page2.html",
 		"oF": 0
 		},
+	"\/guide-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/guide-page.html",
+		"oF": 0
+		},
+	"\/high-volume-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/high-volume-page.html",
+		"oF": 0
+		},
 	"\/home_page.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -912,6 +1021,26 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/microsite.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/microsite-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/signup.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/signup-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/pricing_page.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -924,6 +1053,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/pricing_page_01.html",
+		"oF": 0
+		},
+	"\/template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template.html",
+		"oF": 0
+		},
+	"\/zendesk-ticket.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/zendesk-ticket.php",
 		"oF": 0
 		}
 	},

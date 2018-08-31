@@ -1117,8 +1117,24 @@
         width: 95%;
     }
     .see-more-btn {
-        font-size: 1rem;
+        font-size: 1.3vw;
         text-align: center;
+        color: #2fca80;
+    }
+
+    i.btn-caret {
+        position: relative;
+        bottom: 0.4vw;
+        border: solid #2fca80;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 7px;
+        /* transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg); */
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
     }
     #businesses .business-row.hidden {
         display: none;
@@ -1203,6 +1219,75 @@
     }
 
 
+    /************************************************/
+    /************** Customers Sections **************/
+    /************************************************/
+
+    #customers.sect {
+        position: relative;
+        height: 60vw;
+        font-size: 0;
+    }
+    #customers.sect h1 {
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 2.5vw;
+        line-height: 6.5vw;
+        text-align: center;
+        color: white;
+        background-color: #65788C;
+    }
+    #customers.sect .image-container {
+        height: 87%;
+        background-image: url('./assets/images/home-page-assets/customer-collage.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    #customers.sect .bottom-logos-container {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 25%;
+        background-color: rgba(245, 245, 245, 0.95);
+        text-align: center;
+    }
+    #customers.sect .bottom-logos-container h1 {
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 2.2vw;
+        line-height: 4.5vw;
+        height: 20%;
+        background-color: transparent;
+        color: #3D4351;
+    }
+    #customers.sect .logo {
+        display: inline-block;
+        height: 80%;
+        width: 15%;
+        background-size: 85%;
+        background-repeat: no-repeat;
+        background-position: center;
+        mix-blend-mode: multiply;
+        margin: 0 1vw 0;
+    }
+    #customers.sect .logo-navy {
+        background-image: url('./assets/images/home-page-assets/logo-navy.png');
+    }
+    #customers.sect .logo-walkabout {
+        background-image: url('./assets/images/home-page-assets/logo-walkabout.png');
+    }
+    #customers.sect .logo-aquarium {
+        background-image: url('./assets/images/home-page-assets/logo-aquarium.png');
+    }
+    #customers.sect .logo-fellowship {
+        background-image: url('./assets/images/home-page-assets/logo-fellowship.png');
+    }
+    #customers.sect .logo-psc {
+        background-image: url('./assets/images/home-page-assets/logo-psc.png');
+        background-size: 40%;
+        background-position: center left 2vw;
+    }
     /************************************************/
     /******************* Footer *********************/
     /************************************************/
@@ -1371,6 +1456,21 @@
             </div>
         </div>
     </div>
+
+    <div class="sect" id="customers">
+        <h1>EZ Texting helps businesses like you everyday</h1>
+        <div class="image-container">
+            <div class="bottom-logos-container">
+                <h1>From large corporations to the local coffee shop</h1>
+                <div class="logo logo-navy"></div>
+                <div class="logo logo-walkabout"></div>
+                <div class="logo logo-aquarium"></div>
+                <div class="logo logo-fellowship"></div>
+                <div class="logo logo-psc"></div>
+            </div>
+        </div>    
+    </div>
+
     <div class="cta-sect3">
         <h1>We Help Business Like <span>You</span> Everyday</h1>
         <div class="sect3-img-container">
@@ -1514,7 +1614,7 @@
                 </div>
             </div>
         </div>
-        <div class="see-more-btn">see more</div>
+        <div class="see-more-btn"><span class="see-more-btn--span">see more</span><br/><i class="btn-caret"></i></div>
     </div>
 
     <div class="form-sect8">
@@ -1559,13 +1659,21 @@
 
             $(".see-more-btn").on('click', function() {
                 $(".business-row.education, .business-row.fitness, .business-row.health").toggle(500);
-                if($(".see-more-btn").text() == "see more") {
-                    console.log("text is see more");
-                    $(".see-more-btn").text("see less");
-                } else if ($(".see-more-btn").text() == "see less") {
-                    console.log("text is see less");
-                    $(".see-more-btn").text("see more");
-                }
+                // if($(".see-more-btn").text() == "see more") {
+                //     $(".see-more-btn").text("see less");
+                // } else if ($(".see-more-btn").text() == "see less") {
+                //     $(".see-more-btn").text("see more");
+                // }
+               
+                if(document.getElementsByClassName("see-more-btn--span")[0].innerText == "see more") {
+                    document.getElementsByClassName("see-more-btn--span")[0].innerText = "see less";
+                    document.getElementsByClassName("btn-caret")[0].style.transform = "rotate(-135deg)";
+                    document.getElementsByClassName("btn-caret")[0].style["-webkit-transform"] = "rotate(-135deg)";
+                } else if (document.getElementsByClassName("see-more-btn--span")[0].innerText == "see less") {
+                    document.getElementsByClassName("see-more-btn--span")[0].innerText = "see more";
+                    document.getElementsByClassName("btn-caret")[0].style.transform = "rotate(45deg)";
+                    document.getElementsByClassName("btn-caret")[0].style["-webkit-transform"] = "rotate(45deg)";
+            }
             });
         });
     </script>
