@@ -227,8 +227,62 @@
             $('#freeEZ').attr('style','display: none');    
             $('#freetrial').attr('style','display: block');  
         }
+        var $vwoCookie = Cookies.get('_vis_opt_exp_378_combi');
+        //  VWO Control Group  //
+        if ($vwoCookie == '1') {
+        //  VWO Variation 1  //
+        } else if ($vwoCookie == '2'){  
+            //   Home Page CTA href mods  //
+            $('body').addClass('free-volume-pricing');
+            $('a[href="/start"').attr('href', '/start?pid=paygovolume');
+        }
     }
     checkCookie();
+
+
+    /*************************************/
+    //           EZID Cookie             //
+    /*************************************/
+    var EZID_COOKIE = "EZID";
+    var EZID_EXPIRATION = 36500; // 100 years
+    var EZID_PATH = '/';
+    var EZID_DOMAIN = '.eztexting.com'
+
+    // Taken from https://github.com/google/closure-library/blob/555e0138c83ed54d25a3e1cd82a7e789e88335a7/closure/goog/string/string.js#L1177
+    function generateRandomString() {
+        var x = 2147483648;
+        return Math.floor(Math.random() * x).toString(36) + Math.abs(Math.floor(Math.random() * x) ^ Date.now).toString(36);
+    }
+
+    // shouldUpdateFn(cookieValue) and should return true or false
+    // cookieValueFn() and should return some string value
+    // cookieParams is an object with
+    // expires: string (days it will expire in)
+    // path: string
+    // domain: string
+    // secure: boolean
+    
+    function upsertCookie(cookieName, shouldUpdateFn, cookieValueFn, cookieParams) {
+	    if (shouldUpdateFn(Cookies.get(cookieName))) {
+		    Cookies.set(cookieName, cookieValueFn(), cookieParams);
+	    }	
+    }
+
+    upsertCookie(EZID_COOKIE, 
+	    function(value) {
+		    if (value === undefined || value.length <= 0) 
+			    return true;
+		    else
+			    return false;
+	    }, 
+        generateRandomString, 
+        {
+            expires: EZID_EXPIRATION,
+            path: EZID_PATH,
+            domain: EZID_DOMAIN,
+            secure: true	
+        });
+
 
 
     // Using js-cookies.js  Cookies.get('vwo')

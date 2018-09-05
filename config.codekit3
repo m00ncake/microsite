@@ -16,6 +16,83 @@
 		"oAP": "\/academy_page.html",
 		"oF": 0
 		},
+	"\/assets\/images\/academy-page-assets\/academy-header.png": {
+		"ft": 32768,
+		"iS": 395432,
+		"oA": 0,
+		"oAP": "\/assets\/images\/academy-page-assets\/academy-header.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/academy-page-assets\/icon-beginners.png": {
+		"ft": 32768,
+		"iS": 6949,
+		"oA": 0,
+		"oAP": "\/assets\/images\/academy-page-assets\/icon-beginners.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/academy-page-assets\/icon-guidance.png": {
+		"ft": 32768,
+		"iS": 7969,
+		"oA": 0,
+		"oAP": "\/assets\/images\/academy-page-assets\/icon-guidance.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/academy-page-assets\/icon-results.png": {
+		"ft": 32768,
+		"iS": 4935,
+		"oA": 0,
+		"oAP": "\/assets\/images\/academy-page-assets\/icon-results.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/academy-page-assets\/icon-setup.png": {
+		"ft": 32768,
+		"iS": 9658,
+		"oA": 0,
+		"oAP": "\/assets\/images\/academy-page-assets\/icon-setup.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/academy-page-assets\/iphone.png": {
+		"ft": 32768,
+		"iS": 50972,
+		"oA": 0,
+		"oAP": "\/assets\/images\/academy-page-assets\/iphone.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/academy-page-assets\/logo-academy.png": {
+		"ft": 32768,
+		"iS": 48840,
+		"oA": 0,
+		"oAP": "\/assets\/images\/academy-page-assets\/logo-academy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/eztexting-logo.png": {
 		"ft": 32768,
 		"iS": 6218,
@@ -1021,6 +1098,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/microsite-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/microsite-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/microsite.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1041,6 +1128,33 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/zendesk_ticket-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/zendesk_ticket-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/zendesk_ticket.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/zendesk_ticket-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/local.settings.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/local.settings.php",
+		"oF": 0
+		},
 	"\/pricing_page.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1053,6 +1167,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/pricing_page_01.html",
+		"oF": 0
+		},
+	"\/settings.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/settings.php",
 		"oF": 0
 		},
 	"\/template.html": {
