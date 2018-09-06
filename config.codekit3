@@ -1028,6 +1028,83 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/images\/rcs-page-assets\/icon-lock.png": {
+		"ft": 32768,
+		"iS": 19731,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/icon-lock.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/assets\/images\/rcs-page-assets\/icon-mail.png": {
+		"ft": 32768,
+		"iS": 19317,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/icon-mail.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/assets\/images\/rcs-page-assets\/icon-store.png": {
+		"ft": 32768,
+		"iS": 22084,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/icon-store.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/assets\/images\/rcs-page-assets\/iPhone-Image.png": {
+		"ft": 32768,
+		"iS": 23306,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/iPhone-Image.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/assets\/images\/rcs-page-assets\/MacBook-Clay-White-Frontal-Mockup.png": {
+		"ft": 32768,
+		"iS": 16225,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/MacBook-Clay-White-Frontal-Mockup.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/assets\/images\/rcs-page-assets\/rcs-header.png": {
+		"ft": 32768,
+		"iS": 312976,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/rcs-header.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"\/assets\/images\/rcs-page-assets\/rcs-sub-header.png": {
+		"ft": 32768,
+		"iS": 103311,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/rcs-sub-header.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
 	"\/assets\/images\/search-icon.png": {
 		"ft": 32768,
 		"iS": 608,
@@ -1167,6 +1244,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/pricing_page_01.html",
+		"oF": 0
+		},
+	"\/RCS_page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/RCS_page.html",
 		"oF": 0
 		},
 	"\/settings.php": {
