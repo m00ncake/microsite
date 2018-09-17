@@ -115,6 +115,12 @@
             right: -45px;
             top: 9px;
         }
+        @media screen and (min-width: 1680px) {
+            body {
+                width: 1680px;
+                margin: 0 auto;
+            }
+        }
         @media screen and (max-width: 1600px) {
             .nav-left {
                 margin-left: 6vw;
@@ -175,6 +181,64 @@
             font-weight: 600;
             color: #5a7088;
         }
+        @media screen and (min-width: 1681px) {
+            .rcs-header-title-container {
+                width: 1430px;
+                padding: 90px 175px;
+            }
+        }
+        @media screen and (max-width: 1280px) {
+            .rcs-header-container {
+                height: 550px;
+                background-size: 110%;
+            }
+            .rcs-header-title-container {
+                width: 75vw;
+                padding: 3vw 7vw;
+            }
+            .rcs-page-title {
+                font-size: 15px;
+                padding-bottom: 15px;
+            }
+            .rcs-header-title-container h1 {
+                font-size: 36px;
+                width: 100%;
+            }
+            .rcs-header-subtitle {
+                font-size: 18px;
+                line-height: 31px;
+                padding-top: 15px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .rcs-header-container {
+                height: 500px;
+                background-size: 160%;
+                background-position: top 0 right 0;
+            }
+            .rcs-header-title-container {
+                width: 80vw;
+                padding: 25px 4vw;
+            }
+            .rcs-page-title {
+                font-size: 13px;
+            }
+            .rcs-header-title-container h1 {
+                font-size: 26px;
+            }
+            .rcs-header-subtitle {
+                font-size: 15px;
+                line-height: 28px;
+                padding-top: 15px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .rcs-header-container {
+                height: 530px;
+                background-size: 250%;
+            }
+        }
+
         /******************************************/
         /*              RCS Subheader             */
         /******************************************/
@@ -182,8 +246,12 @@
             background-image: url("./assets/images/rcs-page-assets/rcs-sub-header.png");
             background-repeat: no-repeat;
             background-size: cover;
+            max-height: 350px;
             height: 20vw;
+            min-height: 150px;
             text-align: center;
+            position: relative;
+            z-index: -2;
         }
         .rcs-subheader .rcs-page-title {
             padding: 5vw 0 2vw;
@@ -193,22 +261,70 @@
             color: #fff;
             font-weight: 400;
         }
+        @media screen and (max-width: 768px) {
+            .rcs-subheader .rcs-page-title {
+                padding: 35px 0 15px;
+            }
+            .rcs-subheader h2 {
+                font-size: 26px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .rcs-subheader h2 {
+                font-size: 23px;
+            }
+        }
+
         /*****************************************/
-        /*           RCS Icon Section            */
+        /*             RCS Content               */
         /*****************************************/
-        .icon-sect-container p {
+        .rcs-content-container p {
             font-size: 1.3vw;
             line-height: 2.4vw;
             max-width: 800px;
             width: 60vw;
-            min-width: 600px;
+            min-width: 440px;
             margin: 0 auto;
             padding: 2vw 0 0;
+        }
+        @media screen and (max-width: 1280px) {
+            .rcs-content-container p {
+                font-size: 16px;
+                line-height: 27px;
+                width: 70vw;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .rcs-content-container p {
+               width: 75vw;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .rcs-content-container p {
+                font-size: 14px;
+                line-height: 25px;
+                min-width: 90%;
+                padding: 25px 0 0;
+            }
+        }
+
+        /*****************************************/
+        /*           RCS Icon Section            */
+        /*****************************************/
+        .icon-sect-container {
+            border-top: 1px solid #9D9D9D;
+            margin-top: 2.5vw;
+        }
+        .icon-sect-container h2 {
+            font-size: 2.9vw;
+            text-align: center;
+            color: #394754;
+            padding-top: 2vw;
         }
         .icons-container {
             height: auto;
             width: 70vw;
-            margin: 50px auto 0px;
+            margin: 50px auto;
             text-align: center;
         }
         .icon-container {
@@ -237,11 +353,287 @@
             background-image: url("./assets/images/rcs-page-assets/icon-lock.png");
         }
         .icon-container .content-side {
-            font-size: 1vw;
+            font-size: 1.3vw;
             font-weight: 400;
             padding: 30px 0;
         }
+        @media screen and (max-width: 1280px) {
+            .icons-container {
+                width: 90vw;
+            }
+            .icon-container .content-side {
+                font-size: 15px;
+                padding: 25px 0;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .icon-sect-container {
+                margin-top: 25px;
+            }
+            .icon-sect-container h2 {
+                font-size: 26px;
+                padding-top: 25px;
+            }
+            .icons-container {
+                width: 95vw;
+            }
+            .icon-container {
+                width: 235px;
+            }
+        }
 
+        /******************************************/
+        /*              RCS Features              */
+        /******************************************/
+        .rcs-features-container {
+            background-color: #f5f9fc;
+            height: auto;
+        }
+        .rcs-feature-container {
+            height: auto;
+            width: 80vw;
+            margin: 0 auto;
+        }
+        .rcs-feature-container.feat-02,
+        .rcs-feature-container.feat-03,
+        .rcs-feature-container.feat-04,
+        .rcs-feature-container.feat-05,
+        .rcs-feature-container.feat-06 {
+            border-top: 2px solid #d6d6d6;
+        }
+        .rcs-feature-container .image-side{
+            display: inline-block;
+            height: 42vw;
+            width: 45%;
+            /* background-color: pink; */
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 65%;
+        }
+        .rcs-feature-container.feat-01 .image-side{
+            background-image: url("./assets/images/rcs-page-assets/EZ-1.png");
+            background-position: top right 4vw;
+        }
+        .rcs-feature-container.feat-02 .image-side{
+            background-image: url("./assets/images/rcs-page-assets/EZ-2.png");
+            float: right;
+            background-position: top left 2vw;
+        }
+        .rcs-feature-container.feat-03 .image-side{
+            background-image: url("./assets/images/rcs-page-assets/EZ-3.png");
+            background-position: top right 4vw;
+        }
+        .rcs-feature-container.feat-04 .image-side{
+            background-image: url("./assets/images/rcs-page-assets/EZ-4.png");
+            float: right;
+            background-position: top 1vw left 2vw;
+        }
+        .rcs-feature-container.feat-05 .image-side{
+            background-image: url("./assets/images/rcs-page-assets/EZ-5.png");
+            background-position: top 3vw right 4vw;
+        }
+        .rcs-feature-container.feat-06 .image-side{
+            background-image: url("./assets/images/rcs-page-assets/EZ-1.png");
+            float: right;
+            background-position: top left 2vw;
+        }
+        .rcs-feature-container .content-side {
+            display: inline-block;
+            width: 55%;
+            vertical-align: top;
+        }
+        .rcs-feature-container .content-side .feat-number {
+            font-size: 2.3vw;
+            color: #F5A623;
+            padding: 5vw 0 0.3vw;
+        }
+        .rcs-feature-container .content-side .feat-title {
+            font-size: 2.3vw;
+            font-weight: 400;
+            line-height: 2.8vw;
+            color: #394754;
+            text-transform: uppercase;   
+            margin-right: 13vw; 
+            padding-bottom: 0.5vw;
+        }
+        .rcs-feature-container .content-side .feat-description {
+            font-size: 1.4vw;
+            line-height: 2.3vw;
+            margin-right: 4vw;
+            padding-bottom: 2vw;
+        }
+        .rcs-feature-container.feat-02 .content-side,
+        /* .rcs-feature-container.feat-04 .content-side, */
+        .rcs-feature-container.feat-06 .content-side {
+            width: 50%;
+            padding: 4vw 0 10.5vw 3vw;
+        }
+        .rcs-feature-container.feat-04 .content-side,
+        .rcs-feature-container.feat-05 .content-side {
+            width: 50%;
+            padding: 4vw 0 4vw 3vw;
+        }
+        .rcs-feature-container.feat-01 .content-side .feat-number,
+        .rcs-feature-container.feat-03 .content-side .feat-number {
+            padding: 7vw 0 0.3vw;
+        }
+        .rcs-feature-container.feat-04 .content-side .feat-number,
+        .rcs-feature-container.feat-05 .content-side .feat-number {
+            padding: 0vw 0 0.3vw;
+        }
+        .rcs-feature-container.feat-02 .content-side .feat-title,
+        .rcs-feature-container.feat-02 .content-side .feat-description,
+        .rcs-feature-container.feat-04 .content-side .feat-title,
+        .rcs-feature-container.feat-04 .content-side .feat-description,
+        .rcs-feature-container.feat-06 .content-side .feat-title,
+        .rcs-feature-container.feat-06 .content-side .feat-description {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .rcs-feature-container {
+                width: 90vw;
+            }
+            .rcs-feature-container .image-side{
+                display: inline-block;
+                height: 560px;
+                width: 45%;
+                background-size: 330px;
+            }
+            .rcs-feature-container .content-side {
+                height: 560px;
+            }
+            .rcs-feature-container.feat-04 .content-side,
+            .rcs-feature-container.feat-05 .content-side {
+                height: 600px;
+                width: 54%;
+            }
+            .rcs-feature-container .content-side .feat-number {
+                font-size: 30px;
+                padding: 5vw 0 0.3vw;
+            }
+            .rcs-feature-container .content-side .feat-title {
+                font-size: 30px;
+                line-height: 35px;
+                margin-right: 13vw; 
+                padding-bottom: 0.5vw;
+            }
+            .rcs-feature-container .content-side .feat-description {
+                font-size: 18px;
+                line-height: 29px;
+                margin-right: 4vw;
+                padding-bottom: 2vw;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .rcs-feature-container {
+                width: 95vw;
+            }
+            .rcs-feature-container.feat-01 .image-side,
+            .rcs-feature-container.feat-03 .image-side,
+            .rcs-feature-container.feat-05 .image-side {
+                background-position: top 0 right -4vw;
+            }
+            .rcs-feature-container.feat-02 .image-side,
+            .rcs-feature-container.feat-04 .image-side,
+            .rcs-feature-container.feat-06 .image-side {
+                background-position: top 0 left -5vw
+            }
+            .rcs-feature-container.feat-04 .content-side,
+            .rcs-feature-container.feat-05 .content-side {
+                height: auto;
+                width: 54%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .rcs-feature-container.feat-01 .image-side,
+            .rcs-feature-container.feat-02 .image-side,
+            .rcs-feature-container.feat-03 .image-side,
+            .rcs-feature-container.feat-04 .image-side,
+            .rcs-feature-container.feat-05 .image-side,
+            .rcs-feature-container.feat-06 .image-side {
+                background-position: top -35px center;
+            }
+            .rcs-feature-container .image-side {
+                height: 487px;
+                width: 100%;
+            }
+            .rcs-feature-container .content-side,
+            .rcs-feature-container.feat-02 .content-side,
+            .rcs-feature-container.feat-03 .content-side,
+            .rcs-feature-container.feat-04 .content-side,
+            .rcs-feature-container.feat-05 .content-side,
+            .rcs-feature-container.feat-06 .content-side {
+                width: 100%;
+                height: auto;
+                padding: 0;
+            }
+            .rcs-feature-container.feat-01 .content-side .feat-number,
+            .rcs-feature-container.feat-02 .content-side .feat-number,
+            .rcs-feature-container.feat-03 .content-side .feat-number,
+            .rcs-feature-container.feat-04 .content-side .feat-number,
+            .rcs-feature-container.feat-05 .content-side .feat-number,
+            .rcs-feature-container.feat-06 .content-side .feat-number {
+                padding: 10px 0 5px;
+            }
+            .rcs-feature-container .content-side .feat-description {
+                padding-bottom: 30px;
+            }
+        }
+        /******************************************/
+        /*             RCS Bottom CTA             */
+        /******************************************/
+        .rcs-bottom-section {
+            position: relative;
+            background-color: #f5f9fc;
+            padding-top: 50px;
+            z-index: -2;
+        }
+        .rcs-bottom-cta-container {
+            width: 80vw;
+            margin: 0 auto;
+        }
+        .rcs-bottom-section .content-side {
+            display: inline-block;
+            width: 50%;
+            padding-bottom: 60px;
+        }
+        .rcs-bottom-section .content-side div {
+            font-size: 20px;
+            line-height: 38px;
+            color: #607286;
+            font-weight: 100;
+            margin-bottom: 30px;
+        }
+        .rcs-bottom-section .content-side div span {
+            font-weight: 400;
+        }
+        .rcs-bottom-section .image-side {
+            position: absolute;
+            right: 160px;
+            top: -30px;
+            background-image: url("./assets/images/rcs-page-assets/iPhone-mini.png"), url("./assets/images/rcs-page-assets/macbook.png");
+            background-repeat: no-repeat, no-repeat;
+            background-position: bottom 0px right 130px, top center;
+            height: 450px;
+            width: 710px;
+            z-index: -1
+        }
+        .rcs-bottom-section .content-side a {
+            text-decoration: none;
+        }
+        .rcs-bottom-section .content-side a .cta-btn {
+            background-color: #2FCA80;
+            padding: 12px;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            width: 290px;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
@@ -274,42 +666,143 @@
             <div class="rcs-page-title">ez texting rcs marketing</div>
             <h1>EZ Texting Leading the Way in Rich Services and RCS for Business</h1>
             <div class="rcs-header-subtitle">
-                <span>Rich Communication Services (RCS) is a communications standard that acts like a hybrid of SMS texting and chat.</span>
-                RCS messages work with both Android Messages and Chat. Android Messages is notable because it already exists on every Android phone -
-                no extra app installation is needed. Branding appears on both the banner at the top, and also on every message sent to the user.
+                <span>RCS is a communications standard that acts like a hybrid of SMS texting and chat.</span>
+                It features integrated branding, rich media, and secure transaction. Google is leading the RCS charge by using it as the basis
+                for its Chat app. According to GSMA Intelligence, there are expected to be 3 billion RCS-enabled devices by 2020.
             </div>
         </div>
     </div>
     <div class="rcs-subheader">
         <div class="rcs-page-title">ez texting rcs marketing</div>
-        <h2>How Will Callfire Implement RCS?</h2>
+        <h2>How Will EZ Texting Implement RCS?</h2>
     </div>
-    <div class="icon-sect-container">
+    <div class="rcs-content-container">
         <p>
-            Callfire is already in an advanced phase of implementing business-oriented products that will reply on RCS as a transmission protocol.
+            EZ Texting is already in an advanced phase of implementing business-oriented products that will reply on RCS as a transmission protocol.
             In fact, we're working directly with Google to bring our customers the very best this technology has to offer.
         </p>
         <p>
             We are fully embracing Rich Business Messaging (RBM), the business-to-person framework supported by RCS, and we plan on providing an
             easy-to-use interface that will enable businesses to communicate with their customers in richer, more interactive ways.
-            How RBM Help Businesses
         </p>
+    </div>
+    <div class="icon-sect-container">
+        <h2>How RBM Helps Businesses</h2>
         <div class="icons-container">
             <div class="icon-container mail">
                 <div class="image-side"></div>
-                <div class="content-side">Don't spam</div>
+                <div class="content-side">Lets users know</br>it's not spam</div>
             </div>
             <div class="icon-container store">
                 <div class="image-side"></div>
-                <div class="content-side">Make it easier to tell it's coming from a real business</div>
+                <div class="content-side">Make it easier to tell it's</br>coming from a real business</div>
             </div>
             <div class="icon-container lock">
                 <div class="image-side"></div>
-                <div class="content-side">Make it more secure</div>
+                <div class="content-side">Make your communication</br>more secure</div>
             </div>
         </div>
     </div>
-
+    <div class="rcs-features-container">
+        <div class="rcs-feature-container feat-01">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <div class="feat-number">1.</div>
+                <div class="feat-title">Branding within the chat window</div>
+                <div class="feat-description">
+                    RCS messages in Android Chat will allow your company to brand the chat window with your logo
+                    and make the messages you send in the color you choose. Especially for businesses that currently use SMS,
+                    this could make a huge difference to customers who will instantly be able to recognize the source of their message.
+                </div>
+            </div>
+        </div>
+        <div class="rcs-feature-container feat-02">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <div class="feat-number">2.</div>
+                <div class="feat-title">Business Verification and Encrypted Messages</div>
+                <div class="feat-description">
+                    With RCS for businesses, messages are encrypted, and the identity of the business-side of the dialog is verified.
+                    This can be a significant boost to a company, both in creating trust with their subscribers, and by allowing for
+                    transactions like ticket purchases to happen via text.
+                </div>
+            </div>
+        </div>
+        <div class="rcs-feature-container feat-03">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <div class="feat-number">3.</div>
+                <div class="feat-title">Seamless Connections to Other Apps</div>
+                <div class="feat-description">
+                    If you want to send a customer an offer with a map to your business, you'll be able to do so without talking them away
+                    from your branded message window. Same goes for dialing the phone, making a payment and opening an internet browser. You'll
+                    be able to share more relevant information with customers without losing their engagement with your messages.
+                </div>
+            </div>
+        </div>
+        <div class="rcs-feature-container feat-04">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <div class="feat-number">4.</div>
+                <div class="feat-title">Give Customers Pre-Programmed Response Options</div>
+                <div class="feat-description">
+                    When you're writing an RCS message you can pre-program response choices that show up as buttons under the message. Then, you can
+                    setup unique auto responses that display depending on which option the customer chooses.
+                    </br></br>
+                    For example, you could send a message that says, "Are you coming to the EZ launch event this Friday?" Below that two buttons would
+                    appear "Yes" or "No". If the customer chooses the "Yes" button a message would automatically appear saying "See you Friday!" If no,
+                    the message would be "No worries, see you next time!"
+                </div>
+            </div>
+        </div>
+        <div class="rcs-feature-container feat-05">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <div class="feat-number">5.</div>
+                <div class="feat-title">Provide Rich Visuals with Videos, Images and Carousels</div>
+                <div class="feat-description">
+                    With RCS, you engage customers by sharing rich visuals such as videos, high-quality images and gifs - such visuals historyically been
+                    hard to share over SMS or MMS. Another option would be to send a "Rich Card" with an image, copy and suggested reply or action. These
+                    work great for items such as coupons, maps or special offer.
+                    </br></br>
+                    If you have a large amount of information to share, you can also distill it down by sharing a series of cards in a carousel - from 2 to
+                    10 all at once. This would work well for product variations or menu items.
+                </div>
+            </div>
+        </div>
+        <div class="rcs-feature-container feat-06">
+            <div class="image-side"></div>
+            <div class="content-side">
+                <div class="feat-number">6.</div>
+                <div class="feat-title">A Single Campaign Enables You to Reach Both RCS and SMS Users</div>
+                <div class="feat-description">
+                    EZ Texting RCS for Business allows users to automatically switch back to the SMS/MMS format for users who don't have Android
+                    phones. So you will be able to leverage the cool features RCS offers without cutting out the many users on other devices.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rcs-subheader">
+        <div class="rcs-page-title">ez texting rcs marketing</div>
+        <h2>How Can I Learn More?</h2>
+    </div>
+    <div class="rcs-bottom-section">
+        <div class="rcs-bottom-cta-container">
+            <div class="image-side">
+                <div class="actual-img"></div>
+            </div>
+            <div class="content-side">
+                <div>
+                    RCS is a new technology that is rolling out to Android users in the coming months. EZ Texting is already signed on as an official carrier
+                    and will be on the forefront of this technology as it emerges for everyday use. Got questions about RCS or Android Chat?
+                    <span>Schedule a time to talk with us about how RCS can help your business now, or in the future.</span>
+                </div>
+                <a href="https://go.callfire.com/meetings/slucas/ez-rcs" class="cta-btn-anchor">
+                    <span class="cta-btn">Schedule a Consultation</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <div class="footer"></div>
     <script type="text/javascript">

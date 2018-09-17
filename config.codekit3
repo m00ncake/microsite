@@ -1028,6 +1028,138 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/images\/rcs-page-assets\/CF-1.png": {
+		"ft": 32768,
+		"iS": 423764,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/CF-1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/CF-2.png": {
+		"ft": 32768,
+		"iS": 366940,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/CF-2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/CF-3.png": {
+		"ft": 32768,
+		"iS": 303142,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/CF-3.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/CF-4.png": {
+		"ft": 32768,
+		"iS": 341822,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/CF-4.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/CF-5.png": {
+		"ft": 32768,
+		"iS": 486630,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/CF-5.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/CF-6.png": {
+		"ft": 32768,
+		"iS": 340948,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/CF-6.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/EZ-1.png": {
+		"ft": 32768,
+		"iS": 450900,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/EZ-1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/EZ-2.png": {
+		"ft": 32768,
+		"iS": 359490,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/EZ-2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/EZ-3.png": {
+		"ft": 32768,
+		"iS": 327371,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/EZ-3.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/EZ-4.png": {
+		"ft": 32768,
+		"iS": 359003,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/EZ-4.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/EZ-5.png": {
+		"ft": 32768,
+		"iS": 520758,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/EZ-5.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
+	"\/assets\/images\/rcs-page-assets\/EZ-6.png": {
+		"ft": 32768,
+		"iS": 361955,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/EZ-6.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 60
+		},
 	"\/assets\/images\/rcs-page-assets\/icon-lock.png": {
 		"ft": 32768,
 		"iS": 19731,
@@ -1072,11 +1204,22 @@
 		"oT": 1,
 		"q": 80
 		},
-	"\/assets\/images\/rcs-page-assets\/MacBook-Clay-White-Frontal-Mockup.png": {
+	"\/assets\/images\/rcs-page-assets\/iPhone-mini.png": {
+		"ft": 32768,
+		"iS": 7439,
+		"oA": 0,
+		"oAP": "\/assets\/images\/rcs-page-assets\/iPhone-mini.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/rcs-page-assets\/macbook.png": {
 		"ft": 32768,
 		"iS": 16225,
 		"oA": 0,
-		"oAP": "\/assets\/images\/rcs-page-assets\/MacBook-Clay-White-Frontal-Mockup.png",
+		"oAP": "\/assets\/images\/rcs-page-assets\/macbook.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
