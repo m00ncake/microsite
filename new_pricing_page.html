@@ -1,0 +1,103 @@
+<style>
+
+</style>
+
+<div class="pricing-tabs">
+    <div class="container">
+        <div class="row centered">
+
+            <h2 class="slider-title">How many messages will you send each month?</h2>
+
+            <ul class="slider-list">
+                <li id="pa" data-tooltip="So for example, if you have 250 contacts, you can send each of them 2 messages a month">500</li>
+                <li id="pb" class="active" data-tooltip="So for example, if you have 500 contacts, you can send each of them 2 messages a month">1,000</li>
+                <li id="pd" data-tooltip="So for example, if you have 1,150 contacts, you can send each of them 2 messages a month">3,000</li>
+                <li id="pe" data-tooltip="So for example, if you have 2,500 contacts, you can send each of them 2 messages a month">5,000</li>
+                <li id="pf" data-tooltip="So for example, if you have 5,000 contacts, you can send each of them 2 messages a month">10,000</li>
+                <li id="pg" data-tooltip="So for example, if you have 10,000 contacts, you can send each of them 2 messages a month">20,000</li>
+                <li id="ph" data-tooltip="So for example, if you have 25,000 contacts, you can send each of them 2 messages a month">50,000</li>
+                <li id="pi" data-tooltip="Need more than 50,000 messages per month? Contact us">+ More</li>
+            </ul>
+
+            <div id="more" class="hide">
+                <h3>Contact us for custom plans to fit your needs</h3>
+                <h4>1 (888) 995-5408</h4>
+                <div class="form-wrap">
+                    <div class="form-group">
+                        <label for="name" class="control-label">Name</label>
+                        <input onblur="trackEvent('lastname')" type="text" name="Name" id="Name" class="form-control"
+                            value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="control-label">Email</label>
+                        <input onblur="trackEvent('email')" type="text" name="Email" id="Email" class="form-control"
+                            value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="number" class="control-label">Phone Number</label>
+                        <input onblur="trackEvent('number')" type="text" name="Number" id="Number" class="form-control"
+                            value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="details" class="control-label">Tell us a little about your needs</label>
+                        <textarea onblur="trackEvent('details')" type="text" name="Details" id="Details" class="form-control"
+                            value=""></textarea>
+                    </div>
+                </div>
+                <a class="btn btn-rounded btn-green btn-lg" href="#">Send Inquiry</a>
+            </div>
+
+            <div class="slider-suggestion">
+                <div class="price">
+                    <h3 class="animated"><span>$94</span>/mo</h3>
+                    <div class="monthly-toggle">
+                        <div class="radio">
+                            <input class="radio monthly-plan" id="radio-2" name="radio" type="radio" checked="">
+                            <label for="radio-2">Monthly</label>
+                        </div>
+                        <div class="radio">
+                            <input class="radio annual-plan" id="radio-1" name="radio" type="radio">
+                            <label for="radio-1">Annual <span class="save">Save 25%!</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pkg-desc">
+                    <p><i class="fas fa-check-circle"></i> <span class="un" data-tooltip="Rollover allows you to keep unused texts for the next billing cycle"><span
+                                class="text-amount">1,000</span> Texts with Rollover</span></p>
+                    <p><i class="fas fa-check-circle"></i> <span class="un" data-tooltip="A keyword is what people can text to 313131 to opt-in to your text message campaigns">2
+                            Keywords</span></p>
+                    <p><i class="fas fa-check-circle"></i> <span class="un" data-tooltip="Enables customers to send text messages to your business">1
+                            Textable Number</span></p>
+                </div>
+            </div>
+
+            <span class="alert-annual alert alert-info not-visible">
+                Annual plans will receive the entire credit amount at the start of each billing year.
+            </span>
+
+            <div class="slider-actions">
+                <a class="btn btn-rounded btn-green btn-lg" href="#">Sign Up Now</a>
+                <a class="btn btn-rounded btn-light btn-lg" href="#">or Try it Free for 14 days!</a>
+            </div>
+
+        </div>
+        <div class="row all-features">
+            <h1 id="included">All Plans Feature</h1>
+            <ul class="feature-grid">
+                <li><i class="far fa-address-book"></i> Unlimited Contacts</li>
+                <li><i class="far fa-id-card-alt"></i> Free Demo Keyword</li>
+                <li><i class="far fa-image"></i> Picture Messaging</li>
+                <li><i class="far fa-inbox-in"></i> Free Incoming Messages</li>
+                <li><i class="far fa-alarm-clock"></i> Scheduling Ability</li>
+                <li><i class="far fa-globe-americas"></i> World Class Support</li>
+            </ul>
+        </div>
+        <p class="paygo-link">Not ready to commit? <a href="#">Sign up for Pay and Go</a></p>
+    </div>
+</div>
+<p class="canadian-link">
+    <a href="/pricing/canada">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-441/canada.svg">
+        View Canadian Pricing
+    </a>
+</p>
