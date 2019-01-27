@@ -19,6 +19,7 @@
     $(".micro-home div.header-btns").after('<h2 class="subtitle">Text </h2>');
     $(".micro-home h2.subtitle").append('<b>TRY</b>').append(' to ').append('<b>858585</b>').append(' to see how it works');
     console.log("header buttons loaded");
+    
     // Microsite Footer Mods
     // $(".microsite .disclaimer-row .col-sm-8 .disclaimer:first-child a:first-child").attr('href', '/ez-texting-privacy-policy');
     // $(".microsite .disclaimer-row .col-sm-8 .disclaimer:first-child a:nth-child(2)").attr('href', '/terms-service-0');
