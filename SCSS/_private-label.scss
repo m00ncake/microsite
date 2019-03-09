@@ -1,0 +1,194 @@
+/*************************************************************/
+/*********      Private Label Hero with Icons       **********/
+/*************************************************************/
+.private-label {
+    .block-quotes {
+        h2 {
+            color: #5B8FAE;
+            text-align: center;
+            font-size: 55px;
+            line-height: 59px;
+            margin: 20px 0;
+        }
+        p {
+            &.subtitle {
+                text-align: center;
+                margin: 0 0 30px;
+            }
+        }
+        .block__t1 {
+            .block__column {
+                flex-basis: 100%;
+                padding: 4vw;
+                margin: 0;
+                &.block__column_1 {
+                    border-right: 1px solid rgba(61, 67, 81, 0.5);
+                    img:hover {
+                        content:url("/sites/default/files/Images/private-label/corporate-icon-hover.png");
+                    }
+                }
+                &.block__column_2 {
+                    img:hover {
+                        content:url("/sites/default/files/Images/private-label/reseller-icon-hover.png");
+                    }
+                }
+            }
+            .inner {
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                .sign_image {
+                    display: flex;
+                    height: auto;
+                    flex-basis: unset;
+                    flex-direction: column;
+                    align-content: center;
+                    margin: 0;
+                }
+                .text__column {
+                    text-align: center;
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .private-label {
+        .block-quotes {
+            .block__t1 {
+                .block__column {
+                    &.block__column_1 {
+                        border-right: none;
+                    }
+                }
+                .inner {
+                    .text__column {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**************************************************************/
+/*********      Title with Subtitles Bean Block      **********/
+/**************************************************************/
+.private-label {
+    .section__background {
+        height: auto;
+        min-height: 290px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .sec__wrapper {
+            .section__title {
+                .theme_v1 {
+                    text-align: center;
+                    margin: 50px 0 30px;
+                }
+                .topic__title {
+                    color: white;
+                    font-weight: 300;
+                    font-size: 24px;
+                    text-align: center;
+                    text-transform: unset;
+                    padding-bottom: 60px;
+                }
+            }
+        }
+    }
+}
+.private-label {
+    .markup__container {
+        width: 70vw;
+        margin: 0 auto;
+        h2 {
+            text-align: center;
+            font-size: 42px;
+        }
+    }
+    .sec__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .sec__wrapper_item {
+        flex-basis: 200px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .private-label {
+        .markup__container {
+            width: 90vw;
+
+        }
+    }
+}
+
+/**************************************************************/
+/*********           Title Only Bean Block           **********/
+/**************************************************************/
+
+.private-label {
+    .bg-block {
+        .bean-title-only { 
+            .field-name-field-markup {
+                img {
+                    display: unset;
+                    margin-right: 20px;
+                    margin-left: 0;
+                    height: unset !important;
+                }
+            }
+        }
+    }                
+}
+
+.private-label {
+    .sec__wrapper_h_item {
+        flex-basis: 450px;
+        height: 115px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        text-align: left;
+    }
+}
+
+/**************************************************************/
+/****       Schedule a Consultation (desktop img)          ****/
+/**************************************************************/
+.markup__container.schedule {
+    background-image: url(/sites/default/files/Images/private-label/office-desktop.jpg);
+}
+
+/**************************************************************/
+/*********               Backgrounds                 **********/
+/**************************************************************/
+
+.background_6{
+    background-image: url('/sites/default/files/Images/private-label/private-label-hero.jpg');
+    background-color: $cashmereBlue;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+.background_7 {
+    background-image: url('/sites/default/files/Images/private-label/topic-title-header_1.jpg');
+    background-color: $cashmereBlue;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.background_8 {
+    background-image: url('/sites/default/files/Images/private-label/topic-title-header_2.jpg');
+    background-color: $cashmereBlue;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

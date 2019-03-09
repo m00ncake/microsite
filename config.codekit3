@@ -1367,6 +1367,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/loadStylesheet.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/loadStylesheet-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/microsite-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1452,6 +1462,19 @@
 		"oAP": "/RCS_page.html",
 		"oF": 0
 		},
+	"/SCSS/_private-label.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/SCSS/_private-label.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/SCSS/new_pricing_page.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1464,6 +1487,13 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/SCSS/pricing_4_block.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/SCSS/pricing_4_block.html",
+		"oF": 0
 		},
 	"/SCSS/style.css": {
 		"aP": 1,
@@ -1515,6 +1545,16 @@
 		"oA": 0,
 		"oAP": "/template.html",
 		"oF": 0
+		},
+	"/validate.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/validate-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/zendesk-ticket.php": {
 		"cB": 0,
