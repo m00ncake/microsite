@@ -1,103 +1,726 @@
-<style>
+<style type="text/css">
+	.wrapper_v7_int h1 {
+		margin: 0px 0.5em;
+	}
+	@media (min-width: 1280px) {
+		.price-box {
+			width: 235px;
+		}
+	}
 
+	#pricing-content .container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media (min-width: 847px) {
+		.price-box {
+			width: 22vw;
+			max-width: 240px;
+		}
+	}
+	.wrapper_v7_int h1 {
+		padding-bottom: 0em;
+	}
+	@media (min-width: 769px) {
+		.wrapper_v7_int {
+			min-height: 200px;
+		}
+
+		.wrapper_v7_int h1 {
+			padding-top: 2em;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		div.boxes .price-arrow-right {
+			display: none;
+		}
+	}
+
+	.node-type-pricing-page .pricing4 .price-box:hover {
+		transform: unset;
+	}
+
+	.price-plan-toggle {
+		text-align: center;
+	}
+	span.month, span.year {
+    	position: absolute;
+	}
+	.month {
+		top:0;
+		right:60px;
+	}
+	.year {
+		top:0;
+		left: 60px;
+	}
+	
+	.hide-price-boxes {
+		display: none;
+	}
+
+    .node-type-pricing-page .pricing4 .price-box {
+		min-height: 315px;
+		padding-bottom: 15px;
+	}
+	.node-type-pricing-page .pricing4 .price-box h3 {
+		margin-bottom: 10px;
+	}
+	.node-type-pricing-page .pricing4 .price-box h2 {
+		color: #4b6279;
+		margin: 0;
+	}
+	.btn-row {
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 20px;
+	}
+	.btn.btn-rounded.btn-lg {
+		border: 1px solid #2fc97f;
+		background-color: #2fc97f;
+		color: #fff;
+		transition: transform .3s;
+	}
+	.btn.btn-rounded.btn-lg:hover {
+		border: 1px solid #2fc97f;
+		background-color: #fff;
+		color: #2fc97f;
+		transform: scale(1.05);
+	}
+	.buy-btn .btn.btn-rounded.btn-lg{
+		border: 1px solid #e4e8ec;
+		background-color: #e4e8ec;
+		color: #526278;
+		transition: transform .3s;
+	}
+	.buy-btn .btn.btn-rounded.btn-lg:hover {
+		border: 1px solid #959595;
+		background-color: #fff;
+		color: #959595;
+		transform: scale(1.05);
+	}
+	.node-type-pricing-page .pricing4 #selected{
+		background-color: #4b6279;
+	}
+
+
+	@media (min-width: 769px) {
+		.node-type-pricing-page .more-plans {
+			width: 48%;
+			margin: 0 10px 30px;
+		}
+
+		.node-type-pricing-page .pricing4 .price-box,
+		.node-type-pricing-page .pricing5 .price-box {
+			margin: 4em 1em;
+		}
+	}
+
+	.node-type-pricing-page .pricing4 .boxes,
+	.node-type-pricing-page .pricing5 .boxes {
+		justify-content: space-between;
+	}
+
+	.node-type-pricing-page .more-plans {
+		background-color: #fff;
+	}
+
+	.node-type-pricing-page .more-plans a {
+		color: #648cff;
+	}
+
+	.boxes {
+		position: relative;
+	}
+
+	.more-box {
+		margin-top: -30px;
+	}
+
+	.more-plans.annual-plans {
+		display: block;
+		width: 92%;
+		margin: 0px auto 35px;
+		border: 2px solid #fea30a;
+		color: #fea30a;
+		font-weight: 700;
+	}
+
+	.node-type-pricing-page .boxes--volume .price-box {
+		display: none;
+	}
+
+	.node-type-pricing-page.free-volume-pricing .boxes .price-box {
+		display: none;
+	}
+
+	.node-type-pricing-page.free-volume-pricing .boxes--volume .price-box {
+		display: inline-block;
+	}
+
+	.price-box p.deal.box-line {
+		margin: 0;
+		padding: 20px 1em 20px;
+		height: auto;
+	}
+
+	.price-box .deal.box-line {
+		height: auto;
+	}
+
+	.pricing-button {
+		justify-content: center;
+	}
+
+	.node-type-pricing-page .pricing4 .price-box .btn,
+	.node-type-pricing-page .pricing5 .price-box .btn {
+		position: relative;
+		bottom: unset;
+		left: unset;
+		right: unset;
+		padding: 5px 17px;
+	}
+
+	@media only screen and (max-width: 992px) {
+
+		.btn-group-lg>div.btn.btn-rounded,
+		div.btn.btn-rounded.btn-lg {
+			margin-bottom: 0;
+		}
+	}
+
+
+	.modal-body,
+	.modal-header {
+		padding: 15px;
+		text-align: center;
+		border-bottom: 0px;
+	}
+
+	.modal-content {
+		padding: 30px 0;
+	}
+
+	.modal-header .close {
+		margin-top: -45px;
+		font-weight: 100;
+		font-size: 50px;
+		line-height: 50px;
+		background-color: transparent;
+		position: absolute;
+		right: 10px;
+	}
+
+	.node-type-pricing-page h3.modal-title {
+		font-size: 36px;
+		color: #6581a2;
+	}
+
+	.modal-header h5 {
+		font-size: 17px;
+		font-weight: 600;
+		color: #6581a2;
+	}
+
+	.modal-body .hs-input {
+		width: 75%;
+		border-radius: 4px;
+		border: 2px solid #d8dee5;
+	}
+
+	.modal .actions {
+		margin: 20px 0 0;
+	}
+
+	textarea.hs-input {
+		height: 90px;
+	}
+
+	textarea.hs-input::-webkit-input-placeholder {
+		text-indent: 0px;
+		line-height: 65px;
+	}
+
+	textarea.hs-input::-moz-placeholder {
+		text-indent: 0px;
+		color: #6581a2;
+		font-size: 16px;
+		font-weight: 100;
+		line-height: 65px;
+	}
+
+	input.hs-button.primary.large {
+		width: 30%;
+		background-color: #2fca80;
+		color: #fff;
+		font-weight: 600;
+		text-transform: uppercase;
+		border: unset;
+		border-radius: 3px;
+		padding: 14px 0;
+	}
+
+	input.hs-input::-moz-placeholder {
+		font-size: 16px;
+		font-weight: 100;
+		color: #6581a2;
+	}
+
+	span.hs-form-required {
+		display: none;
+	}
+
+
+	/***** Toggle Button *****/
+	/* .btn-toggle {
+	margin: 0 4rem;
+	padding: 0;
+	position: relative;
+	border: none;
+	height: 1.5rem;
+	width: 3rem;
+	border-radius: 1.5rem;
+	color: #6b7381;
+	background: #bdc1c8;
+	}
+	.btn-toggle:focus,
+	.btn-toggle.focus,
+	.btn-toggle:focus.active,
+	.btn-toggle.focus.active {
+	outline: none;
+	} */
+	.btn-toggle:before,
+	.btn-toggle:after {
+	line-height: 1.5rem;
+	width: 4rem;
+	text-align: center;
+	font-weight: 600;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: absolute;
+	bottom: 0;
+	transition: opacity 0.25s;
+	}
+	.btn-toggle > .handle {
+	position: absolute;
+	top: 0.1875rem;
+	left: 0.1875rem;
+	width: 1.125rem;
+	height: 1.125rem;
+	border-radius: 1.125rem;
+	background: #fff;
+	transition: left 0.25s;
+	}
+	.btn-toggle.active {
+	transition: background-color 0.25s;
+	}
+	.btn-toggle.active > .handle {
+	left: 1.6875rem;
+	transition: left 0.25s;
+	}
+	.btn-toggle.active:before {
+	opacity: 0.5;
+	}
+	.btn-toggle.active:after {
+	opacity: 1;
+	}
+
+	.btn-toggle:before,
+	.btn-toggle:after {
+	color: #6b7381;
+	}
+	.btn-toggle.btn-lg.active {
+	background-color: #2fc97f;
+	}
+	.btn-toggle.btn-lg {
+	margin: 0 5rem;
+	padding: 0;
+	position: relative;
+	border: none;
+	height: 2.5rem;
+	width: 5rem;
+	border-radius: 2.5rem;
+	color: #6b7381;
+	background: #bdc1c8;
+	}
+	.btn-toggle.btn-lg:focus,
+	.btn-toggle.btn-lg.focus,
+	.btn-toggle.btn-lg:focus.active,
+	.btn-toggle.btn-lg.focus.active {
+	outline: none;
+	}
+	.btn-toggle.btn-lg:before,
+	.btn-toggle.btn-lg:after {
+	line-height: 2.5rem;
+	width: 5rem;
+	text-align: center;
+	font-weight: 600;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: absolute;
+	bottom: 0;
+	transition: opacity 0.25s;
+	}
+	.btn-toggle.btn-lg > .handle {
+	position: absolute;
+	top: 0.3125rem;
+	left: 0.3125rem;
+	width: 1.875rem;
+	height: 1.875rem;
+	border-radius: 1.875rem;
+	background: #fff;
+	transition: left 0.25s;
+	}
+	.btn-toggle.btn-lg.active {
+	transition: background-color 0.25s;
+	}
+	.btn-toggle.btn-lg.active > .handle {
+	left: 2.8125rem;
+	transition: left 0.25s;
+	}
+	.btn-toggle.btn-lg.active:before {
+	opacity: 0.5;
+	}
+	.btn-toggle.btn-lg.active:after {
+	opacity: 1;
+	}
+	.btn-toggle.btn-lg.btn-sm:before,
+	.btn-toggle.btn-lg.btn-sm:after {
+	line-height: 0.5rem;
+	color: #fff;
+	letter-spacing: 0.75px;
+	left: 0.6875rem;
+	width: 3.875rem;
+	}
+	.btn-toggle.btn-lg.btn-sm:before {
+	text-align: right;
+	}
+	.btn-toggle.btn-lg.btn-sm:after {
+	text-align: left;
+	opacity: 0;
+	}
+	.btn-toggle.btn-lg.btn-sm.active:before {
+	opacity: 0;
+	}
+	.btn-toggle.btn-lg.btn-sm.active:after {
+	opacity: 1;
+	}
+	.btn-toggle.btn-lg.btn-xs:before,
+	.btn-toggle.btn-lg.btn-xs:after {
+	display: none;
+	}
 </style>
+<div id="pricing-content" class="pricing4">
+	<div class="container">
+		<div class="col-sm-12 price-plan-toggle">
+			<button type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+				<span class="month">Monthly</span><span class="year">Annual <b>Save 20%</b></span>
+				<div class="handle"></div>
+			</button>
+		</div>
+		<div class="row">
+			<!---------------------->
+			<!--Annual Price Boxes-->
+			<!---------------------->
+			<div class="annual-price-boxes hide-price-boxes">
+				<div class="price-box hide-price-box col-xs-2 equalHeight" style="height:320px;">
+						<div class="price-card-header">
+							<h3>
+								Starter
+							</h3>
+							<h2>
+								$375
+							</h2>
+							<p>
+								<b>per year</b>
+							</p>
+						</div>
+						<div class="btn-row">
+							<div class="pricing-button freetrial-btn">
+								<a href="/signup?pid=freetrial-new">
+									<div id="plus" class="btn btn-lg btn-rounded">
+										TRY
+									</div>
+								</a>
+							</div>
+							<div class="pricing-button buy-btn">
+								<a href="/signup?pid=plus">
+									<div id="plus" class="btn btn-lg btn-rounded">
+										BUY
+									</div>
+								</a>
+							</div>
+						</div>
+						<p class="deal box-line">
+							48,000 Messages<br />
+							4.5 cents/message<br />
+						</p>
+					</div>
+				<div class="price-box col-xs-2 equalHeight" id="selected">
+					<div class="price-card-header">
+						<h3>
+							Plus
+						</h3>
+						<div class="popular">
+							POPULAR
+						</div>
+						<h2>
+							$470
+						</h2>
+						<p>
+							<b>per year</b>
+						</p>
+					</div>
+					<div class="btn-row">
+						<div class="pricing-button freetrial-btn">
+							<a href="/signup?pid=freetrial-new">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									TRY
+								</div>
+							</a>
+						</div>
+						<div class="pricing-button buy-btn">
+							<a href="/signup?pid=select">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									BUY
+								</div>
+							</a>
+						</div>
+					</div>
+					<p class="deal box-line">
+						12000 Messages<br />
+						4.25 cents/message<br />
+					</p>
 
-<div class="pricing-tabs">
-    <div class="container">
-        <div class="row centered">
+				</div>
+				<div class="price-box col-xs-2 equalHeight">
+					<div class="price-card-header">
+						<h3>
+							Select
+						</h3>
+						<h2>
+							$900
+						</h2>
+						<p>
+							<b>per year</b>
+						</p>
+					</div>
+					<div class="btn-row">
+						<div class="pricing-button freetrial-btn">
+							<a href="/signup?pid=freetrial-new">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									TRY
+								</div>
+							</a>
+						</div>
+						<div class="pricing-button buy-btn">
+							<a href="/signup?pid=elite">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									BUY
+								</div>
+							</a>
+						</div>
+					</div>
+					<p class="deal box-line">
+						24000 Messages<br />
+						4 cents/message<br />
+					</p>
+				</div>
+				<div class="price-box col-xs-2 equalHeight">
+					<h3>
+						Custom
+					</h3>
+					<div>
+						<p style="margin-bottom:0;line-height:1">
+							<b>Call Us to Help You</b>
+						</p>
+						<p style="margin-bottom:0">
+							<b>Craft the Perfect Plan</b>
+						</p>
+						<p class="contact-number" style="margin-bottom:15px;font-size:20px">
+							<a href="tel:+18552360777" style="text-decoration:none">
+								(855) 236-0777
+							</a>
+						</p>
+					</div>
+					<div class="btn-row">
+						<div class="pricing-button">
+							<button data-toggle="modal" data-target="#ModalForm" class="btn btn-lg btn-rounded">
+								Contact Us
+							</button>
+						</div>
+					</div>
+					<p class="deal box-line" style="padding:15px 0">
+						Unlimited messages<br />
+						Open API access<br />
+					</p>
+				</div>
+			</div>
 
-            <h2 class="slider-title">How many messages will you send each month?</h2>
+			<!---------------------->
+			<!--Normal Price Boxes-->
+			<!---------------------->
+			<div class="boxes">
+				<div class="price-box col-xs-2 equalHeight" style="height:320px;">
+					<div class="price-card-header">
+						<h3>
+							Starter
+						</h3>
+						<h2>
+							$39
+						</h2>
+						<p>
+							<b>per month</b>
+						</p>
+					</div>
+					<div class="btn-row">
+						<div class="pricing-button freetrial-btn">
+							<a href="/signup?pid=freetrial-new">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									TRY
+								</div>
+							</a>
+						</div>
+						<div class="pricing-button buy-btn">
+							<a href="/signup?pid=plus">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									BUY
+								</div>
+							</a>
+						</div>
+					</div>
+					<p class="deal box-line">
+						400 Messages<br />
+						4.75 cents/message<br />
+					</p>
+				</div>
+				<div class="price-box col-xs-2 equalHeight" id="selected">
+					<div class="price-card-header">
+						<h3>
+							Plus
+						</h3>
+						<div class="popular">
+							POPULAR
+						</div>
+						<h2>
+							$49
+						</h2>
+						<p>
+							<b>per month</b>
+						</p>
+					</div>
+					<div class="btn-row">
+						<div class="pricing-button freetrial-btn">
+							<a href="/signup?pid=freetrial-new">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									TRY
+								</div>
+							</a>
+						</div>
+						<div class="pricing-button buy-btn">
+							<a href="/signup?pid=select">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									BUY
+								</div>
+							</a>
+						</div>
+					</div>
+					<p class="deal box-line">
+						1000 Messages<br />
+						4.5 cents/message<br />
+					</p>
 
-            <ul class="slider-list">
-                <li id="pa" data-tooltip="So for example, if you have 250 contacts, you can send each of them 2 messages a month">500</li>
-                <li id="pb" class="active" data-tooltip="So for example, if you have 500 contacts, you can send each of them 2 messages a month">1,000</li>
-                <li id="pd" data-tooltip="So for example, if you have 1,150 contacts, you can send each of them 2 messages a month">3,000</li>
-                <li id="pe" data-tooltip="So for example, if you have 2,500 contacts, you can send each of them 2 messages a month">5,000</li>
-                <li id="pf" data-tooltip="So for example, if you have 5,000 contacts, you can send each of them 2 messages a month">10,000</li>
-                <li id="pg" data-tooltip="So for example, if you have 10,000 contacts, you can send each of them 2 messages a month">20,000</li>
-                <li id="ph" data-tooltip="So for example, if you have 25,000 contacts, you can send each of them 2 messages a month">50,000</li>
-                <li id="pi" data-tooltip="Need more than 50,000 messages per month? Contact us">+ More</li>
-            </ul>
-
-            <div id="more" class="hide">
-                <h3>Contact us for custom plans to fit your needs</h3>
-                <h4>1 (888) 995-5408</h4>
-                <div class="form-wrap">
-                    <div class="form-group">
-                        <label for="name" class="control-label">Name</label>
-                        <input onblur="trackEvent('lastname')" type="text" name="Name" id="Name" class="form-control"
-                            value="">
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="control-label">Email</label>
-                        <input onblur="trackEvent('email')" type="text" name="Email" id="Email" class="form-control"
-                            value="">
-                    </div>
-                    <div class="form-group">
-                        <label for="number" class="control-label">Phone Number</label>
-                        <input onblur="trackEvent('number')" type="text" name="Number" id="Number" class="form-control"
-                            value="">
-                    </div>
-                    <div class="form-group">
-                        <label for="details" class="control-label">Tell us a little about your needs</label>
-                        <textarea onblur="trackEvent('details')" type="text" name="Details" id="Details" class="form-control"
-                            value=""></textarea>
-                    </div>
-                </div>
-                <a class="btn btn-rounded btn-green btn-lg" href="#">Send Inquiry</a>
-            </div>
-
-            <div class="slider-suggestion">
-                <div class="price">
-                    <h3 class="animated"><span>$94</span>/mo</h3>
-                    <div class="monthly-toggle">
-                        <div class="radio">
-                            <input class="radio monthly-plan" id="radio-2" name="radio" type="radio" checked="">
-                            <label for="radio-2">Monthly</label>
-                        </div>
-                        <div class="radio">
-                            <input class="radio annual-plan" id="radio-1" name="radio" type="radio">
-                            <label for="radio-1">Annual <span class="save">Save 25%!</span></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="pkg-desc">
-                    <p><i class="fas fa-check-circle"></i> <span class="un" data-tooltip="Rollover allows you to keep unused texts for the next billing cycle"><span
-                                class="text-amount">1,000</span> Texts with Rollover</span></p>
-                    <p><i class="fas fa-check-circle"></i> <span class="un" data-tooltip="A keyword is what people can text to 313131 to opt-in to your text message campaigns">2
-                            Keywords</span></p>
-                    <p><i class="fas fa-check-circle"></i> <span class="un" data-tooltip="Enables customers to send text messages to your business">1
-                            Textable Number</span></p>
-                </div>
-            </div>
-
-            <span class="alert-annual alert alert-info not-visible">
-                Annual plans will receive the entire credit amount at the start of each billing year.
-            </span>
-
-            <div class="slider-actions">
-                <a class="btn btn-rounded btn-green btn-lg" href="#">Sign Up Now</a>
-                <a class="btn btn-rounded btn-light btn-lg" href="#">or Try it Free for 14 days!</a>
-            </div>
-
-        </div>
-        <div class="row all-features">
-            <h1 id="included">All Plans Feature</h1>
-            <ul class="feature-grid">
-                <li><i class="far fa-address-book"></i> Unlimited Contacts</li>
-                <li><i class="far fa-id-card-alt"></i> Free Demo Keyword</li>
-                <li><i class="far fa-image"></i> Picture Messaging</li>
-                <li><i class="far fa-inbox-in"></i> Free Incoming Messages</li>
-                <li><i class="far fa-alarm-clock"></i> Scheduling Ability</li>
-                <li><i class="far fa-globe-americas"></i> World Class Support</li>
-            </ul>
-        </div>
-        <p class="paygo-link">Not ready to commit? <a href="#">Sign up for Pay and Go</a></p>
-    </div>
+				</div>
+				<div class="price-box col-xs-2 equalHeight">
+					<div class="price-card-header">
+						<h3>
+							Select
+						</h3>
+						<h2>
+							$94
+						</h2>
+						<p>
+							<b>per month</b>
+						</p>
+					</div>
+					<div class="btn-row">
+						<div class="pricing-button freetrial-btn">
+							<a href="/signup?pid=freetrial-new">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									TRY
+								</div>
+							</a>
+						</div>
+						<div class="pricing-button buy-btn">
+							<a href="/signup?pid=elite">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									BUY
+								</div>
+							</a>
+						</div>
+					</div>
+					<p class="deal box-line">
+						2000 Messages<br />
+						4 cents/message<br />
+					</p>
+				</div>
+				<div class="price-box col-xs-2 equalHeight">
+					<h3>
+						Custom
+					</h3>
+					<div>
+						<p style="margin-bottom:0;line-height:1">
+							<b>Call Us to Help You</b>
+						</p>
+						<p style="margin-bottom:0">
+							<b>Craft the Perfect Plan</b>
+						</p>
+						<p class="contact-number" style="margin-bottom:15px;font-size:20px">
+							<a href="tel:+18552360777" style="text-decoration:none">
+								(855) 236-0777
+							</a>
+						</p>
+					</div>
+					<div class="btn-row">
+						<div class="pricing-button">
+							<button data-toggle="modal" data-target="#ModalForm" class="btn btn-lg btn-rounded">
+								Contact Us
+							</button>
+						</div>
+					</div>
+					<p class="deal box-line" style="padding:15px 0">
+						Unlimited messages<br />
+						Open API access<br />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="more-box">
+				<!-- <div class="more-plans annual-plans">
+					Annual Plans Save 20%!
+				</div> -->
+				<div class="more-plans">
+					Not quite ready to commit?
+					<a href="/signup?pid=paygo-new">
+						Try Pay & Go Plan at 10 cents/message</a>
+				</div>
+				<div class="more-plans">
+					We support Canada!
+					<a href="/price/canada">Click here for Canadian Pricing</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<p class="canadian-link">
-    <a href="/pricing/canada">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-441/canada.svg">
-        View Canadian Pricing
-    </a>
-</p>
+<!-- Modal -->
+
+<script>
+	jQuery(document).ready(function($) {
+		console.log('document ready to roll');
+		$("#pricing-content .btn-toggle").on("click", function() { $("#pricing-content .annual-price-boxes").toggleClass("hide-price-boxes"); });
+	});
+</script>
