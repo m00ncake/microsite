@@ -1,36 +1,65 @@
 <style type="text/css">
+	.wrapper_v7_int {
+    background-image: url(/sites/all/themes/ez/dist/images/freetrial-badge.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 85%;
+    background-size: 12%;
+	}
 	.wrapper_v7_int h1 {
 		margin: 0px 0.5em;
 	}
 	@media (min-width: 1280px) {
 		.price-box {
-			width: 235px;
+			width: 245px;
 		}
 	}
-
+	.price-box {
+		width: 22vw;
+		max-width: 245px;
+	}
 	#pricing-content .container {
 		display: flex;
 		flex-direction: column;
 	}
 
-	@media (min-width: 847px) {
+	.wrapper_v7_int h1 {
+		padding-bottom: 0em;
+	}
+	/* @media (min-width: 769px) {
+		.wrapper_v7_int {
+			min-height: 200px;
+		}
+		.wrapper_v7_int h1 {
+			padding-top: 2em;
+		}
+		.price-box {
+			width: 22vw;
+			max-width: 240px;
+		}
+	} */
+	@media only screen 
+	and (min-width : 768px) 
+	and (max-width : 1200px) {
+		.wrapper_v7_int {
+			min-height: 200px;
+		}
+		.wrapper_v7_int h1 {
+			padding-top: 2em;
+		}
+		#pricing-content .container {
+			width: 90vw;
+		}
 		.price-box {
 			width: 22vw;
 			max-width: 240px;
 		}
 	}
-	.wrapper_v7_int h1 {
-		padding-bottom: 0em;
-	}
-	@media (min-width: 769px) {
-		.wrapper_v7_int {
-			min-height: 200px;
+	/* @media (max-width: 1200px) {
+		.price-box {
+			width: 22vw;
+			max-width: 240px;
 		}
-
-		.wrapper_v7_int h1 {
-			padding-top: 2em;
-		}
-	}
+	} */
 	@media screen and (max-width: 768px) {
 		div.boxes .price-arrow-right {
 			display: none;
@@ -43,6 +72,7 @@
 
 	.price-plan-toggle {
 		text-align: center;
+		margin-top: 35px;
 	}
 	span.month, span.year {
     	position: absolute;
@@ -55,11 +85,27 @@
 		top:0;
 		left: 60px;
 	}
-	
-	.hide-price-boxes {
-		display: none;
-	}
-
+.price-boxes{
+    transition: 0.3s;
+		opacity: 1;
+		display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.price-boxes.hide-price-boxes {
+    transition: 0.3s;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+}
+.price-boxes.hide-price-boxes .price-card-header {
+    opacity: 0;
+    transition: 0.3s;
+}
+.price-boxes .price-card-header {
+    opacity: 1;
+    transition: 0.3s;
+}
     .node-type-pricing-page .pricing4 .price-box {
 		min-height: 315px;
 		padding-bottom: 15px;
@@ -113,7 +159,7 @@
 
 		.node-type-pricing-page .pricing4 .price-box,
 		.node-type-pricing-page .pricing5 .price-box {
-			margin: 4em 1em;
+			margin: 4em auto;
 		}
 	}
 
@@ -138,14 +184,6 @@
 		margin-top: -30px;
 	}
 
-	.more-plans.annual-plans {
-		display: block;
-		width: 92%;
-		margin: 0px auto 35px;
-		border: 2px solid #fea30a;
-		color: #fea30a;
-		font-weight: 700;
-	}
 
 	.node-type-pricing-page .boxes--volume .price-box {
 		display: none;
@@ -189,7 +227,6 @@
 			margin-bottom: 0;
 		}
 	}
-
 
 	.modal-body,
 	.modal-header {
@@ -273,23 +310,6 @@
 
 
 	/***** Toggle Button *****/
-	/* .btn-toggle {
-	margin: 0 4rem;
-	padding: 0;
-	position: relative;
-	border: none;
-	height: 1.5rem;
-	width: 3rem;
-	border-radius: 1.5rem;
-	color: #6b7381;
-	background: #bdc1c8;
-	}
-	.btn-toggle:focus,
-	.btn-toggle.focus,
-	.btn-toggle:focus.active,
-	.btn-toggle.focus.active {
-	outline: none;
-	} */
 	.btn-toggle:before,
 	.btn-toggle:after {
 	line-height: 1.5rem;
@@ -425,17 +445,17 @@
 			<!---------------------->
 			<!--Annual Price Boxes-->
 			<!---------------------->
-			<div class="annual-price-boxes hide-price-boxes">
+			<div class="price-boxes hide-price-boxes">
 				<div class="price-box hide-price-box col-xs-2 equalHeight" style="height:320px;">
 						<div class="price-card-header">
 							<h3>
 								Starter
 							</h3>
 							<h2>
-								$375
+								$31
 							</h2>
 							<p>
-								<b>per year</b>
+								<b>per month</b>
 							</p>
 						</div>
 						<div class="btn-row">
@@ -455,8 +475,9 @@
 							</div>
 						</div>
 						<p class="deal box-line">
-							48,000 Messages<br />
-							4.5 cents/message<br />
+							<b>Additional</b><br />
+							400 Messages<br />
+							4.75 cents/message<br />
 						</p>
 					</div>
 				<div class="price-box col-xs-2 equalHeight" id="selected">
@@ -468,10 +489,10 @@
 							POPULAR
 						</div>
 						<h2>
-							$470
+							$39
 						</h2>
 						<p>
-							<b>per year</b>
+							<b>per month</b>
 						</p>
 					</div>
 					<div class="btn-row">
@@ -491,8 +512,9 @@
 						</div>
 					</div>
 					<p class="deal box-line">
-						12000 Messages<br />
-						4.25 cents/message<br />
+						<b>Additional</b><br/>
+						1000 Messages<br/>
+						4.5 cents/message<br/>
 					</p>
 
 				</div>
@@ -502,10 +524,10 @@
 							Select
 						</h3>
 						<h2>
-							$900
+							$75
 						</h2>
 						<p>
-							<b>per year</b>
+							<b>per month</b>
 						</p>
 					</div>
 					<div class="btn-row">
@@ -525,7 +547,8 @@
 						</div>
 					</div>
 					<p class="deal box-line">
-						24000 Messages<br />
+						<b>Additional</b><br/>
+						2000 Messages<br />
 						4 cents/message<br />
 					</p>
 				</div>
@@ -563,7 +586,7 @@
 			<!---------------------->
 			<!--Normal Price Boxes-->
 			<!---------------------->
-			<div class="boxes">
+			<div class="price-boxes">
 				<div class="price-box col-xs-2 equalHeight" style="height:320px;">
 					<div class="price-card-header">
 						<h3>
@@ -593,6 +616,7 @@
 						</div>
 					</div>
 					<p class="deal box-line">
+						<b>Additional</b><br/>
 						400 Messages<br />
 						4.75 cents/message<br />
 					</p>
@@ -629,6 +653,7 @@
 						</div>
 					</div>
 					<p class="deal box-line">
+						<b>Additional</b><br/>
 						1000 Messages<br />
 						4.5 cents/message<br />
 					</p>
@@ -663,6 +688,7 @@
 						</div>
 					</div>
 					<p class="deal box-line">
+						<b>Additional</b><br/>
 						2000 Messages<br />
 						4 cents/message<br />
 					</p>
@@ -716,11 +742,3 @@
 		</div>
 	</div>
 </div>
-<!-- Modal -->
-
-<script>
-	jQuery(document).ready(function($) {
-		console.log('document ready to roll');
-		$("#pricing-content .btn-toggle").on("click", function() { $("#pricing-content .annual-price-boxes").toggleClass("hide-price-boxes"); });
-	});
-</script>
