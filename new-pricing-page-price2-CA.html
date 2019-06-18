@@ -1,17 +1,21 @@
 <style type="text/css">
+
+	.b-700 {
+		font-weight: 700;
+	}
+
+
+	.blue-sub div.v7_backdrop {
+		background-image: url(/sites/all/themes/ez/dist/images/micro-pricing/pricing-header.png);
+	}
 	.wrapper_v7_int {
     background-image: url(/sites/all/themes/ez/dist/images/freetrial-badge.svg);
     background-repeat: no-repeat;
-    background-position: 85% 85%;
+    background-position: 95% 85%;
     background-size: 12%;
 	}
 	.wrapper_v7_int h1 {
 		margin: 0px 0.5em;
-	}
-	@media (min-width: 1280px) {
-		.price-box {
-			width: 235px;
-		}
 	}
 
 	#pricing-content .container {
@@ -19,49 +23,17 @@
 		flex-direction: column;
 	}
 
-	@media (min-width: 847px) {
-		.price-box {
-			width: 22vw;
-			max-width: 240px;
-		}
-	}
 	.wrapper_v7_int h1 {
 		padding-bottom: 0em;
 	}
-	@media (min-width: 769px) {
-		.wrapper_v7_int {
-			min-height: 200px;
-		}
-
-		.wrapper_v7_int h1 {
-			padding-top: 2em;
-		}
-		.node-type-pricing-page .pricing4 .popular {
-			transform: rotate(45deg);
-			background-color: #ea9c33;
-			top: 10px;
-			right: -15px;
-			width: 110px;
-			height: 25px;
-			font-size: 13px;
-		}
-	}
-	@media screen and (max-width: 768px) {
-		div.boxes .price-arrow-right {
-			display: none;
-		}
-	}
-
-	.node-type-pricing-page .pricing4 .price-box:hover {
-		transform: unset;
-	}
-
+	
+	
 	.price-plan-toggle {
 		text-align: center;
 		margin-top: 35px;
 	}
 	span.month, span.year {
-    	position: absolute;
+		position: absolute;
 	}
 	.month {
 		top:0;
@@ -71,43 +43,38 @@
 		top:0;
 		left: 60px;
 	}
-	.row.pricing-row {
-    display: flex;
-    justify-content: center;
-}
-	.price-boxes{
-			transition: 0s;
-			opacity: 1;
-			/* display: flex;
-			justify-content: center;
-			flex-wrap: no-wrap; */
+	
+	/*******************************/
+	/*   Transitions: Price Boxes  */
+	/*******************************/
+	.price-boxes {
+		transition: 0s;
+		opacity: 1;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.price-boxes h2 {
+		opacity: 1;
+		transition: 0.5s;
 	}
 	.price-boxes.hide-price-boxes {
-			transition: 0s;
-			opacity: 0;
-			height: 0;
-			position: absolute;
+		transition: 0s;
+		opacity: 0;
+		height: 0;
+		position: absolute;
 	}
-	/* .price-boxes.hide-price-boxes .price-card-header {
-			opacity: 0;
-			transition: 0.3s;
-	} */
-	.price-boxes h2 {
-			opacity: 1;
-			transition: 0.7s;
+	.price-boxes.hide-price-boxes h2 {
+		opacity: 0;
+		transition: 0.5s;
 	}
 
-	.price-boxes.hide-price-boxes h2 {
-			opacity: 0;
-			transition: 0.7s;
-	}
-	.price-boxes .price-card-header {
-			opacity: 1;
-			transition: 0.3s;
-	}
-    .node-type-pricing-page .pricing4 .price-box {
+	.node-type-pricing-page .pricing4 .price-box {
 		min-height: 315px;
-		padding-bottom: 15px;
+		padding-bottom: 0px;
+	}
+	.node-type-pricing-page .pricing4 .price-box:hover {
+		transform: unset;
 	}
 	.node-type-pricing-page .pricing4 .price-box h3 {
 		margin-bottom: 10px;
@@ -117,11 +84,25 @@
 	.node-type-pricing-page .pricing4 .price-box h2 {
 		color: #4b6279;
 		margin: 0;
+	}	
+	.node-type-pricing-page .pricing4 .price-box p {
+		font-size: 14px;
 	}
+
 	.btn-row {
 		display: flex;
 		justify-content: space-evenly;
-		margin-bottom: 20px;
+		margin-bottom: 23px;
+	}
+	.node-type-pricing-page .pricing4 .price-box .btn {
+		position: relative;
+		bottom: unset;
+		left: unset;
+		right: unset;
+		padding: 5px 17px;
+	}
+	.pricing-button {
+		justify-content: center;
 	}
 	.btn.btn-rounded.btn-lg {
 		border: 1px solid #2fc97f;
@@ -133,7 +114,7 @@
 		border: 1px solid #2fc97f;
 		background-color: #fff;
 		color: #2fc97f;
-		transform: scale(1.05);
+		/* transform: scale(1.05); */
 	}
 	.buy-btn .btn.btn-rounded.btn-lg{
 		border: 1px solid #e4e8ec;
@@ -145,89 +126,111 @@
 		border: 1px solid #959595;
 		background-color: #fff;
 		color: #959595;
-		transform: scale(1.05);
+		/* transform: scale(1.05); */
 	}
-	.node-type-pricing-page .pricing4 #selected{
+
+	.price-box .deal.box-line {
+		margin: 0;
+		padding: 15px 0;
+		height: auto;
+	}
+
+	.node-type-pricing-page .pricing4 #selected {
 		background-color: #4b6279;
 		overflow: hidden;
+		padding: 0;
+	}
+	.node-type-pricing-page .pricing4 #selected .btn-row {
+		margin: 0 13px 23px;
+	}
+	#selected p.deal.box-line {
+		border-top: 1px solid #8691a1;
+		background-color: #8691a1;
+		padding-bottom: 17px;
+	}
+	.node-type-pricing-page .pricing4 .popular {
+    transform: rotate(45deg);
+    background-color: #ea9c33;
+    top: 20px;
+    right: -40px;
+    width: 140px;
+    height: 25px;
+    font-size: 13px;
+    margin: unset;
 	}
 
+	.node-type-pricing-page .more-plans {
+		border: 1px solid #868e9a;
+    background-color: #fff;
+    color: #868e9a;
+	}
+	.node-type-pricing-page .more-plans a {
+		color: #868e9a;
+	}
+	.node-type-pricing-page .more-plans a:hover {
+		color: #2fc97f;
+		text-decoration: underline;
+	} 
+
+
+	@media (min-width: 1200px) {
+		#pricing-content .container {
+			width: 70%;
+		}
+	}
+	
+	@media (min-width: 992px) {
+		#pricing-content .container {
+			width: 99%;
+			max-width: 1150px;
+		}
+	}
 
 	@media (min-width: 769px) {
+		.wrapper_v7_int {
+			min-height: 200px;
+		}
+		.wrapper_v7_int h1 {
+			padding-top: 2em;
+		}
+		.price-boxes {
+			justify-content: space-between;
+		}
+		.node-type-pricing-page .pricing4 .price-box {
+			margin: 2.25em 1em 2.25em;
+			width: 235px;
+		}
 		.node-type-pricing-page .more-plans {
 			width: 48%;
 			margin: 0 10px 30px;
 		}
+	}
 
-		.node-type-pricing-page .pricing4 .price-box,
-		.node-type-pricing-page .pricing5 .price-box {
-			margin: 4em 1em;
+	@media screen and (max-width: 1070px) {
+		.price-boxes {
+			justify-content: space-evenly;
 		}
-	}
-
-	.node-type-pricing-page .pricing4 .boxes,
-	.node-type-pricing-page .pricing5 .boxes {
-		justify-content: space-between;
-	}
-
-	.node-type-pricing-page .more-plans {
-		background-color: #fff;
-	}
-
-	.node-type-pricing-page .more-plans a {
-		color: #648cff;
-	}
-
-	.boxes {
-		position: relative;
-	}
-
-	.more-box {
-		margin-top: -30px;
-	}
-
-
-	.node-type-pricing-page .boxes--volume .price-box {
-		display: none;
-	}
-
-	.node-type-pricing-page.free-volume-pricing .boxes .price-box {
-		display: none;
-	}
-
-	.node-type-pricing-page.free-volume-pricing .boxes--volume .price-box {
-		display: inline-block;
-	}
-
-	.price-box p.deal.box-line {
-		margin: 0;
-		padding: 20px 1em 20px;
-		height: auto;
-	}
-
-	.price-box .deal.box-line {
-		height: auto;
-	}
-
-	.pricing-button {
-		justify-content: center;
-	}
-
-	.node-type-pricing-page .pricing4 .price-box .btn,
-	.node-type-pricing-page .pricing5 .price-box .btn {
-		position: relative;
-		bottom: unset;
-		left: unset;
-		right: unset;
-		padding: 5px 17px;
+		.node-type-pricing-page .pricing4 .price-box {
+			margin: 2.25em 1em 0em;
+			width: 235px;
+		}
+		.more-box {
+    	margin-top: 30px;
+		}
 	}
 
 	@media only screen and (max-width: 992px) {
-
-		.btn-group-lg>div.btn.btn-rounded,
 		div.btn.btn-rounded.btn-lg {
 			margin-bottom: 0;
 		}
+	}
+
+
+	/**************************/
+	/*       Custom Box       */
+	/**************************/
+	.contact-number a {
+		color: #6984a4;
 	}
 
 	.modal-body,
@@ -310,51 +313,11 @@
 		display: none;
 	}
 
-
+	/*************************/
 	/***** Toggle Button *****/
-	.btn-toggle:before,
-	.btn-toggle:after {
-	line-height: 1.5rem;
-	width: 4rem;
-	text-align: center;
-	font-weight: 600;
-	font-size: 0.75rem;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	position: absolute;
-	bottom: 0;
-	transition: opacity 0.25s;
-	}
-	.btn-toggle > .handle {
-	position: absolute;
-	top: 0.1875rem;
-	left: 0.1875rem;
-	width: 1.125rem;
-	height: 1.125rem;
-	border-radius: 1.125rem;
-	background: #fff;
-	transition: left 0.25s;
-	}
-	.btn-toggle.active {
-	transition: background-color 0.25s;
-	}
-	.btn-toggle.active > .handle {
-	left: 1.6875rem;
-	transition: left 0.25s;
-	}
-	.btn-toggle.active:before {
-	opacity: 0.5;
-	}
-	.btn-toggle.active:after {
-	opacity: 1;
-	}
-
-	.btn-toggle:before,
-	.btn-toggle:after {
-	color: #6b7381;
-	}
+	/*************************/
 	.btn-toggle.btn-lg.active {
-	background-color: #2fc97f;
+	background-color: #ea9c33;
 	}
 	.btn-toggle.btn-lg {
 	margin: 0 5rem;
@@ -364,7 +327,7 @@
 	height: 2.5rem;
 	width: 5rem;
 	border-radius: 2.5rem;
-	color: #6b7381;
+	color: #526278;
 	background: #bdc1c8;
 	}
 	.btn-toggle.btn-lg:focus,
@@ -409,31 +372,7 @@
 	.btn-toggle.btn-lg.active:after {
 	opacity: 1;
 	}
-	.btn-toggle.btn-lg.btn-sm:before,
-	.btn-toggle.btn-lg.btn-sm:after {
-	line-height: 0.5rem;
-	color: #fff;
-	letter-spacing: 0.75px;
-	left: 0.6875rem;
-	width: 3.875rem;
-	}
-	.btn-toggle.btn-lg.btn-sm:before {
-	text-align: right;
-	}
-	.btn-toggle.btn-lg.btn-sm:after {
-	text-align: left;
-	opacity: 0;
-	}
-	.btn-toggle.btn-lg.btn-sm.active:before {
-	opacity: 0;
-	}
-	.btn-toggle.btn-lg.btn-sm.active:after {
-	opacity: 1;
-	}
-	.btn-toggle.btn-lg.btn-xs:before,
-	.btn-toggle.btn-lg.btn-xs:after {
-	display: none;
-	}
+
 </style>
 <div id="pricing-content" class="pricing4">
 	<div class="container">
@@ -448,7 +387,7 @@
 			<!--Annual Price Boxes-->
 			<!---------------------->
 			<div class="price-boxes hide-price-boxes">
-				<div class="price-box hide-price-box col-xs-2 equalHeight" style="height:320px;">
+				<div class="price-box hide-price-box col-xs-2 equal-height">
 						<div class="price-card-header">
 							<h3>
 								Starter
@@ -457,7 +396,8 @@
 								$31
 							</h2>
 							<p>
-								<b>per month</b>
+								<span class="b-700">per month</span><br/>
+								400 messages<br/>
 							</p>
 						</div>
 						<div class="btn-row">
@@ -469,7 +409,7 @@
 								</a>
 							</div>
 							<div class="pricing-button buy-btn">
-								<a href="/signup?pid=plus">
+								<a href="/signup?pid=starter2">
 									<div id="plus" class="btn btn-lg btn-rounded">
 										BUY
 									</div>
@@ -477,12 +417,11 @@
 							</div>
 						</div>
 						<p class="deal box-line">
-							<b>Additional</b><br />
-							400 Messages<br />
-							4.75 cents/message<br />
+							Additional<br/>
+							4.75 cents/message<br/>
 						</p>
 					</div>
-				<div class="price-box col-xs-2 equalHeight" id="selected">
+				<div class="price-box col-xs-2 equal-height" id="selected">
 					<div class="price-card-header">
 						<h3>
 							Plus
@@ -494,7 +433,8 @@
 							$39
 						</h2>
 						<p>
-							<b>per month</b>
+							<span class="b-700">per month</span><br/>
+							1000 messages<br/>
 						</p>
 					</div>
 					<div class="btn-row">
@@ -506,7 +446,7 @@
 							</a>
 						</div>
 						<div class="pricing-button buy-btn">
-							<a href="/signup?pid=select">
+							<a href="/signup?pid=plusvolume">
 								<div id="plus" class="btn btn-lg btn-rounded">
 									BUY
 								</div>
@@ -514,13 +454,12 @@
 						</div>
 					</div>
 					<p class="deal box-line">
-						<b>Additional</b><br/>
-						1000 Messages<br/>
+						Additional<br/>
 						4.5 cents/message<br/>
 					</p>
 
 				</div>
-				<div class="price-box col-xs-2 equalHeight">
+				<div class="price-box col-xs-2 equal-height">
 					<div class="price-card-header">
 						<h3>
 							Select
@@ -529,7 +468,8 @@
 							$75
 						</h2>
 						<p>
-							<b>per month</b>
+							<span class="b-700">per month</span><br/>
+							2000 messages<br/>
 						</p>
 					</div>
 					<div class="btn-row">
@@ -541,7 +481,7 @@
 							</a>
 						</div>
 						<div class="pricing-button buy-btn">
-							<a href="/signup?pid=elite">
+							<a href="/signup?pid=selectvolume">
 								<div id="plus" class="btn btn-lg btn-rounded">
 									BUY
 								</div>
@@ -549,25 +489,22 @@
 						</div>
 					</div>
 					<p class="deal box-line">
-						<b>Additional</b><br/>
-						2000 Messages<br />
+						Additional<br/>
 						4 cents/message<br />
 					</p>
 				</div>
-				<div class="price-box col-xs-2 equalHeight">
+				<div class="price-box col-xs-2 equal-height">
 					<h3>
 						Custom
 					</h3>
 					<div>
-						<p style="margin-bottom:0;line-height:1">
-							<b>Call Us to Help You</b>
+						<p style="margin:15px 0 13px;line-height:1.5">
+							<b>CALL US TO HELP YOU</b><br/>
+							<b>CRAFT THE PERFECT PLAN</b><br/>
 						</p>
-						<p style="margin-bottom:0">
-							<b>Craft the Perfect Plan</b>
-						</p>
-						<p class="contact-number" style="margin-bottom:15px;font-size:20px">
-							<a href="tel:+18552360777" style="text-decoration:none">
-								(855) 236-0777
+						<p class="contact-number" style="margin-bottom:19px;font-size:19px">
+							<a href="tel:+18552360777" style="text-decoration:none" class="b-700">
+								855-236-0777
 							</a>
 						</p>
 					</div>
@@ -578,7 +515,7 @@
 							</button>
 						</div>
 					</div>
-					<p class="deal box-line" style="padding:15px 0">
+					<p class="deal box-line">
 						Unlimited messages<br />
 						Open API access<br />
 					</p>
@@ -589,7 +526,7 @@
 			<!--Normal Price Boxes-->
 			<!---------------------->
 			<div class="price-boxes">
-				<div class="price-box col-xs-2 equalHeight" style="height:320px;">
+				<div class="price-box col-xs-2 equal-height">
 					<div class="price-card-header">
 						<h3>
 							Starter
@@ -598,7 +535,45 @@
 							$39
 						</h2>
 						<p>
-							<b>per month</b>
+							<span class="b-700">per month</span><br/>
+							400 messages<br/>
+						</p>
+					</div>
+					<div class="btn-row">
+						<div class="pricing-button freetrial-btn">
+							<a href="/signup?pid=freetrial-new">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									TRY
+								</div>
+							</a>
+						</div>
+						<div class="pricing-button buy-btn">
+							<a href="/signup?pid=starter">
+								<div id="plus" class="btn btn-lg btn-rounded">
+									BUY
+								</div>
+							</a>
+						</div>
+					</div>
+					<p class="deal box-line">
+						Additional<br/>
+						4.75 cents/message<br />
+					</p>
+				</div>
+				<div class="price-box col-xs-2 equal-height" id="selected">
+					<div class="price-card-header">
+						<h3>
+							Plus
+						</h3>
+						<div class="popular">
+							POPULAR
+						</div>
+						<h2>
+							$49
+						</h2>
+						<p>
+							<span class="b-700">per month</span><br/>
+							1000 messages<br/>
 						</p>
 					</div>
 					<div class="btn-row">
@@ -618,24 +593,22 @@
 						</div>
 					</div>
 					<p class="deal box-line">
-						<b>Additional</b><br/>
-						400 Messages<br />
-						4.75 cents/message<br />
+						Additional<br/>
+						4.5 cents/message<br />
 					</p>
+
 				</div>
-				<div class="price-box col-xs-2 equalHeight" id="selected">
+				<div class="price-box col-xs-2 equal-height">
 					<div class="price-card-header">
 						<h3>
-							Plus
+							Select
 						</h3>
-						<div class="popular">
-							POPULAR
-						</div>
 						<h2>
-							$49
+							$94
 						</h2>
 						<p>
-							<b>per month</b>
+							<span class="b-700">per month</span><br/>
+							2000 messages<br/>
 						</p>
 					</div>
 					<div class="btn-row">
@@ -655,60 +628,22 @@
 						</div>
 					</div>
 					<p class="deal box-line">
-						<b>Additional</b><br/>
-						1000 Messages<br />
-						4.5 cents/message<br />
-					</p>
-
-				</div>
-				<div class="price-box col-xs-2 equalHeight">
-					<div class="price-card-header">
-						<h3>
-							Select
-						</h3>
-						<h2>
-							$94
-						</h2>
-						<p>
-							<b>per month</b>
-						</p>
-					</div>
-					<div class="btn-row">
-						<div class="pricing-button freetrial-btn">
-							<a href="/signup?pid=freetrial-new">
-								<div id="plus" class="btn btn-lg btn-rounded">
-									TRY
-								</div>
-							</a>
-						</div>
-						<div class="pricing-button buy-btn">
-							<a href="/signup?pid=elite">
-								<div id="plus" class="btn btn-lg btn-rounded">
-									BUY
-								</div>
-							</a>
-						</div>
-					</div>
-					<p class="deal box-line">
-						<b>Additional</b><br/>
-						2000 Messages<br />
+						Additional<br/>
 						4 cents/message<br />
 					</p>
 				</div>
-				<div class="price-box col-xs-2 equalHeight">
+				<div class="price-box col-xs-2 equal-height">
 					<h3>
 						Custom
 					</h3>
 					<div>
-						<p style="margin-bottom:0;line-height:1">
-							<b>Call Us to Help You</b>
+						<p style="margin:15px 0 13px;line-height:1.5">
+							<b>CALL US TO HELP YOU</b><br/>
+							<b>CRAFT THE PERFECT PLAN</b><br/>
 						</p>
-						<p style="margin-bottom:0">
-							<b>Craft the Perfect Plan</b>
-						</p>
-						<p class="contact-number" style="margin-bottom:15px;font-size:20px">
-							<a href="tel:+18552360777" style="text-decoration:none">
-								(855) 236-0777
+						<p class="contact-number" style="margin-bottom:19px;font-size:19px">
+							<a href="tel:+18552360777" style="text-decoration:none" class="b-700">
+								855-236-0777
 							</a>
 						</p>
 					</div>
@@ -719,7 +654,7 @@
 							</button>
 						</div>
 					</div>
-					<p class="deal box-line" style="padding:15px 0">
+					<p class="deal box-line">
 						Unlimited messages<br />
 						Open API access<br />
 					</p>
@@ -738,7 +673,7 @@
 				</div>
 				<div class="more-plans">
 					We support Canada!
-					<a href="/price/canada">Click here for Canadian Pricing</a>
+					<a href="/price2">Click here to see US pricing</a>
 				</div>
 			</div>
 		</div>

@@ -1315,6 +1315,82 @@
 		"oAP": "/backup.html",
 		"oF": 0
 		},
+	"/badge.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/badge.html",
+		"oF": 0
+		},
+	"/badge.min.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/badge.min.html",
+		"oF": 0
+		},
+	"/Blog.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/Blog.html",
+		"oF": 0
+		},
+	"/callfire-prod-critical-css.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/callfire-prod-critical-css-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/callfire-stage-critical-css.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/callfire-stage-critical-css-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/clubtexting_welcom_email.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/clubtexting_welcom_email.html",
+		"oF": 0
+		},
+	"/clubtexting_welcome_email--old.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/clubtexting_welcome_email--old.html",
+		"oF": 0
+		},
+	"/cookies.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/cookies.php",
+		"oF": 0
+		},
+	"/drift-GTM-CT.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/drift-GTM-CT.html",
+		"oF": 0
+		},
+	"/drift.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/drift.html",
+		"oF": 0
+		},
 	"/features_page.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1327,6 +1403,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/features_page2.html",
+		"oF": 0
+		},
+	"/grouptexting_welcome_email--old.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/grouptexting_welcome_email--old.html",
+		"oF": 0
+		},
+	"/grouptexting_welcome_email.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/grouptexting_welcome_email.html",
 		"oF": 0
 		},
 	"/guide-page.html": {
@@ -1343,6 +1433,13 @@
 		"oAP": "/high-volume-page.html",
 		"oF": 0
 		},
+	"/high-volume-pricing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/high-volume-pricing.html",
+		"oF": 0
+		},
 	"/home_page.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1355,6 +1452,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/howitworks.html",
+		"oF": 0
+		},
+	"/instapage-solo-signup-form.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/instapage-solo-signup-form.html",
 		"oF": 0
 		},
 	"/js/jquery.countTo.js": {
@@ -1397,6 +1501,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/signup-widget.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/signup-widget-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/signup.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1434,11 +1548,39 @@
 		"oAP": "/local.settings.php",
 		"oF": 0
 		},
-	"/new_pricing_page.html": {
+	"/new-pricing-page-price2-CA.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/new_pricing_page.html",
+		"oAP": "/new-pricing-page-price2-CA.html",
+		"oF": 0
+		},
+	"/new-pricing-page-price2-US.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/new-pricing-page-price2-US.html",
+		"oF": 0
+		},
+	"/price-control-CA.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/price-control-CA.html",
+		"oF": 0
+		},
+	"/price-control-US.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/price-control-US.html",
+		"oF": 0
+		},
+	"/pricing_4_block.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing_4_block.html",
 		"oF": 0
 		},
 	"/pricing_page.html": {
@@ -1460,6 +1602,30 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/RCS_page.html",
+		"oF": 0
+		},
+	"/rebrand-homepage-critical.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/rebrand-homepage-critical-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/rebrand-homepage.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/rebrand-homepage.html",
+		"oF": 0
+		},
+	"/rebrand-pricing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/rebrand-pricing.html",
 		"oF": 0
 		},
 	"/SCSS/_private-label.scss": {
@@ -1487,13 +1653,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/SCSS/pricing_4_block.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/SCSS/pricing_4_block.html",
-		"oF": 0
 		},
 	"/SCSS/style.css": {
 		"aP": 1,
@@ -1525,6 +1684,16 @@
 		"oAP": "/settings.php",
 		"oF": 0
 		},
+	"/signup-widget.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/signup-widget-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/template-footer.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1546,6 +1715,13 @@
 		"oAP": "/template.html",
 		"oF": 0
 		},
+	"/test": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/test",
+		"oF": 0
+		},
 	"/validate.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1555,6 +1731,20 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/volume-price-control-CA.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/volume-price-control-CA.html",
+		"oF": 0
+		},
+	"/volume-price-control-US.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/volume-price-control-US.html",
+		"oF": 0
 		},
 	"/zendesk-ticket.php": {
 		"cB": 0,

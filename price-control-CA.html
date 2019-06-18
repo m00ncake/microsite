@@ -1,0 +1,682 @@
+<style type="text/css">
+    .wrapper_v7_int h1 {
+        margin: 0px 0.5em;
+    }
+
+    @media screen and (max-width: 768px) {
+        div.boxes .price-arrow-right {
+            display: none;
+        }
+    }
+
+    div#selected .btn.btn-lg.btn-rounded.btn-orange:hover {
+        border: 0.1vw solid white;
+        background-color: transparent;
+        color: white;
+    }
+
+    @media (min-width: 769px) {
+        .wrapper_v7_int {
+            min-height: 200px;
+        }
+
+        .wrapper_v7_int h1 {
+            padding-top: 2em;
+        }
+    }
+
+    .wrapper_v7_int h1 {
+        padding-bottom: 0em;
+    }
+
+    @media (min-width: 847px) {
+        .price-box {
+            width: 22vw;
+            max-width: 220px;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .price-box {
+            width: 220px;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .node-type-pricing-page .more-plans {
+            width: 31%;
+            padding: 15px 5px;
+            margin: 0 0.55vw 30px;
+        }
+        .node-type-pricing-page .pricing4 .price-box,
+        .node-type-pricing-page .pricing5 .price-box {
+            margin: 4em 1em;
+        }
+    }
+
+    .node-type-pricing-page .pricing4 .boxes,
+    .node-type-pricing-page .pricing5 .boxes {
+        justify-content: space-between;
+    }
+
+    .node-type-pricing-page .pricing4 .popular {
+        width: 95px;
+        Padding-top: 1px;
+        top: 2px;
+        right: -7px;
+    }
+
+    .node-type-pricing-page .more-plans {
+        background-color: #fff;
+    }
+
+    .node-type-pricing-page .more-plans a {
+        color: #648cff
+    }
+
+    .boxes {
+        position: relative;
+    }
+
+    .price-arrow {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        display: block;
+        text-decoration: none !important;
+        text-align: center;
+        line-height: 50px;
+        font-size: 36px;
+        color: #8491a3;
+    }
+
+    .price-arrow-right {
+        right: -50px;
+    }
+
+    .price-arrow-left {
+        left: -50px;
+    }
+
+    .more-box {
+        margin-top: -30px;
+    }
+
+    .more-plans.annual-plans {
+        display: block;
+        width: 97.5%;
+        margin: 0px auto 35px;
+        border: 2px solid #FEA30A;
+        color: #FEA30A;
+        font-weight: 700;
+    }
+
+    .node-type-pricing-page .boxes--volume .price-box {
+        display: none;
+    }
+
+    .node-type-pricing-page.free-volume-pricing .boxes .price-box {
+        display: none;
+    }
+
+    .node-type-pricing-page.free-volume-pricing .boxes--volume .price-box {
+        display: inline-block;
+    }
+
+    .price-box p.deal.box-line {
+        margin: 0;
+        padding: 30px 1em 30px;
+        height: auto;
+    }
+
+    .price-box .deal.box-line {
+        height: auto;
+    }
+
+    .pricing-button {
+        position: absolute;
+        bottom: 25px;
+        right: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .node-type-pricing-page .pricing4 .price-box .btn,
+    .node-type-pricing-page .pricing5 .price-box .btn {
+        position: relative;
+        bottom: unset;
+        left: unset;
+        right: unset;
+    }
+
+    @media only screen and (max-width: 992px) {
+
+        .btn-group-lg>div.btn.btn-rounded,
+        div.btn.btn-rounded.btn-lg {
+            margin-bottom: 0;
+        }
+    }
+
+    .price-arrow-right {
+        background-image: url('/sites/all/themes/ez/dist/images/micro-pricing/arrow-right.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .modal-body,
+    .modal-header {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 0px;
+    }
+
+    .modal-content {
+        padding: 30px 0;
+    }
+
+    .modal-header .close {
+        margin-top: -45px;
+        font-weight: 100;
+        font-size: 50px;
+        line-height: 50px;
+        background-color: transparent;
+        position: absolute;
+        right: 10px;
+    }
+
+    .node-type-pricing-page h3.modal-title {
+        font-size: 36px;
+        color: #6581a2;
+    }
+
+    .modal-header h5 {
+        font-size: 17px;
+        font-weight: 600;
+        color: #6581a2;
+    }
+
+    .modal-body .hs-input {
+        width: 75%;
+        border-radius: 4px;
+        border: 2px solid #d8dee5;
+    }
+
+    .modal .actions {
+        margin: 20px 0 0;
+    }
+
+    textarea.hs-input {
+        height: 90px;
+    }
+
+    textarea.hs-input::-webkit-input-placeholder {
+        text-indent: 0px;
+        line-height: 65px;
+    }
+
+    textarea.hs-input::-moz-placeholder {
+        text-indent: 0px;
+        color: #6581a2;
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 65px;
+    }
+
+    input.hs-button.primary.large {
+        width: 30%;
+        background-color: #2fca80;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: unset;
+        border-radius: 3px;
+        padding: 14px 0;
+    }
+
+    input.hs-input::-moz-placeholder {
+        font-size: 16px;
+        font-weight: 100;
+        color: #6581a2;
+    }
+
+    span.hs-form-required {
+        display: none;
+    }
+</style>
+<div class="pricing4">
+    <div class="container">
+        <div class="row">
+            <a href="/volume-price-control/canada" class="price-arrow price-arrow-right">
+                <img scr="/sites/all/themes/ez/dist/images/micro-pricing/arrow-right.png" />
+            </a>
+            <div class="boxes boxes--volume">
+                <div id="volumefreeEZ" class="price-box col-xs-2 equalHeight">
+                    <h3>
+                        Free &amp; EZ
+                    </h3>
+                    <h2>
+                        FREE
+                    </h2>
+                    <p>
+                        <b>Truly Free!</b>
+                    </p>
+                    <p class="deal box-line">
+                        100 Free SMS/month
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=freevolume">
+                            <div class="btn btn-lg btn-rounded btn-orange free-trial">FREE TRIAL</div>
+                        </a>
+                    </div>
+                </div>
+                <div id="volumefreetrial" class="price-box col-xs-2 equalHeight" style="display: none">
+                    <h3>
+                        14 Day Trial
+                    </h3>
+                    <h2>
+                        FREE
+                    </h2>
+                    <p>
+                        <b>No Credit Card Needed!</b>
+                    </p>
+                    <p class="deal box-line">
+                        100 Free Messages<br>
+                        1 Demo Keyword<br>
+                        <b>MMS Enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Get Started Today!</b><br>
+                        No Risk<br>
+                        No Commitment
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=freetrial">
+                            <div class="btn btn-lg btn-rounded btn-orange free-trial">FREE TRIAL</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2 col-xs-offset-1 equalHeight">
+                    <h3>
+                        Pay &amp; GO
+                    </h3>
+                    <h2>
+                        GO
+                    </h2>
+                    <p class="no-fee">
+                        <b>No Monthly Fees!</b>
+                    </p>
+                    <p class="deal box-line">
+                        5 cents/message<br>
+                        <b>MMS enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br>
+                        $25/keyword/month
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=paygovolume">
+                            <div class="btn btn-lg btn-rounded btn-orange">FREE TRIAL</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2 equalHeight" id="selected">
+                    <h3>
+                        Plus
+                    </h3>
+                    <div class="popular">
+                        POPULAR
+                    </div>
+                    <h2>
+                        $49
+                    </h2>
+                    <p>
+                        <b>per month</b>
+                    </p>
+                    <p class="deal box-line">
+                        1000 Messages<br>
+                        3 Custom Keyword<br>
+                        <b>MMS Enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br>
+                        4.9 cents/message<br>
+                        $25/keyword/month
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=plusvolume">
+                            <div class="btn btn-lg btn-rounded btn-orange">FREE TRIAL</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2 equalHeight">
+                    <h3>
+                        Select
+                    </h3>
+                    <h2>
+                        $79
+                    </h2>
+                    <p>
+                        <b>per month</b>
+                    </p>
+                    <p class="deal box-line">
+                        2000 Messages<br>
+                        4 Custom Keywords<br>
+                        <b>MMS Enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br>
+                        4 cents/message<br>
+                        $25/keyword/month
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=selectvolume">
+                            <div class="btn btn-lg btn-rounded btn-orange">FREE TRIAL</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2 equalHeight">
+                    <h3>
+                        Elite
+                    </h3>
+                    <h2>
+                        $129
+                    </h2>
+                    <p>
+                        <b>per month</b>
+                    </p>
+                    <p class="deal box-line">
+                        3500 Messages<br>
+                        5 Custom Keywords<br>
+                        <b>MMS Enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br>
+                        3.7 cents/message<br>
+                        $25/keyword/month
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=elitevolume">
+                            <div class="btn btn-lg btn-rounded btn-orange">FREE TRIAL</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <!--<div id="freeEZ" class="price-box col-xs-2 equalHeight">
+                      <h3>
+                          Free &amp; EZ
+                      </h3>
+                      <h2>
+                          FREE
+                      </h2>
+                      <p>
+                          <b>Truly Free!</b>
+                      </p>
+                      <p class="deal box-line">
+                          100 Free SMS/month
+                      </p>
+                      <p class="deal box-line">
+                          <b>Additional Bonus</b><br>
+                          1 Free Demo Keyword
+                      </p>
+                      <div class="spacer">
+                          &nbsp;
+                      </div>
+                      <div class="pricing-button">
+                          <a href="/start?pid=free">
+                              <div class="btn btn-lg btn-rounded btn-orange free-trial">FREE TRIAL</div>
+                          </a>
+                      </div>
+                  </div>-->
+                <!--<div id="freetrial" class="price-box col-xs-2 equalHeight" style="display: none">
+                      <h3>
+                          14 Day Trial
+                      </h3>
+                      <h2>
+                          FREE
+                      </h2>
+                      <p>
+                          <b>No Credit Card Needed!</b>
+                      </p>
+                      <p class="deal box-line">
+                          100 Free Messages<br>
+                          1 Demo Keyword<br>
+                          <b>MMS Enabled</b>
+                      </p>
+                      <p class="deal box-line">
+                          <b>Get Started Today!</b><br>
+                          No Risk<br>
+                          No Commitment
+                      </p>
+                      <div class="spacer">
+                          &nbsp;
+                      </div>
+                      <div class="pricing-button">
+                          <a href="/start?pid=freetrial">
+                              <div class="btn btn-lg btn-rounded btn-orange free-trial">FREE TRIAL</div>
+                          </a>
+                      </div>
+                  </div>-->
+                <!--<div class="price-box col-xs-2 col-xs-offset-1 equalHeight">
+                      <h3>
+                          Pay &amp; GO
+                      </h3>
+                      <h2>
+                          GO
+                      </h2>
+                      <p class="no-fee">
+                          <b>No Monthly Fees!</b>
+                      </p>
+                      <p class="deal box-line">
+                          5 cents/message<br>
+                          <b>MMS enabled</b>
+                      </p>
+                      <p class="deal box-line">
+                          <b>Additional Purchases</b><br>
+                      </p>
+                      <div class="spacer">
+                          &nbsp;
+                      </div>
+                      <div class="pricing-button">
+                          <a href="/start?country=2&pid=2244">
+                              <div class="btn btn-lg btn-rounded btn-orange">FREE TRIAL</div>
+                          </a>
+                      </div>
+                  </div>-->
+                <div class="price-box col-xs-2 equalHeight">
+                    <h3>
+                        14 Day Trial
+                    </h3>
+                    <h2>
+                        FREE
+                    </h2>
+                    <p>
+                        <b>No Credit Card Required!</b>
+                    </p>
+                    <p class="deal box-line">
+                        100 Free Messages<br>
+                        1 Demo Keyword<br>
+                        <b>MMS Enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Get Started Today!</b><br>
+                        No Risk<br>
+                        No Commitment
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?country=2&pid=freetrial">
+                            <div class="btn btn-lg btn-rounded btn-orange free-trial">Sign Up</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2 equalHeight" id="selected">
+                    <div class="price-card-header">
+                        <h3>
+                            Plus
+                        </h3>
+                        <div class="popular">
+                            MOST POPULAR
+                        </div>
+                        <h2>
+                            $49
+                        </h2>
+                        <p>
+                            <b>Per Month</b>
+                        </p>
+                    </div>
+                    <p class="deal box-line">
+                        725 Messages<br>
+                        1 Custom Keyword
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br>
+                        6.5 cents/message<br>
+                        $30/Keyword/Month
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?country=2&pid=plus">
+                            <div id="plus" class="btn btn-lg btn-rounded btn-orange">Sign Up</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2 equalHeight">
+                    <div class="price-card-header">
+                        <h3>
+                            Select
+                        </h3>
+                        <h2>
+                            $94
+                        </h2>
+                        <p>
+                            <b>Per Month</b>
+                        </p>
+                    </div>
+                    <p class="deal box-line">
+                        1400 Messages<br>
+                        2 Custom Keywords
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br>
+                        6.5 cents/message<br>
+                        $30/Keyword/Month
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?country=2&pid=select">
+                            <div id="select" class="btn btn-lg btn-rounded btn-orange">Sign Up</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2 equalHeight">
+                    <div class="price-card-header">
+                        <h3>
+                            Elite
+                        </h3>
+                        <h2>
+                            $149
+                        </h2>
+                        <p>
+                            <b>Per Month</b>
+                        </p>
+                    </div>
+                    <p class="deal box-line">
+                        2350 Messages<br>
+                        3 Custom Keywords
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br>
+                        6.5 cents/message<br>
+                        $30/Keyword/Month
+                    </p>
+                    <div class="spacer">
+                        &nbsp;
+                    </div>
+                    <div class="pricing-button">
+                        <a href="/start?country=2&pid=elite">
+                            <div id="elite" class="btn btn-lg btn-rounded btn-orange">Sign Up</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="price-box col-xs-2 equalHeight">
+                    <h3>
+                        Just for you
+                    </h3>
+                    <p class="deal box-line" style="padding:15px 0">
+                        API<br>
+                        Enterprise<br>
+                        White Label<br>
+                        Agencies<br>
+                    </p>
+                    <div class="deal box-line">
+                        <p style="margin:0"><b>Call Us to Help</b></p><br />
+                        <p style="margin:0"><b>Craft the Perfect<br />
+                                Plan for You</b></p><br />
+                        <p style="margin:0">
+                            <a href="tel:+18552360777" style="text-decoration:none"><b>Call Us!<br> (855)
+                                    236-0777</b></a>
+                        </p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="pricing-button">
+                        <button data-toggle="modal" data-target="#ModalForm"
+                            class="btn btn-lg btn-rounded btn-orange">Let's Talk</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="more-box">
+                <div class="more-plans annual-plans">
+                    Annual Plans Save 20%!
+                </div>
+                <div class="more-plans">
+                    Not quite ready to commit? <br>
+                    <a href="/start?country=2&pid=paygo">
+                        Try Pay & Go Plan at 7 cents/message
+                    </a>
+                </div>
+                <div class="more-plans">
+                    Need more? Check out our <br>
+                    <a href="/volume-price-control/canada">
+                        High Volume Plans.
+                    </a>
+                </div>
+                <div class="more-plans">
+                    Looking for U.S. Pricing? <br>
+                    <a href="/price-control">
+                        Click here to see US pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
