@@ -1611,6 +1611,13 @@
 		"oAP": "/rebrand-academy.html",
 		"oF": 0
 		},
+	"/rebrand-brand.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/rebrand-brand.html",
+		"oF": 0
+		},
 	"/rebrand-homepage-critical.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1640,6 +1647,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/rebrand-rcs.html",
+		"oF": 0
+		},
+	"/rebrand-signup.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/rebrand-signup.html",
 		"oF": 0
 		},
 	"/SCSS/_private-label.scss": {
