@@ -1548,6 +1548,27 @@
 		"oAP": "/local.settings.php",
 		"oF": 0
 		},
+	"/mandrill-eztexting_en.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/mandrill-eztexting_en.html",
+		"oF": 0
+		},
+	"/mandrill-ttl_enabled_en-original.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/mandrill-ttl_enabled_en-original.html",
+		"oF": 0
+		},
+	"/mandrill-ttl_enabled_en.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/mandrill-ttl_enabled_en.html",
+		"oF": 0
+		},
 	"/new-pricing-page-price2-CA.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1616,6 +1637,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/rebrand-brand.html",
+		"oF": 0
+		},
+	"/rebrand-high-volume-pricing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/rebrand-high-volume-pricing.html",
 		"oF": 0
 		},
 	"/rebrand-homepage-critical.css": {

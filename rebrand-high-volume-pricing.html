@@ -1,0 +1,309 @@
+<style type="text/css">
+
+    .wrapper_v7_int h1 {
+        padding-bottom: 0em;
+        margin: 0px 0.5em;
+    }
+    .boxes {
+        position: relative;
+    }
+
+    .price-arrow {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        display: block;
+        text-decoration: none !important;
+        text-align: center;
+        line-height: 50px;
+        font-size: 36px;
+        color: #8491a3;
+    }
+
+    .price-arrow-right {
+        right: -50px;
+    }
+
+    .price-arrow-left {
+        left: -50px;
+    }
+
+    .more-box {
+        margin-top: -30px;
+    }
+
+    .node-type-pricing-page .boxes--volume .price-box {
+        display: none;
+    }
+
+    .node-type-pricing-page.free-volume-pricing .boxes .price-box {
+        display: none;
+    }
+
+    .node-type-pricing-page.free-volume-pricing .boxes--volume .price-box {
+        display: inline-block;
+    }
+
+    .custom-plan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .node-type-pricing-page .pricing4 .price-box .custom-plan .btn {
+        left: auto;
+        right: auto;
+        position: relative;
+        bottom: -35px;
+    }
+
+    div#selected .btn.btn-lg.btn-rounded.btn-orange:hover {
+        border: 0.1vw solid white;
+        background-color: transparent;
+        color: white;
+    }
+
+    .node-type-pricing-page .pricing4 .boxes,
+    .node-type-pricing-page .pricing5 .boxes {
+        justify-content: space-between;
+    }
+
+    .node-type-pricing-page .pricing4 .popular {
+        width: 95px;
+        Padding-top: 1px;
+        top: 2px;
+        right: -7px;
+    }
+
+    .node-type-pricing-page .more-plans {
+        background-color: #fff;
+    }
+
+    .node-type-pricing-page .more-plans a {
+        color: #648cff
+    }
+
+    .boxes {
+        position: relative;
+    }
+
+    .price-arrow {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        display: block;
+        text-decoration: none !important;
+        text-align: center;
+        line-height: 50px;
+        font-size: 36px;
+        color: #8491a3;
+    }
+
+    .price-arrow-right {
+        right: -50px;
+    }
+    .price-arrow-left {
+        left: -50px;
+    }
+    .price-arrow-left {
+        background-image: url('/sites/all/themes/ez/dist/images/micro-pricing/arrow-left.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .more-box {
+        margin-top: -30px;
+    }
+
+    .more-plans.annual-plans {
+        display: block;
+        width: 97.5%;
+        margin: 0px auto 35px;
+        border: 2px solid #FEA30A;
+        color: #FEA30A;
+        font-weight: 700;
+    }
+
+    .node-type-pricing-page .boxes--volume .price-box {
+        display: none;
+    }
+
+    .node-type-pricing-page.free-volume-pricing .boxes .price-box {
+        display: none;
+    }
+
+    .node-type-pricing-page.free-volume-pricing .boxes--volume .price-box {
+        display: inline-block;
+    }
+
+    .price-box p.deal.box-line {
+        margin: 0;
+        padding: 30px 1em 30px;
+        height: auto;
+    }
+
+    .price-box .deal.box-line {
+        height: auto;
+    }
+
+    .pricing-button {
+        position: absolute;
+        bottom: 25px;
+        right: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .node-type-pricing-page .pricing4 .price-box .btn,
+    .node-type-pricing-page .pricing5 .price-box .btn {
+        position: relative;
+        bottom: unset;
+        left: unset;
+        right: unset;
+    }
+
+    @media only screen and (max-width: 992px) {
+
+        .btn-group-lg>div.btn.btn-rounded,
+        div.btn.btn-rounded.btn-lg {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        div.boxes .price-arrow-left {
+            display: none;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .wrapper_v7_int {
+            min-height: 200px;
+        }
+        .wrapper_v7_int h1 {
+            padding-top: 2em;
+        }
+        .node-type-pricing-page .more-plans {
+            width: 31%;
+            padding: 15px 5px;
+            margin: 0 0.55vw 30px;
+        }
+        .more-plans.annual-plans {
+            width: 97.5%;
+            margin: 0 auto 35px;
+        }
+        .node-type-pricing-page .pricing4 .price-box,
+        .node-type-pricing-page .pricing5 .price-box {
+            margin: 4em 1em;
+        }
+    }
+
+
+    @media (min-width: 847px) {
+        .price-box {
+            width: 22vw;
+            max-width: 220px;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .price-box {
+            width: 220px;
+        }
+    }
+
+
+    .modal-body,
+    .modal-header {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 0px;
+    }
+
+    .modal-content {
+        padding: 30px 0;
+    }
+
+    .modal-header .close {
+        margin-top: -45px;
+        font-weight: 100;
+        font-size: 50px;
+        line-height: 50px;
+        background-color: transparent;
+        position: absolute;
+        right: 10px;
+    }
+
+    .node-type-pricing-page h3.modal-title {
+        font-size: 36px;
+        color: #6581a2;
+        /*color: #002E5D;*/
+    }
+
+    .modal-header h5 {
+        font-size: 17px;
+        font-weight: 600;
+        color: #6581a2;
+        /*color: #002E5D;*/
+    }
+
+    .modal-body .hs-input {
+        width: 75%;
+        border-radius: 4px;
+        border: 2px solid #d8dee5;
+        /*border: 1px solid #54585A;*/
+    }
+
+    .modal .actions {
+        margin: 20px 0 0;
+    }
+
+    textarea.hs-input {
+        height: 90px;
+    }
+
+    textarea.hs-input::-webkit-input-placeholder {
+        text-indent: 0px;
+        line-height: 65px;
+    }
+
+    textarea.hs-input::-moz-placeholder {
+        text-indent: 0px;
+        color: #6581a2;
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 65px;
+    }
+
+    input.hs-button.primary.large {
+        width: 30%;
+        background-color: #2fca80;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 1px solid #2fca80;
+        border-radius: 3px;
+        padding: 14px 0;
+        transition: background-color .3s linear;
+    }
+    input.hs-button.primary.large:hover {
+        background-color: transparent;
+        color: #2fca80;
+        border: 1px solid #2fca80;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.001), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    input.hs-input::-moz-placeholder {
+        font-size: 16px;
+        font-weight: 100;
+        color: #6581a2;
+    }
+
+    span.hs-form-required {
+        display: none;
+    }
+
+</style>
