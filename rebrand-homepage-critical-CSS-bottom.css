@@ -42,7 +42,7 @@ html {
 }
 
 .microsite .container {
-    width: 85vw
+    /* width: 85vw */
 }
 
 .microsite #content {
@@ -216,7 +216,7 @@ html {
 
 @media screen and (max-width:440px) {
     .microsite .container {
-        width: 95vw
+        /* width: 95vw */
     }
 
     .micro-home .wrapper_v7_int h1 {

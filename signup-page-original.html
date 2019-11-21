@@ -1,0 +1,111 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var getParams = {};
+    
+    if (location.search) {
+        var parts = location.search.substring(1).split('&');
+    
+        for (var i = 0; i < parts.length; i++) {
+            var nv = parts[i].split('=');
+            if (!nv[0]) continue;
+            getParams[nv[0]] = nv[1] || true;
+        }
+    if (getParams['uname'] != null) {
+      document.querySelector('#userName').value = getParams.uname;
+    }
+    if (getParams['fname'] != null) {
+      document.querySelector('#firstName').value = getParams.fname;
+    }
+    if (getParams['lname'] != null) {
+      document.querySelector('#lastName').value = getParams.lname;
+    }
+    if (getParams['email'] != null) {
+      document.querySelector('#email').value = unescape(getParams.email);
+    }
+    }
+    
+    });
+</script>
+    
+<?php 
+$package = (empty($_GET['pid'])) ? '' : $_GET['pid'];
+if ($package == 'free') { 
+$creditAmount = '250';
+?>
+
+<script>
+      jQuery(document).ready(function($) {
+        $('.control-label .text-muted').hide();
+        $('#signup-form').validate();
+        $('#companyName').rules('add', {
+          required: true,
+          messages: {
+            required: "Please enter the name of your company"
+          }
+        });
+    });
+</script>
+    
+<h3>
+    Great Features Like...
+</h3>
+<ul>
+    <li>
+            <?php echo $creditAmount; ?> free texts per month
+    </li>
+    <li>
+        1 Free & EZ keyword
+    </li>
+    <li>
+        Unlimited contacts
+    </li>
+</ul>
+<h3>
+    Upgrade for more features
+</h3>
+<ul>
+    <li>
+        Customized keywords
+    </li>
+    <li>
+        Detailed reports
+    </li>
+    <li>
+        Unlimited free phone support
+    </li>
+</ul>
+<a class="btn btn-orange btn-rounded" href="/pricing">See all pricing options</a>
+<?php } ?>
+<h3>
+    50,000 Clients
+</h3>
+<h3>
+    Join Them Now
+</h3>
+<blockquote>
+    &ldquo;We reach hundreds of customers to inform of education opportunities, promotions, new product launches also…Works perfectly, excellent customer service.&rdquo;
+</blockquote>
+
+    <cite style="font-weight:600">Bob Cazet, Alumni Football USA</cite>
+
+<blockquote>
+    &ldquo;We specifically use EZ Texting for employee communications, emergency notifications, weather alerts, reminders, etc.  I would recommend EZ Texting for the cost effectiveness and ease of use.&rdquo;
+</blockquote>
+
+    <cite style="font-weight:600">Steve Brownlee, Professional Salon Concepts</cite>
+
+<blockquote>
+    &ldquo;We contact volunteers by text alerting them to time-sensitive volunteer opportunities…It's affordable and easy to use.&rdquo;
+</blockquote>
+
+    <cite style="font-weight:600">Sarah Nejdl, Families to Freedom</cite>
+
+<div class="trust-logos">
+    <h3>Safe &amp; Reliable</h3>
+    <p>
+        <script type="text/javascript" src="//privacy-policy.truste.com/privacy-seal/EZ-Texting/asc?rid=0aac9314-004d-4389-8811-28232f03b2af"></script>
+        <a href="//privacy.truste.com/privacy-seal/EZ-Texting/validation?rid=60a36371-2070-4733-a336-ce404530f9a5" target="_blank" title="TRUSTe online privacy certification">
+            <img alt="TRUSTe online privacy certification" src="//privacy-policy.truste.com/privacy-seal/EZ-Texting/seal?rid=60a36371-2070-4733-a336-ce404530f9a5" style="border: none; margin-right: 30px;" />
+        </a>
+    </p>
+</div>

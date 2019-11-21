@@ -1,109 +1,124 @@
-<style type="text/css">.page .content h3 { text-transform: uppercase; font-weight: 400; }
-    .content h4 { color: #00A3E0; text-transform: uppercase; text-align: center; margin: 50px 35px 10px; }
-    .app-store { margin: 40px 0 50px; }
+<style type="text/css">.page .content h3 { text-transform: capitalize; font-weight: 400; }
+    .content h4 { color: #00A3E0; text-transform: capitalize; text-align: left; }
+    .feature-top h4 { margin: 50px 15px 10px 35px; }
+    .feature-middle h4 { margin: 20px 25px 10px 15px; }
+    .feature-bottom h4 { margin: 50px 10px 10px 15px; }
+    .app-store { margin: 30px 0 50px; }
     .features-section { margin-top: 60px }
     .features-container { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 35px; }
-    .feature-top { flex-basis: 282px; }
+    .feature-top { flex-basis: 282px; } 
+    @media screen and (max-width: 768px) { .feature-top { flex-basis: 250px; } }
+    .feature-middle {flex-basis: 250px; -moz-box-shadow: 0 3px 13px 2px #eee; -webkit-box-shadow: 0 3px 13px 2px #eee; box-shadow: 0 3px 13px 2px #eee;}
     .feature-bottom { flex-basis: 265px; }
-    .feature-top, .feature-bottom { display: flex; flex-direction: column; align-items: center; position: relative; }
-    .feature-top p, .feature-bottom p { padding: 0 15px 15px; line-height: 1.5; text-align: center; }
+    .feature-top, .feature-middle, .feature-bottom { display: flex; flex-direction: column; align-items: center; position: relative; }
+    .features-container p { line-height: 1.5; text-align: left; }
+    .feature-top p { padding: 0px 15px 15px 35px; }
+    .feature-middle p, .feature-bottom p { padding: 0 15px 15px;}
     .content-container { border: 1px solid grey; margin-top: 50px; }
     .feature-bottom img { position: absolute; top: 12px; }
-    </style>
-    <div class="section" style="border-bottom:1px solid grey">
-        <p>
-            With our new free text messaging app, EZ Texting customers can now send and receive direct text messages when they’re on the go
-        </p>
-        <h3>
-            The World Is Your Office
-        </h3>
-        <p>
-            Reply instantly to individual messages received from group texts. Text from your landline or toll-free number to send reminders, schedule pick-ups, and take orders, anytime, anywhere.
-        </p>
-        <h3>
-            Keep Business and Pleasure Separate
-        </h3>
-        <p>
-            The powerful one-to-one messaging feature of EZ Texting’s top-rated SMS service is now easier to use than ever. Direct message business contacts, and track conversations in a separate, well-organized Inbox.
-        </p>
-        <h3>
-            Don’t Leave Your Customers Waiting
-        </h3>
-        <p>
-            You’ll get notified instantly when a contact messages you or replies to your bulk text message. No more waiting until you can log back into your EZ Texting account to check your Inbox.
-        </p><img alt="apple-app-store" class="app-store" src="/sites/default/files/Images/mobile-app/AppStore.svg" style="width: 150px; height: 83px;">
-    </div>
-    <div class="features-section" style="border-bottom:1px solid grey">
-        <h3>
-            Existing EZ Texting Customers Can:
-        </h3>
-        <div class="features-container flex">
-            <div class="feature-top feature-top-01">
-                <img alt="iphone" src="/sites/default/files/Images/mobile-app/iPhone-01.png" style="height: 304px; width: 250px;">
-                <h4>
-                    Get Notifications for New Replies
-                </h4>
-                <p>
-                    Never miss a lead with this text app. Get a push notification every time a new text message is received so that you can respond back instantly.
-                </p>
-            </div>
-            <div class="feature-top feature-top-02">
-                <img alt="iphone" src="/sites/default/files/Images/mobile-app/iPhone-02.png" style="height: 304px; width: 250px;">
-                <h4>
-                    Engage in Direct Messaging
-                </h4>
-                <p>
-                    Follow up with customers one-on-one as new texts come in and respond in real time. Replies sent from the text app can be sent via your shared short code or your <a href="">text-enabled phone number</a>.
-                </p>
-            </div>
-            <div class="feature-top feature-top-03">
-                <img alt="iphone" src="/sites/default/files/Images/mobile-app/iPhone-03.png" style="height: 304px; width: 250px;">
-                <h4>
-                    Easily Track Your Conversations
-                </h4>
-                <p>
-                    See all of your message history saved in one place, not just for one-on-one messages but replies to your group messages as well.
-                </p>
-            </div>
-        </div><img alt="apple-app-store" class="app-store" src="/sites/default/files/Images/mobile-app/AppStore.svg" style="width: 150px; height: 83px;">
-    </div>
-    <div class="features-section" style="border-bottom:1px solid grey">
-        <h3>
-            Plus, you can use the free business texting mobile app to:
-        </h3>
-        <div class="features-container flex">
-            <div class="feature-bottom feature-bottom-01">
-                <img alt="iphone" src="/sites/default/files/Images/mobile-app/report-bg.svg" style="height: 70px; width: 150px;">
-                <div class="content-container">
-                    <h4>
-                        Review Delivery Reports
-                    </h4>
-                    <p>
-                        Track message delivery, engagement, and performance history through in-depth reporting and analytics.
-                    </p>
-                </div>
-            </div>
-            <div class="feature-bottom feature-bottom-02">
-                <img alt="iphone" src="/sites/default/files/Images/mobile-app/ChatBubble.svg" style="height: 150px; width: 50px;">
-                <div class="content-container">
-                    <h4>
-                        Simplify B2C Conversations
-                    </h4>
-                    <p>
-                        Pick up where you left off by sending a text message from the free iOS app to follow up on a previous inquiry, confirm an appointment, answer a question, or request immediate feedback. Your conversations and contacts will be synced across all devices.
-                    </p>
-                </div>
-            </div>
-            <div class="feature-bottom feature-bottom-03">
-                <img alt="iphone" src="/sites/default/files/Images/mobile-app/PhoneBook.svg" style="height: 150px; width: 50px;">
-                <div class="content-container">
-                    <h4>
-                        Add ContactsFrom Anywhere
-                    </h4>
-                    <p>
-                        Don’t lose out on a lead while you’re out networking. Use our free texting app to quickly add a new contact’s information.
-                    </p>
-                </div>
-            </div>
-        </div><img alt="apple-app-store" class="app-store" src="/sites/default/files/Images/mobile-app/AppStore.svg" style="width: 150px; height: 83px;">
-    </div>
+</style>
+<div class="features-section" style="border-bottom:1px solid #ddd">
+	<h3>
+		Existing EZ Texting Customers Can:
+	</h3>
+	<div class="features-container flex">
+		<div class="feature-top feature-top-01">
+			<img alt="iphone" src="/sites/default/files/Images/mobile-app/iPhone-01.png" style="height: 304px; width: 250px;">
+			<h4>
+				Get Notifications for New Replies
+			</h4>
+			<p>
+				Never miss a lead with this text app. Get a push notification every time a new text message is received so that you can respond back instantly.
+			</p>
+		</div>
+		<div class="feature-top feature-top-02">
+			<img alt="iphone" src="/sites/default/files/Images/mobile-app/iPhone-02.png" style="height: 304px; width: 250px;">
+			<h4>
+				Engage in Direct Messaging
+			</h4>
+			<p>
+				Follow up with customers one-on-one as new texts come in and respond in real time. Replies sent from the text app can be sent via your shared short code or your <a href="/text-to-landline">text-enabled phone number</a>.
+			</p>
+		</div>
+		<div class="feature-top feature-top-03">
+			<img alt="iphone" src="/sites/default/files/Images/mobile-app/iPhone-03.png" style="height: 304px; width: 250px;">
+			<h4>
+				Easily Track Your Conversations
+			</h4>
+			<p>
+				See all of your message history saved in one place, not just for one-on-one messages but replies to your group messages as well.
+			</p>
+		</div>
+	</div><img alt="apple-app-store" class="app-store" src="/sites/default/files/Images/mobile-app/AppStore.svg" style="width: 150px; height: 83px;">
+</div>
+<div class="features-section card-sec" style="border-bottom:1px solid #ddd">
+	<div class="features-container flex">
+		<div class="feature-middle feature-middle-01">
+			<img alt="iphone" src="/sites/default/files/Images/mobile-app/card-header01-office.jpg" style="height: 141px; width: 250px;">
+			<h4>
+				The World Is Your Office
+			</h4>
+			<p>
+				Reply instantly to individual messages received from group texts. Text from your landline or toll-free number to send reminders, schedule pick-ups, and take orders, anytime, anywhere.
+			</p>
+		</div>
+		<div class="feature-middle feature-middle-02">
+			<img alt="iphone" src="/sites/default/files/Images/mobile-app/card-header02-mail.jpg" style="height: 141px; width: 250px;">
+			<h4>
+				Keep Business and Pleasure Separate
+			</h4>
+			<p>
+				The powerful one-to-one messaging feature of EZ Texting’s top-rated SMS service is now easier to use than ever. Direct message business contacts, and track conversations in a separate, well-organized Inbox.
+			</p>
+		</div>
+		<div class="feature-middle feature-middle-03">
+			<img alt="iphone" src="/sites/default/files/Images/mobile-app/card-header03-rockert.jpg" style="height: 141px; width: 250px;">
+			<h4>
+				Don’t Leave Your Customers Waiting
+			</h4>
+			<p>
+				You’ll get notified instantly when a contact messages you or replies to your bulk text message. No more waiting until you can log back into your EZ Texting account to check your Inbox.
+			</p>
+		</div>
+	</div><img alt="apple-app-store" class="app-store" src="/sites/default/files/Images/mobile-app/AppStore.svg" style="width: 150px; height: 83px;">
+</div>
+<div class="features-section icon-sec" style="border-bottom:1px solid #ddd">
+	<h3>
+		Plus, you can use the free business texting mobile app to:
+	</h3>
+	<div class="features-container flex">
+		<div class="feature-bottom feature-bottom-01">
+			<img alt="iphone" src="/sites/default/files/Images/mobile-app/report-bg.svg" style="height: 70px; width: 150px;">
+			<div class="content-container">
+				<h4>
+					Review Delivery Reports
+				</h4>
+				<p>
+					Track message delivery, engagement, and performance history through in-depth reporting and analytics.
+				</p>
+			</div>
+		</div>
+		<div class="feature-bottom feature-bottom-02">
+			<img alt="iphone" src="/sites/default/files/Images/mobile-app/chatbubble-bg.svg" style="height: 70px; width: 146px;">
+			<div class="content-container">
+				<h4>
+					Simplify B2C Conversations
+				</h4>
+				<p>
+					Pick up where you left off by sending a text message from the free iOS app to follow up on a previous inquiry, confirm an appointment, answer a question, or request immediate feedback. Your conversations and contacts will be synced across all devices.
+				</p>
+			</div>
+		</div>
+		<div class="feature-bottom feature-bottom-03">
+			<img alt="iphone" src="/sites/default/files/Images/mobile-app/phonebook-bg.svg" style="height: 70px; width: 122px;">
+			<div class="content-container">
+				<h4>
+					Add ContactsFrom Anywhere
+				</h4>
+				<p>
+					Don’t lose out on a lead while you’re out networking. Use our free texting app to quickly add a new contact’s information.
+				</p>
+			</div>
+		</div>
+	</div><img alt="apple-app-store" class="app-store" src="/sites/default/files/Images/mobile-app/AppStore.svg" style="width: 150px; height: 83px;">
+</div>

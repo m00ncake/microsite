@@ -1,0 +1,445 @@
+<style type="text/css">
+
+    .wrapper_v7_int h1 {
+        padding-bottom: 0em;
+        margin: 0px 0.5em;
+    }
+
+    @media (min-width: 769px) {
+        .wrapper_v7_int {
+            min-height: 200px;
+        }
+        .wrapper_v7_int h1 {
+            padding-top: 2em;
+        }
+    }
+
+    .boxes {
+        position: relative;
+    }
+
+    .price-arrow {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        display: block;
+        text-decoration: none !important;
+        text-align: center;
+        line-height: 50px;
+        font-size: 36px;
+        color: #8491a3;
+    }
+
+
+    .price-arrow-left {
+        background-image: url('/sites/all/themes/ez/dist/images/micro-pricing/arrow-left.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: -70px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .price-arrow-left {
+            display: none;
+        }
+    }
+
+    .more-box {
+		display:flex;
+		flex-direction: column;
+		margin: 0px 20px 30px;
+
+	}
+	@media screen and (max-width: 768px) {
+		.more-box {
+			margin: 0px 1.5vw 30px;
+		}
+	}
+
+    	
+	.annual-plans {
+		display: block;
+		width: 100%;
+		border: 2px solid #FEA30A;
+        border-radius: 5px;
+		color: #FEA30A;
+        background-color: #fff;
+		font-weight: 700;
+        padding: 15px 5px;
+        margin: 0px auto 15px;
+	}
+
+	/* @media screen and (max-width: 515px) {
+		.annual-plans {
+			margin-bottom: 10px;
+		}
+	} */
+
+	.plan-options {
+		display: flex;
+		justify-content: space-between;
+	}
+	@media screen and (max-width: 515px) {
+		.plan-options {
+			flex-direction: column;
+		}
+	}
+
+    .node-type-pricing-page .more-plans {
+        background-color: #fff;
+    }
+    @media (min-width: 769px) {
+        .node-type-pricing-page .more-plans {
+            width: 31%;
+            padding: 15px 5px;
+        }
+    }
+	@media screen and (max-width: 515px) {
+		.node-type-pricing-page .more-plans {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+
+    .node-type-pricing-page .more-plans a {
+        color: #00A3E0;
+    }
+
+
+	.more-plans.info-details {
+		display: block;
+		width: 100%;
+		margin: 0px auto 25px;
+		padding: 7px;
+	}
+
+
+    .node-type-pricing-page .pricing4 .boxes {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+	@media screen and (max-width: 1199px) {
+		.node-type-pricing-page .pricing4 .boxes {
+			justify-content: space-evenly;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		.node-type-pricing-page .pricing4 .boxes {
+			justify-content: space-evenly;
+		}
+	}
+
+
+    .node-type-pricing-page .pricing4 .price-box {
+        margin: 4em 1em;
+    }
+    @media (min-width: 769px) {
+        .node-type-pricing-page .pricing4 .price-box {
+            margin: 50px 0px;
+        }
+    }
+    @media (min-width: 847px) {
+        .price-box {
+            width: 22vw;
+            max-width: 220px;
+        }
+    }
+	@media screen and (max-width: 1199px) {
+		.node-type-pricing-page .pricing4 .price-box {
+			margin: 25px 10px;
+		}
+	}
+    @media screen and (max-width: 768px) {
+		.node-type-pricing-page .pricing4 .price-box {
+			margin: 20px 20px;
+		}
+	}
+
+    .node-type-pricing-page .pricing4 .price-box .btn {
+        position: relative;
+        bottom: unset;
+        left: unset;
+        right: unset;
+    }
+
+
+    .price-box .deal.box-line {
+        margin: 0;
+        padding: 30px 1em 30px;
+        height: auto;
+    }
+
+    .pricing-button {
+        position: absolute;
+        bottom: 25px;
+        right: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-body,
+    .modal-header {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 0px;
+    }
+
+    .modal-content {
+        padding: 30px 0;
+    }
+
+    .modal-header .close {
+        margin-top: -45px;
+        font-weight: 100;
+        font-size: 50px;
+        line-height: 50px;
+        background-color: transparent;
+        position: absolute;
+        right: 10px;
+    }
+
+    .node-type-pricing-page h3.modal-title {
+        font-size: 36px;
+        color: #002E5D;
+    }
+
+    .modal-header h5 {
+        font-size: 17px;
+        font-weight: 600;
+        color: #002E5D;
+    }
+
+    .modal-body .hs-input {
+        width: 75%;
+        border-radius: 4px;
+        border: 1px solid #54585A;
+    }
+
+    .modal .actions {
+        margin: 20px 0 0;
+    }
+
+
+    textarea.hs-input {
+        height: 90px;
+    }
+
+    textarea.hs-input::-webkit-input-placeholder {
+        text-indent: 0px;
+        line-height: 65px;
+    }
+
+    textarea.hs-input::-moz-placeholder {
+        text-indent: 0px;
+        color: #6581a2;
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 65px;
+    }
+
+    input.hs-button.primary.large {
+        width: 30%;
+        background-color: #2fca80;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 1px solid #2fca80;
+        border-radius: 3px;
+        padding: 14px 0;
+        transition: background-color .3s linear;
+    }
+    input.hs-button.primary.large:hover {
+        background-color: transparent;
+        color: #2fca80;
+        border: 1px solid #2fca80;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.001), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    input.hs-input::-moz-placeholder {
+        font-size: 16px;
+        font-weight: 100;
+        color: #6581a2;
+    }
+
+    span.hs-form-required {
+        display: none;
+    }
+
+    img.info {
+		height: 15px;
+		margin-top: -4px;
+	}
+
+
+</style>
+
+<div class="pricing4">
+    <div class="container">
+        <div class="row">
+            <a href="/price" class="price-arrow price-arrow-left"></a>
+            <div class="boxes">
+                <div class="price-box col-xs-2">
+                    <h3>
+                        Pro
+                    </h3>
+                    <h2>
+                        $250
+                    </h2>
+                    <p>
+                        <b>Per Month</b>
+                    </p>
+                    <p class="deal box-line">
+                        5500 Credits<br />
+                        4 Custom Keywords<br />
+                        <b>MMS Enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br />
+                        4 Cents/Credit<br />
+                        $25/Keyword/Month
+                    </p>
+                    <div class="spacer"></div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=pro-4">
+                            <div class="btn btn-lg btn-rounded btn-orange">SIGN UP</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2">
+                    <h3>
+                        Bronze
+                    </h3>
+                    <h2>
+                        $450
+                    </h2>
+                    <p>
+                        <b>Per Month</b>
+                    </p>
+                    <p class="deal box-line">
+                        10,000 Credits<br />
+                        6 Custom Keywords<br />
+                        <b>MMS Enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br />
+                        4 Cents/Credit<br />
+                        $25/Keyword/Month
+                    </p>
+                    <div class="spacer"></div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=bronze-4">
+                            <div class="btn btn-lg btn-rounded btn-orange">SIGN UP</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2">
+                    <h3>
+                        Silver
+                    </h3>
+                    <h2>
+                        $1100
+                    </h2>
+                    <p>
+                        <b>Per Month</b>
+                    </p>
+                    <p class="deal box-line">
+                        25,000 Credits<br>
+                        10 Custom Keywords<br>
+                        <b>MMS enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br />
+                        3.5 Cents/Credit<br />
+                        $25/Keyword/Month
+                    </p>
+                    <div class="spacer"></div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=silver-4">
+                            <div class="btn btn-lg btn-rounded btn-orange">SIGN UP</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2 col-xs-offset-1">
+                    <h3>
+                        Gold
+                    </h3>
+                    <h2>
+                        $2000
+                    </h2>
+                    <p class="no-fee">
+                        <b>Per Month</b>
+                    </p>
+                    <p class="deal box-line">
+                        50,000 Credits<br>
+                        15 Custom Keywords<br>
+                        <b>MMS enabled</b>
+                    </p>
+                    <p class="deal box-line">
+                        <b>Additional Purchases</b><br />
+                        3.25 Cents/Credit<br />
+                        $25/Keyword/Month
+                    </p>
+                    <div class="spacer"></div>
+                    <div class="pricing-button">
+                        <a href="/start?pid=gold-4">
+                            <div class="btn btn-lg btn-rounded btn-orange">SIGN UP</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="price-box col-xs-2">
+                    <h3>
+                        Just for you
+                    </h3>
+                    <p class="deal box-line" style="padding:15px 0">
+                        API<br>
+                        Enterprise<br>
+                        White Label<br>
+                        Agencies<br>
+                    </p>
+                    <div class="deal box-line">
+                        <p style="margin:0"><b>Call Us to Help</b></p><br />
+                        <p style="margin:0"><b>Craft the Perfect<br />
+                                Plan for You</b></p><br />
+                        <p style="margin:0">
+                            <a href="tel:+18552360777" style="text-decoration:none"><b>Call Us!<br> (855)
+                                    236-0777</b></a>
+                        </p>
+                    </div>
+                    <div class="pricing-button">
+                        <button data-toggle="modal" data-target="#ModalForm"
+                            class="btn btn-lg btn-rounded btn-orange">Let's Talk</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="more-box">
+                <div class="annual-plans">
+                    Annual Plans Save 20%!
+                </div>
+                <div class="plan-options">
+                    <div class="more-plans">
+                        Not quite ready to commit? <br>
+                        <a href="/start?pid=paygo-5"> Try Pay & Go Plan at 5 cents/credit.</a>
+                    </div>
+                    <div class="more-plans">
+                        Need less? Check out our <br>
+                        <a href="/price"> regular plans.</a>
+                    </div>
+                    <div class="more-plans">
+                        We support Canada! <br>
+                        <a href="/price/canada">Click here for Canadian pricing.</a>
+                    </div>
+                </div>
+                <div class="more-plans info-details">
+                    <!--<img class="info" alt="info icon" src="/sites/default/files/Images/pricing-page/info-button.svg"/>-->
+                    Send text or picture messages.<br>
+                    1 SMS Message = 1 Credit &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 1 MMS Message = 3 Credits
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
