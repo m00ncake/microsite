@@ -989,6 +989,90 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/howitworks-page-assets/advice-ease.png": {
+		"ft": 32768,
+		"iS": 6087,
+		"oA": 0,
+		"oAP": "/assets/images/howitworks-page-assets/advice-ease.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/howitworks-page-assets/advice-ease.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/howitworks-page-assets/advice-ease.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/images/howitworks-page-assets/advice-multi.png": {
+		"ft": 32768,
+		"iS": 7103,
+		"oA": 0,
+		"oAP": "/assets/images/howitworks-page-assets/advice-multi.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/howitworks-page-assets/advice-multi.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/howitworks-page-assets/advice-multi.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/images/howitworks-page-assets/advice-players.png": {
+		"ft": 32768,
+		"iS": 5870,
+		"oA": 0,
+		"oAP": "/assets/images/howitworks-page-assets/advice-players.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/howitworks-page-assets/advice-players.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/howitworks-page-assets/advice-players.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/images/howitworks-page-assets/advice-try.png": {
+		"ft": 32768,
+		"iS": 6612,
+		"oA": 0,
+		"oAP": "/assets/images/howitworks-page-assets/advice-try.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/howitworks-page-assets/advice-try.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/howitworks-page-assets/advice-try.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/images/howitworks-page-assets/bg-shadow.png": {
 		"ft": 32768,
 		"iS": 20700,
@@ -999,6 +1083,26 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/assets/images/howitworks-page-assets/mark-check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/howitworks-page-assets/mark-check.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/images/howitworks-page-assets/mark-x.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/howitworks-page-assets/mark-x.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/assets/images/Pillar Page Assets/pillarPageHeader1.jpg": {
 		"ft": 16384,
@@ -1336,6 +1440,27 @@
 		"oAP": "/Blog.html",
 		"oF": 0
 		},
+	"/board-page-6lines.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/board-page-6lines.html",
+		"oF": 0
+		},
+	"/board-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/board-page.html",
+		"oF": 0
+		},
+	"/brand-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/brand-page.html",
+		"oF": 0
+		},
 	"/callfire-prod-critical-css.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1346,6 +1471,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/Callfire-SPP.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/Callfire-SPP.html",
+		"oF": 0
+		},
 	"/callfire-stage-critical-css.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1355,6 +1487,48 @@
 		"oAP": "/callfire-stage-critical-css-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/Callfire-TOS.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/Callfire-TOS.html",
+		"oF": 0
+		},
+	"/Callfire-WPP.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/Callfire-WPP.html",
+		"oF": 0
+		},
+	"/carousel-bootstrap.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/carousel-bootstrap.html",
+		"oF": 0
+		},
+	"/ClubTexting-SPP.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ClubTexting-SPP.html",
+		"oF": 0
+		},
+	"/ClubTexting-TOS.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ClubTexting-TOS.html",
+		"oF": 0
+		},
+	"/ClubTexting-WPP.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ClubTexting-WPP.html",
+		"oF": 0
 		},
 	"/clubtexting_welcom_email.html": {
 		"cB": 0,
@@ -1370,11 +1544,32 @@
 		"oAP": "/clubtexting_welcome_email--old.html",
 		"oF": 0
 		},
+	"/contact-us-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/contact-us-page.html",
+		"oF": 0
+		},
 	"/cookies.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/cookies.php",
+		"oF": 0
+		},
+	"/ctcm_v1.4.min.js.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ctcm_v1.4.min.js.gz",
+		"oF": 0
+		},
+	"/d8-testimonial.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/d8-testimonial.html",
 		"oF": 0
 		},
 	"/drift-GTM-CT.html": {
@@ -1391,6 +1586,76 @@
 		"oAP": "/drift.html",
 		"oF": 0
 		},
+	"/email-signature.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/email-signature.html",
+		"oF": 0
+		},
+	"/ez-registration-welcome-email-template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ez-registration-welcome-email-template.html",
+		"oF": 0
+		},
+	"/EZTexting-SPP.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/EZTexting-SPP.html",
+		"oF": 0
+		},
+	"/EZTexting-TOS.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/EZTexting-TOS.html",
+		"oF": 0
+		},
+	"/EZTexting-WPP.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/EZTexting-WPP.html",
+		"oF": 0
+		},
+	"/features-chat-page-old.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/features-chat-page-old.html",
+		"oF": 0
+		},
+	"/features-integrations.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/features-integrations.html",
+		"oF": 0
+		},
+	"/features-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/features-page.html",
+		"oF": 0
+		},
+	"/features-ttl-2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/features-ttl-2.html",
+		"oF": 0
+		},
+	"/features-ttl-6.5-SW.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/features-ttl-6.5-SW.html",
+		"oF": 0
+		},
 	"/features_page.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1403,6 +1668,27 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/features_page2.html",
+		"oF": 0
+		},
+	"/GroupTexting-SPP.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/GroupTexting-SPP.html",
+		"oF": 0
+		},
+	"/GroupTexting-TOS.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/GroupTexting-TOS.html",
+		"oF": 0
+		},
+	"/GroupTexting-WPP.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/GroupTexting-WPP.html",
 		"oF": 0
 		},
 	"/grouptexting_welcome_email--old.html": {
@@ -1447,6 +1733,27 @@
 		"oAP": "/home_page.html",
 		"oF": 0
 		},
+	"/howitworks-full-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/howitworks-full-page.html",
+		"oF": 0
+		},
+	"/howitworks-guide.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/howitworks-guide.html",
+		"oF": 0
+		},
+	"/howitworks-wysiwyg.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/howitworks-wysiwyg.html",
+		"oF": 0
+		},
 	"/howitworks.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1454,11 +1761,32 @@
 		"oAP": "/howitworks.html",
 		"oF": 0
 		},
+	"/httpd.config": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/httpd.config",
+		"oF": 0
+		},
+	"/instapage-drift-button.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/instapage-drift-button.html",
+		"oF": 0
+		},
 	"/instapage-solo-signup-form.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/instapage-solo-signup-form.html",
+		"oF": 0
+		},
+	"/interview-search-input-test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/interview-search-input-test.html",
 		"oF": 0
 		},
 	"/js/jquery.countTo.js": {
@@ -1541,6 +1869,27 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/leadership-page-6lines.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/leadership-page-6lines.html",
+		"oF": 0
+		},
+	"/leadership-page-mb70.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/leadership-page-mb70.html",
+		"oF": 0
+		},
+	"/leadership-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/leadership-page.html",
+		"oF": 0
+		},
 	"/local.settings.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1553,6 +1902,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/mandrill-eztexting_en.html",
+		"oF": 0
+		},
+	"/mandrill-ttl_enabled_en-extra-footer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/mandrill-ttl_enabled_en-extra-footer.html",
 		"oF": 0
 		},
 	"/mandrill-ttl_enabled_en-original.html": {
@@ -1569,53 +1925,109 @@
 		"oAP": "/mandrill-ttl_enabled_en.html",
 		"oF": 0
 		},
-	"/new-pricing-page-price2-CA.html": {
+	"/mobile-app.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/new-pricing-page-price2-CA.html",
+		"oAP": "/mobile-app.html",
 		"oF": 0
 		},
-	"/new-pricing-page-price2-US.html": {
+	"/pricing-page-CA-variation.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/new-pricing-page-price2-US.html",
+		"oAP": "/pricing-page-CA-variation.html",
 		"oF": 0
 		},
-	"/price-control-CA.html": {
+	"/pricing-page-price4-CA-volume.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/price-control-CA.html",
+		"oAP": "/pricing-page-price4-CA-volume.html",
 		"oF": 0
 		},
-	"/price-control-US.html": {
+	"/pricing-page-price4-CA.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/price-control-US.html",
+		"oAP": "/pricing-page-price4-CA.html",
 		"oF": 0
 		},
-	"/pricing_4_block.html": {
+	"/pricing-page-price4-Tooltip-US.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/pricing_4_block.html",
+		"oAP": "/pricing-page-price4-Tooltip-US.html",
 		"oF": 0
 		},
-	"/pricing_page.html": {
+	"/pricing-page-price4-US-volume.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/pricing_page.html",
+		"oAP": "/pricing-page-price4-US-volume.html",
 		"oF": 0
 		},
-	"/pricing_page_01.html": {
+	"/pricing-page-price4-US.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/pricing_page_01.html",
+		"oAP": "/pricing-page-price4-US.html",
+		"oF": 0
+		},
+	"/pricing-page-pricing4-CA-volume.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing-page-pricing4-CA-volume.html",
+		"oF": 0
+		},
+	"/pricing-page-pricing4-CA.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing-page-pricing4-CA.html",
+		"oF": 0
+		},
+	"/pricing-page-pricing4-US-volume.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing-page-pricing4-US-volume.html",
+		"oF": 0
+		},
+	"/pricing-page-pricing4-US.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing-page-pricing4-US.html",
+		"oF": 0
+		},
+	"/pricing-page-US-control-volume.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing-page-US-control-volume.html",
+		"oF": 0
+		},
+	"/pricing-page-US-control.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing-page-US-control.html",
+		"oF": 0
+		},
+	"/pricing-page-US-variation-volume.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing-page-US-variation-volume.html",
+		"oF": 0
+		},
+	"/pricing-page-US-variation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing-page-US-variation.html",
 		"oF": 0
 		},
 	"/RCS_page.html": {
@@ -1632,11 +2044,25 @@
 		"oAP": "/rebrand-academy.html",
 		"oF": 0
 		},
+	"/rebrand-brand-pillar.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/rebrand-brand-pillar.html",
+		"oF": 0
+		},
 	"/rebrand-brand.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/rebrand-brand.html",
+		"oF": 0
+		},
+	"/rebrand-careers-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/rebrand-careers-page.html",
 		"oF": 0
 		},
 	"/rebrand-high-volume-pricing.html": {
@@ -1646,13 +2072,53 @@
 		"oAP": "/rebrand-high-volume-pricing.html",
 		"oF": 0
 		},
-	"/rebrand-homepage-critical.css": {
+	"/rebrand-homepage-critical-CSS-bottom.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/rebrand-homepage-critical-min.css",
+		"oAP": "/rebrand-homepage-critical-CSS-bottom-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/rebrand-homepage-critical-CSS-bottom.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/rebrand-homepage-critical-CSS-bottom.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/rebrand-homepage-critical-CSS-nav-only.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/rebrand-homepage-critical-CSS-nav-only-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/rebrand-homepage-critical-CSS-nav-only.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/rebrand-homepage-critical-CSS-nav-only.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/rebrand-homepage-critical.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/rebrand-homepage-critical.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1682,6 +2148,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/rebrand-signup.html",
+		"oF": 0
+		},
+	"/rebrand_homepage_blue-header.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/rebrand_homepage_blue-header.html",
 		"oF": 0
 		},
 	"/SCSS/_private-label.scss": {
@@ -1740,6 +2213,13 @@
 		"oAP": "/settings.php",
 		"oF": 0
 		},
+	"/signup-page-original.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/signup-page-original.html",
+		"oF": 0
+		},
 	"/signup-widget.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1749,6 +2229,20 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/SPP-12-20.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/SPP-12-20.html",
+		"oF": 0
+		},
+	"/SPP-12-24.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/SPP-12-24.html",
+		"oF": 0
 		},
 	"/template-footer.html": {
 		"cB": 0,
@@ -1776,6 +2270,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/test",
+		"oF": 0
+		},
+	"/TOS-new.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/TOS-new.html",
+		"oF": 0
+		},
+	"/TOS-Old.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/TOS-Old.html",
 		"oF": 0
 		},
 	"/validate.js": {
