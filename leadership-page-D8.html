@@ -1,0 +1,611 @@
+
+<style type="text/css">
+	.content-side {
+	  max-height: 265px;
+	  -webkit-transition: max-height 1.5s ease-out;
+	  -o-transition: max-height 1.5s ease-out;
+	  transition: max-height 1.5s ease-out; }
+	  @media (max-width: 767px) {
+		.content-side {
+		  max-height: 280px; } }
+	  .content-side .content-text {
+		pointer-events: none;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		line-height: 29px;
+		-webkit-line-clamp: 6;
+		-webkit-box-orient: vertical;
+		font-size: 18px;
+		position: relative;
+		-webkit-transition: 1s;
+		-o-transition: 1s;
+		transition: 1s; }
+	.read-more {
+		  position: absolute;
+		  bottom: 0;
+		  right: 0;
+		  padding-left: 7px;
+		  color: #00A3E0;
+		  pointer-events: auto;
+		  cursor: pointer;
+		  visibility: visible;
+		  -webkit-transition: visibility 0.5s 0.5s;
+		  -o-transition: visibility 0.5s 0.5s;
+		  transition: visibility 0.5s 0.5s; }
+	
+	.content-side {
+	  overflow: hidden;
+	  pointer-events: none;
+	  -webkit-transition: max-height 1s ease-out;
+	  -o-transition: max-height 1s ease-out;
+	  transition: max-height 1s ease-out; }
+	
+	.content-side:hover {
+	  max-height: 1500px;
+	  -webkit-transition: max-height 1.6s ease-in;
+	  -o-transition: max-height 1.6s ease-in;
+	  transition: max-height 1.6s ease-in; }
+	
+	.content-side:hover .content-text {
+	  -webkit-line-clamp: 100;
+	  display: block;
+	  overflow: visible;
+	  -webkit-transition: 1.6s;
+	  -o-transition: 1.6s;
+	  transition: 1.6s; }
+	
+	.content-side:hover .content-text {
+	  pointer-events: all; }
+	
+	.content-side:hover .read-more {
+	  visibility: hidden;
+	  -webkit-transition: visibility 0s 0s;
+	  -o-transition: visibility 0s 0s;
+	  transition: visibility 0s 0s; }
+	
+	.content-side .read-more {
+	  visibility: visible;
+	  -webkit-transition: visibility 0.5s 0.5s;
+	  -o-transition: visibility 0.5s 0.5s;
+	  transition: visibility 0.5s 0.5s; }
+	
+	.content-side p.job-title {
+	  margin: 5px 0 5px; }
+	
+	.content-side p.job-title i {
+	  line-height: 1.2; }
+	
+	.leader, .board {
+	  margin-bottom: 70px; }
+	
+	.row-tj {
+	  margin-bottom: 0; }
+	
+	.leader .read-more {
+	  background-color: #f3f5f6; }
+	
+	.board .read-more {
+	  background-color: #fff; }
+	
+	@media screen and (min-width: 769px) {
+	  .show-in-tablet {
+		display: none; }
+	  .read-more.norm {
+		padding-right: 30px}
+	  .board .read-more.norm {
+		padding-right: 13px;}
+	  .read-more.punit {
+		padding-right: 12px;}
+	  .read-more.matt {
+		padding-right: 11px; }
+	  .read-more.little {
+		padding-right: 16px;}
+	  .read-more.janice {
+		padding-right: 1px; }
+	  .read-more.craig {
+		padding-right: 5px;}
+	  .read-more.pete {
+		padding-right: 14px; }
+	  .read-more.charles {
+		right: 0px; }
+	  .read-more.yuri {
+		padding-right: 15px; }
+	  .read-more.allison {
+		padding-right: 4px;} }
+	
+	@media screen and (max-width: 1199px) {
+	  .show-sm-screen {
+		display: inline-block; }
+	  .read-more.norm {
+		padding-right: 27px; }
+	  .read-more.punit, .read-more.allison {
+		padding-right: 16px; }
+	  .read-more.janice, .read-more.pete, .read-more.yuri {
+		padding-right: 13px; }
+	  .read-more.james {
+		padding-right: 11px; } }
+	
+	@media screen and (max-width: 992px) {
+	  .hide-xs-screen {
+		display: none; }
+	  .leader .read-more {
+		right: 0px; }
+	  .content-side {
+		margin-top: 20px; } }
+	
+	@media screen and (max-width: 768px) {
+	  .show-in-tablet {
+		display: inline-block; }
+	  .content-side p.job-title i {
+		font-weight: 300; }
+	  .read-more.norm {
+		padding-right: 28px; }
+	  .board .read-more.norm {
+		padding-right: 0px;}
+	  .read-more.vijesh {
+		padding-right: 0px; }
+	  .board .read-more.vijesh {
+		padding-right: 9px;}
+	  .read-more.punit, .read-more.janice, .read-more.craig {
+		padding-right: 16px; }
+	  .board .read-more.punit, .read-more.charles {
+		padding-right: 15px;}
+	  .read-more.matt {
+		padding-right: 17px; }
+	  .read-more.little, .read-more.josh {
+		padding-right: 7px; }
+	  .read-more.rachel {
+		padding-right: 1px; }
+	  .read-more.pete {
+		padding-right: 0;}
+	  .read-more.yuri {
+		padding-right: 26px;}
+	  .read-more.james {
+		padding-right: 0;} }
+
+	</style>
+	
+
+
+
+
+
+
+
+
+
+
+/******************************************/
+/*              Leadership                */
+/******************************************/
+
+<div class="col-xl-10 mx-auto">
+	<h2 class="text-center">Leadership Team</h2>
+
+	<div class="leader row mb-5 pt-4">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Norm Happ" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-norm-2.png" style="width: 265px; height: 265px;" />
+		</div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Norman Happ</h3>
+
+			<p class="job-title"><i>Chief Executive Officer</i></p>
+
+			<div class="content-text">Norman Happ is EZ Texting's CEO. Previously, he was at Evernote since 2016 as
+				Senior Vice President of Sales and Partnerships and was responsible for growing company revenue
+				worldwide. Having previously spent 8 years in go-to-market executive roles within Intuit’s Small
+				Business Group, he knows the challenges of high-velocity SaaS sales. During his time at Intuit, Norman
+				developed and designed a series of breakthrough customer-targeting data mining algorithms. Prior to
+				Intuit, he spent 5 years at H&amp;R Block in diverse leadership roles, where he was responsible for
+				building and scaling the company’s first inside sales organization. Early on in his career, Norman
+				founded two technology companies and worked extensively throughout Europe. He credits his career
+				beginnings as a technologist for setting the foundation for his tools-driven, analytical, yet
+				customer-oriented approach towards revenue growth.
+				<div class="read-more norm">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="leader row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Janice McNair" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-janice-3.png"
+				style="width: 265px; height: 265px;" /></div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Janice McNair</h3>
+
+			<p class="job-title"><i>Chief Financial Officer</i></p>
+
+			<div class="content-text">Janice McNair is an strategic finance executive who thrives on scaling
+				organizations and driving growth initiatives. She has more than 20 years of finance and operating
+				experience with Fortune 500, growth and startup companies. Prior to joining EZ Texting, McNair launched
+				an independent consulting firm focused on corporate finance, business launch and strategy in the digital
+				media, ad tech, gaming and technology industries. As a VP in Investment Banking at Goldman Sachs, she
+				closed more than 20 financing, merger and strategic transactions for technology, entertainment, media
+				and telecommunications companies. She started her career at J.P. Morgan. She has a B.S. in Finance and
+				Economics from Boston College in Finance and Economics and an MBA degree from Harvard Business School.
+				<div class="read-more janice">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="leader row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Vijesh Mehta" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-vijesh-2.png"
+				style="width: 265px; height: 265px;" /></div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Vijesh Mehta</h3>
+
+			<p class="job-title"><i>Chief Technology Officer &amp; Co-Founder</i></p>
+
+			<div class="content-text">Vijesh has over 10 years of experience taking web-based services to market and
+				sits on the board of four major companies with web-based platforms. He also has extensive experience in
+				shaping corporate strategy and exceptional knowledge of highly scalable software architectures. His
+				previous endeavors include the widely recognized consulting firm Skyy Consulting, which developed one of
+				the largest open-source telecom platforms available today. Vijesh got his first computer at age 8, at
+				which point he proceeded to write his first lines of code in Basic while trying to get a game to work.
+				<div class="read-more vijesh show-in-tablet hide-xs-screen show-sm-screen">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="leader row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Punit Shah" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-punit-2.png"
+				style="width: 265px; height: 265px;" /></div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Punit Shah</h3>
+
+			<p class="job-title"><i>Co-Founder &amp; Chief Growth Officer</i></p>
+
+			<div class="content-text">Punit Shah is an expert at creating, transforming, and maximizing data driven, low
+				friction businesses. Shah has had repeat success in creating industry leading marketing efficiency
+				through online channels and developing high ROI, easy to use, online products to meet the needs of wide
+				underserved markets. Shah’s leadership approach drives growth through a harmonious combination of
+				scalable data analysis &amp; reporting, crisp goals, powerful vision, deep empathy, and strong culture.
+				Shah is an active advisor to companies that engage his interests and expertise. He also spends as much
+				of his time as possible mentoring and guiding his contacts on how to achieve the next phase of
+				professional and personal growth.
+				<div class="read-more punit">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="leader row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Matt Reid" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-matt-3.png" style="width: 265px; height: 265px;" />
+		</div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Matt Reid</h3>
+
+			<p class="job-title"><i>Chief Marketing Officer</i></p>
+
+			<div class="content-text">With more than 20 years of marketing, strategy, and management experience at
+				various technology companies he currently oversees global marketing. Prior to EZ Texting, Reid served as
+				vice president of marketing for Velocify, a market-leading SaaS provider of sales automation technology
+				acquired by Ellie Mae in late 2017. He also led marketing for adtech company OpenX and built the sales
+				and marketing teams for Eucalyptus Systems, an open-source platform acquired by HP. Reid also led
+				product marketing for all SaaS technologies at Citrix, directing the initial market launches of
+				GoToMeeting and GoToWebinar. Reid earned his Master of Business Administration degree in marketing at
+				California State University, Sacramento, and dual bachelor’s degrees at the University of California,
+				Santa Barbara.
+				<div class="read-more matt">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="leader row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Mark Little" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-mark-2.png" style="width: 265px; height: 265px;" />
+		</div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Mark Little</h3>
+
+			<p class="job-title"><i>Chief Customer&nbsp;Officer</i></p>
+
+			<div class="content-text">Mark serves as the company’s Chief Customer Officer. He brings broad and deep
+				commercial and consulting experience in building high-performance, customer-facing teams in XaaS
+				environments. In addition, he’s built extensive SMB domain expertise with high velocity sales models
+				through companies such as Intuit, VistaPrint, Monster.com, and Kinko’s. Most recently, Mark served as
+				Regional Manager of the Alexander Group, a boutique revenue growth management consulting firm that
+				specializes in the tech sector. Mark has served in numerous senior roles with a go-to-market focus at
+				leading companies and start-ups including CEO, COO, Managing Director, EVP of Strategic Partnerships,
+				SVP of Marketing &amp; Sales, VP of Sales, etc. Earlier in his career, Mark was a consultant at Booz
+				Allen Hamilton in their strategy practice. Mark earned a B.A. in American Culture from Northwestern
+				University and an MBA from the Stanford Graduate School of Business.
+				<div class="read-more little">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="leader row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Josh Siegel" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-josh.png" style="width: 265px; height: 265px;" />
+		</div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Josh Siegel</h3>
+
+			<p class="job-title"><i>Chief Product Officer</i></p>
+
+			<div class="content-text">Josh Siegel currently serves as the Chief Product Officer for EZ Texting. Josh
+				brings both a general management and product orientation to his role at the company. Prior to EZ
+				Texting, Josh led the Subscription and Data Product teams at Gannett where he managed both consumer and
+				B2B product lines. He also served as GM and SVP of SaaS and Subscriptions products at Reachlocal, a
+				leading provider of marketing technology and services for SMBs. Earlier in his career, Josh managed the
+				Yahoo Publisher Network, a contextual ad program for web publishers. Josh earned an MA at San Diego
+				State University and his BS degree at California Polytechnic, San Luis Obispo.
+				<div class="read-more josh">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="leader row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Craig Klemp" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-craig-2.png"
+				style="width: 265px; height: 265px;" /></div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Craig Klemp</h3>
+
+			<p class="job-title"><i>VP of Partnerships</i></p>
+
+			<div class="content-text">Craig is EZ Texting’s VP of Partnerships. He brings 15 years of broad business
+				experience across a variety of strategic functions within Fortune 100, startup, and professional
+				services organizations. Craig has spent the last 7 years scaling SaaS technology startups through
+				partnerships, business development, and enterprise sales. Most recently he worked at Evernote, where he
+				was responsible for global partnerships as well as the company’s Japan &amp; APAC business. Earlier in
+				his career, Craig worked in management consulting and venture capital. Craig has a B.S. from the
+				University of Virginia and an MBA from UC Berkeley’s Haas School of Business.
+				<div class="read-more craig">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="leader row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Rachel Cochran" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-rachel.png" style="width: 265px; height: 265px;" />
+		</div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Rachel Cochran</h3>
+
+			<p class="job-title"><i>VP of People</i></p>
+
+			<div class="content-text">Rachel brings nearly 15 years of experience from the public and private sector
+				leading both recruiting and people operations teams. She has spent the past five years working in SaaS
+				technology startups focused on coaching leaders around organizational design and creating innovative
+				people programs to best leverage their talent. Earlier in her career, Rachel worked in the education
+				space as an HR leader supporting organizations such as Teach For America and the NYC Department of
+				Education. Rachel has a B.S. from the University of Connecticut and an M.P.A. from New York University.
+				<div class="read-more rachel show-in-tablet hide-xs-screen show-sm-screen">... read more</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+/******************************************/
+/*                Board                   */
+/******************************************/
+
+<div class="col-xl-10 mx-auto">
+	<h2 class="text-center">Board Members</h2>
+
+	<div class="board row mb-5 pt-4">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="placholder.png" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-vijesh-2.png"
+				style="width: 265px; height: 265px;" /></div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Vijesh Mehta</h3>
+
+			<p class="job-title"><i>Chairman of the Board</i></p>
+
+			<div class="content-text">Vijesh has over 10 years of experience taking web-based services to market and
+				sits on the board of four major web-based platforms. He also has extensive experience in shaping
+				corporate strategy and exceptional knowledge of highly scalable software architectures. His previous
+				endeavors include the widely recognized consulting firm Skyy Consulting, which developed one of the
+				largest open-source telecom platforms available today. Fun fact: Vijesh got his first computer at age 8,
+				at which point he proceeded to write his first lines of code in Basic while trying to get a game to
+				work.
+				<div class="read-more vijesh show-in-tablet show-sm-screen">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="board row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Norm Happ" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-norm-2.png" style="width: 265px; height: 265px;" />
+		</div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Norman Happ</h3>
+
+			<p class="job-title"><i>Member, Board of Directors</i></p>
+
+			<div class="content-text">Norm Happ is EZ Texting's CEO. Before that he was at Evernote. Norman Happ joined
+				Evernote in 2016 as Senior Vice President of Sales and Partnerships and was responsible for growing
+				company revenue worldwide. Having previously spent 8 years in go-to-market executive roles within
+				Intuit’s Small Business Group, he knows the challenges of high-velocity SaaS sales. During his time at
+				Intuit, Norm developed and designed a series of breakthrough customer-targeting data mining algorithms.
+				Prior to Intuit, he spent 5 years at H&amp;R Block in diverse leadership roles, where he was responsible
+				for building and scaling the company’s first inside sales organization. Early on in his career, Norm
+				founded two technology companies and worked extensively throughout Europe. He credits his career
+				beginnings as a technologist for setting the foundation for his tools-driven, analytical, yet
+				customer-oriented approach towards revenue growth.
+				<div class="read-more norm">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="board row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Allison Checchi" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-allison-2.png"
+				style="width: 265px; height: 265px;" /></div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Allison Checchi</h3>
+
+			<p class="job-title"><i>Member, Board of Directors</i></p>
+
+			<div class="content-text">With more than fifteen years working in the entertainment and digital media
+				industry, Allison has a passion for helping companies successfully realize their full potential.
+				Currently, Allison is the Chief Operating Officer of Atom Tickets, an entertainment tech start-up based
+				in Los Angeles. Previously, Allison served as Chief Marketing Officer of YP, a leader in local digital
+				marketing solutions, where she led all marketing and B2B product management functions for the
+				Cerberus-backed company. Allison spent nearly a dozen years at Bain &amp; Company, where she was a
+				Principal in Bain’s Technology, Media and Telecom practice with a primary emphasis on growth strategy.
+				She holds a BS in Engineering Science and Economics from Vanderbilt University and an MBA from Harvard
+				Business School.
+				<div class="read-more allison">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="board row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Punit Shah" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-punit-2.png"
+				style="width: 265px; height: 265px;" /></div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Punit "Pete" Shah</h3>
+
+			<p class="job-title"><i>Member, Board of Directors</i></p>
+
+			<div class="content-text">Punit Shah is an expert at creating, transforming, and maximizing data driven, low
+				friction businesses. Shah has had repeat success in creating industry leading marketing efficiency
+				through online channels and developing high ROI, easy to use, online products to meet the needs of wide
+				underserved markets. Shah’s leadership approach drives growth through a harmonious combination of
+				scalable data analysis &amp; reporting, crisp goals, powerful vision, deep empathy, and strong culture.
+				Shah is an active advisor to companies that engage his interests and expertise. He also spends as much
+				of his time as possible mentoring and guiding his contacts on how to achieve the next phase of
+				professional and personal growth.
+				<div class="read-more punit">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="board row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="placholder.png" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-pete-2.png" style="width: 265px; height: 265px;" />
+		</div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Pete Chung</h3>
+
+			<p class="job-title"><i>Member, Board of Directors</i></p>
+
+			<div class="content-text">Pete Chung is a Managing Director and Head of Morgan Stanley Expansion Capital and
+				Co-Head and Managing Member of Morgan Stanley Venture Partners ("MSVP"), Morgan Stanley's technology and
+				healthcare focused late-stage funds. Previously, Pete co-founded Morgan Stanley Technology Ventures, the
+				strategic investment arm of Morgan Stanley Technology Investment Banking, and Pete was also involved
+				with Morgan Stanley Principal Investment's growth equity investing activity. Pete joined Morgan Stanley
+				Technology Investment Banking in 1993 and helped open Morgan Stanley's first Silicon Valley office in
+				Menlo Park in 1994. Pete is a graduate of Dartmouth College and the Stanford Graduate School of
+				Business.
+				<div class="read-more pete">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="board row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="charles hilliard" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-charles-2.png"
+				style="width: 265px; height: 265px;" /></div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Charles Hilliard</h3>
+
+			<p class="job-title"><i>Member, Board of Directors</i></p>
+
+			<div class="content-text">Charles is a senior executive with 25 years of strategic, operating, and financial
+				management experience, including leading two venture-backed technology start-ups through $1 billion+
+				IPOs. Previously, he was an Advisor at Dropbox, a leading cloud-based storage and file sharing company,
+				and Special Advisor to the Board of Directors at Demand Media (NYSE: DMD), a leading digital media
+				company. Prior to that, Charles was President &amp; CFO of Demand Media, managing over 100 personnel and
+				all aspects of accounting, finance, legal, and IT operations. During his five-year tenure, the company
+				tripled annual revenue to over $350 million, returned 5.6x to common shareholders, closed several
+				strategic acquisitions, raised $135 million in private growth equity and, in January 2011, raised $174
+				million in the first US Internet IPO to achieve a market capitalization of over $1 billion since Google.
+				Previously, he served as President and CFO of United Online (NASDAQ: UNTD), starting as CFO of its
+				predecessor, NetZero. During an eight-year tenure, the company achieved a 100-fold increase in annual
+				revenues to over $500 million, returned 16.8x to common shareholders, and became a member of the
+				Standard &amp; Poor’s 600 Index. A former investment banker involved with the successful execution of
+				over $30 billion of financing transactions and mergers and acquisitions. Select clients included Time
+				Warner, Disney, Coca-Cola, Harrah's Entertainment, Digital Equipment Corp, Times Mirror and Office
+				Depot. Licensed CPA with extensive public reporting and SEC experience, including successfully appearing
+				before the SEC's Office of the Chief Accountant (OCA).
+				<div class="read-more charles">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="board row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="Yuri Prilutskiy" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-yuri-2.png" style="width: 265px; height: 265px;" />
+		</div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">Yuriy Prilutskiy</h3>
+
+			<p class="job-title"><i>Member, Board of Directors</i></p>
+
+			<div class="content-text">Yuriy is a Managing Director at Patricia Industries North America since 2015. He
+				joined Investor AB in 2010 as an Analyst for Investor Growth Capital focusing on healthcare investing in
+				North America. Yuriy currently serves on the boards of BraunAbility and Laborie as well as several of
+				Investor Growth Capital’s healthcare and tech venture capital investments. He was involved with multiple
+				past Investor Growth Capital investments including Aptalis, Jazz Pharmaceuticals, and Transcend Medical.
+				Prior to joining Investor, Yuriy worked at JPMorgan and Bank of America as an equity research analyst
+				covering pharmaceuticals companies. Yuriy received a B.Sc. in Finance and Economics from New York
+				University’s Stern School of Business.
+				<div class="read-more yuri">... read more</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="board row mb-5">
+		<div class="image mb-4 col-lg-4 col-xl-3 text-center"><img alt="james stith" class="b-lazy"
+				data-src="/sites/default/files/leadership/leadership-james-2.png"
+				style="height: 265px; width: 265px;" /></div>
+
+		<div class="content-side clearfix col-lg-8 col-xl-9">
+			<h3 class="mt-0">James Stith</h3>
+
+			<p class="job-title"><i>Member, Board of Directors</i></p>
+
+			<div class="content-text">James Stith is an Investor at ROCA Partners. Mr. Stith previously was the Senior
+				Director of M&amp;A at IAC/InterActiveCorp, a publicly-traded portfolio of consumer media and technology
+				companies. At IAC, Mr. Stith helped lead investments and guide the M&amp;A strategy. Prior to IAC, Mr.
+				Stith was a founding executive of Carats &amp; Cake (a leading marketplace for wedding vendors), a
+				private equity investor at Ares Management, and an investment banker at Lehman Brothers. Mr. Stith has a
+				BA in Economics and International Relations from the University of Pennsylvania.
+				<div class="read-more james show-in-tablet show-sm-screen">... read more</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+/******************************************/
+/*             Script Field               */
+/******************************************/
+<script>
+// filters out Safari Browers and add class	
+document.addEventListener('DOMContentLoaded', function () { 
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1){
+        const items = document.querySelectorAll('.read-more');
+        items.forEach(function (item){
+           item.classList.add('s-fix'); 
+        });
+    }    
+});
+</script>

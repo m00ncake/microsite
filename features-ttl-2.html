@@ -1,43 +1,80 @@
+<style type="text/css">
+    a.btn {
+        margin: 0 10px 15px 0;
+    }
+
+    a.btn-watch {
+        position: relative;
+        text-transform: uppercase;
+        border: 1px solid #2fca80;
+        color: #2fca80;
+        font-weight: 600;
+        padding-left: 45px;
+        padding-right: 10px;
+    }
+
+    a.btn-watch:hover {
+        background: rgba(47, 202, 107, .1);
+        border: 1px solid #2fca80;
+        color: #2fca80;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .001), 0 4px 4px rgba(0, 0, 0, .25);
+    }
+
+    span.play-svg {
+        position: absolute;
+        left: 10px;
+        top: 8px;
+    }
+
+    svg.watch-icon {
+        width: 25px;
+        height: 25px;
+    }
+</style>
+
+
+<svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="play">
+        <title></title>
+        <path
+            d="M256 0C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0zm0 464c-114.875 0-208-93.125-208-208S141.125 48 256 48s208 93.125 208 208-93.125 208-208 208zm-64-320l192 112-192 112z"
+            fill="#2fca80"></path>
+    </symbol>
+</svg>
+
 <div class="ttl-2_block">
-        <div class="content__block">
-            <p class="mb-50">
-                Your customers are already texting your business. It's time to join the conversation.
-            </p>
-            <p class="cost">
-                <span class="dollar-amount">$29/</span><span class="month">month</span><br>
-                For Unlimited Texts
-            </p>
-            <div class="button__block">
-                <!--<button class="btn btn-lg btn-rounded" data-target="#yt-video-modal" data-toggle="modal" style="margin-right:15px" type="button">Open Modal</button>-->
-                <a id="button" class="header-btns--watch" data-target="#yt-video-modal" data-toggle="modal" type="button>
-                    <img alt="play icon" class="play-icon" src="data:image/png;base64,
-                    iVBORw0KGgoAAAANSUhEUgAAAGQAAABkBAMAAACCzIhnAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURUdwTP///////////////////////////////////////////xR6XWcAAAAL
-                    dFJOUwDVRBBgl3y67zAgVEvJWgAAAsdJREFUWMO9WDtvE0EQPp+xUUITCQRKrqEJFG6MBDRpHKFUaaIQJYUbAyJIuAEMNOmiNODGVBRpTAFComET23dh/xzc7t7t3e3M7HkKpsrt7ueZzHsmCFxq3juK
-                    5D8SH553gzrU3FTvNYn9GqCHJ7JE8RMfYlM6tE8jtiVAt5ZGkJj7EqF3GOKRROkpjAjH9smdw+Pjl2/td3IXtEc/N8bBRB+t7OQmmkP2+Zbd3p7aw9Vn2ekGLlbyunz+I0JF2zVC9aoX1wxm5lxgCIvp
-                    wUxeQIp5DLIxTNZh9X+B2Ggmc8zIfZdNSNiroM7i/U9KLCva54LhddwSAei8aKnfuEmFxQP1ZC//7viYZGwu8s+xl4lhk3SLciUTGrIyLkrWKfHEqPTqpPyfIaRkiQvOIvwZLrJO00j/vPJDztN3a9a/
-                    Bn5I2/pZ5DVKwTQid8lZnQS/m7lmy4rooUam2S0gSL+/hyBKtZeGXVKReixHmJpnxpCLSkQh4TbUxmym3P44kOqvKPqVvu1qha25ECg9NrTKWoAhQyQTtLXKFHIKQIDMvaol2gJ8MsSyWqS03AHyl4G4
-                    jtdXITME3CWDxF3AZRYKeIVA5Cng/3Nlyd8YpCraDWXLCHBKCxFTxzAiSC/eoBB5Vrq4nh4FUKoIsfLdyiEDAiImVfN7IfLT8pD5f4FcLA0pxUC7lpJHsJIJUy4AU3ocZgI4DO2WI8gtSec/A52fCrGK
-                    H2chRgXyHhzIRLo4RdIFnpRiLCmhqQ8obCb1oQl2HU2wWBqHulyTxrFi0cOLhdK1cErSBlWSoML39SNZ+BjllVHEGa0CpyFhtD2M5kq3cINacsX8RpHRjjKaXkZrzWngGWMCYxjhjDxmsFpgkCEwvzHG
-                    N8aQyBlFGQNvPlaL+mM1Mry/IoZ3zoqAsYjgrDs4SxXO6oazIOKsoTjLLs5Kzb+4+wsa7EWxkuKlRAAAAABJRU5ErkJggg==">
-                    Watch the Video
-                </a>
-                <a class="btn btn-lg btn-rounded" href="/start-ttl" rel="noopener noreferrer" target="_blank">Start Chatting Now</a>
-            </div>
-            <div class="modal fade" id="yt-video-modal" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button class="close" data-dismiss="modal" type="button">×</button>
-                        </div>
-                        <div class="modal-body">
-                            <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/_RK0Tqzf_Ao" width="560"></iframe>
-                        </div>
+    <div class="content__block">
+        <p class="mb-50">
+            Your customers are already texting your business. It's time to join the conversation.
+        </p>
+        <p class="cost">
+            <span class="dollar-amount">$29/</span><span class="month">month</span><br>
+            For Unlimited Texts
+        </p>
+        <div class="button__block">
+            <a class="btn btn-watch btn-lg" data-target="#yt-video-modal" data-toggle="modal" id="button">
+                <span class="play-svg"><svg class="watch-icon">
+                        <use xlink:href="#play"></use>
+                    </svg></span>Watch the Video</a> <a class="btn btn-lg btn-rounded" href="/start-ttl"
+                rel="noopener noreferrer" target="_blank">Start Chatting Now</a>
+        </div>
+        <!--<div class="modal fade" id="yt-video-modal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type="button">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe class="ttl-video"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="" frameborder="0" height="315"
+                            src="https://www.youtube.com/embed/_RK0Tqzf_Ao" width="560"></iframe>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="image__block lazyload" data-src="/sites/default/files/TTL/iphone-laptop.png">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="575">
-        </div>
+        </div>-->
     </div>
+    <div class="image__block lazyload" data-src="/sites/default/files/TTL/iphone-laptop.png">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="575">
+    </div>
+</div>
