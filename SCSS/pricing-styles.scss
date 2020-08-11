@@ -1,0 +1,212 @@
+@media (min-width: 992px) {
+    .pricing4 .pr-box {
+        max-width: 20%;
+    }
+}
+
+.pricing4 .price-box {
+    transition: 0.3s;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    min-height: 525px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.pricing4 .price-box h3 {
+    font-size: 26px;
+    margin-bottom: 16px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.pricing4 .price-box .price-card-header {
+    padding-bottom: 30px;
+}
+
+.pricing4 .price-box .price-card-header h3 {
+    font-size: 26px;
+    margin-bottom: 16px;
+    margin-top: 30px;
+}
+
+.pricing4 .price-box .price-card-header h2 {
+    color: $yellow;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.pricing4 .price-box .price-card-header .popular {
+    position: absolute;
+    right: -25px;
+    top: 10px;
+    background-color: $yellow;
+    color: #fff;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.pricing4 .price-box .box-line {
+    border-top: 1px solid #d0d5dc;
+    padding: 30px 0.8em 30px;
+}
+
+.pricing4 .price-box#selected {
+    background: #9aa3ad;
+    color: #fff;
+}
+
+.pricing4 .price-box#selected h3 {
+    color: #fff;
+}
+
+
+.pricing4 .price-box#selected h2 {
+    text-shadow: 0 0 0 #576677;
+    color: #fff;
+}
+
+.pricing4 .price-box#selected .pricing-button .btn:hover {
+    /*background-color: #fff;*/
+    color: #fff !important;
+    border-color: #fff;
+}
+
+.pricing4 .price-box:hover {
+    box-shadow: 0 3px 20px rgba(50, 50, 50, 0.1s);
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/*******************************/
+/*   Transitions: Price Boxes  */
+/*******************************/
+
+.price-boxes .toggle-item {
+    opacity: 1;
+    transition: 0.5s;
+}
+.price-boxes.hide-price-boxes {
+    transition: 0s;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+}
+.price-boxes.hide-price-boxes .toggle-item {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.discount-cost {
+    margin: 15px 0 3px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffa300;
+
+    span {
+        font-size: 14px;
+        color: #54585a;
+    }
+}
+
+/*************************/
+/***** Toggle Button *****/
+/*************************/
+
+span.month, span.year {
+    position: absolute;
+}
+
+.btn-toggle img {
+    position: absolute;
+    left: 150px;
+    top: -30px;
+    max-width: 160%;
+}
+
+.month {
+    top:0;
+    right:60px;
+}
+.year {
+    top:0;
+    left: 60px;
+}
+
+.btn-toggle.active {
+    background-color: #2fca80;
+}
+.btn-toggle {
+    margin: 0 5rem;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 26px;
+    width: 52px;
+    border-radius: 25px;
+    color: #526278;
+    background: #ffa300;
+    & span{
+        color: #526278;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+}
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+    outline: none;
+    box-shadow: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+    line-height: 26px;
+    width: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.25s;
+    & span{
+        color: #526278;
+    }
+}
+.btn-toggle > .handle {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    transition: left 0.25s;
+}
+.btn-toggle.active {
+    transition: background-color 0.25s;
+}
+.btn-toggle.active > .handle {
+    left: 29px;
+    transition: left 0.25s;
+}
+.btn-toggle.active:before {
+    opacity: 0.5;
+}
+.btn-toggle.active:after {
+    opacity: 1;
+}
+
+/**************************************/
+/*           Anchor Links             */
+/**************************************/
+.pr-box a:not(.btn) {
+    color: #54585a;;
+    text-decoration: none;
+}

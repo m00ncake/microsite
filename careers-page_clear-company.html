@@ -1,0 +1,41 @@
+<link href="https://reports.hrmdirect.com/employment/default/sm/settings/dynamic-embed/dynamic-iframe-embed-css.php" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+// Load jQuery
+if(typeof jQuery == "undefined"){
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    //script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js';
+    head.appendChild(script);
+}
+
+var hrmFrameResize = function() {
+
+    function receiveMessage(event) { // Perform actions posted from the iframe
+        var request = jQuery.parseJSON(event.data);
+        switch (request.action) {
+            case "resizeMe":
+            var height = parseInt(request.height) + 0;
+            jQuery("#iframeHeightDiv").css({height: height + 100 + "px"});
+            break;
+        }
+    }
+    function bindEvent(window, eventName, eventHandler) {
+        if (window.addEventListener){
+          window.addEventListener("message", receiveMessage, false); 
+        } else if (window.attachEvent){
+          window.attachEvent('on'+"message", receiveMessage);
+        }
+    }
+    bindEvent(window, "message", receiveMessage);
+
+};
+
+hrmFrameResize();
+</script>
+<img style="width:120px;margin-top:25px;margin-bottom:15px" src="https://www.glassdoor.com/api/widget/verticalStarRating.htm?e=737614">
+<h2 style="margin-left:10px;margin-bottom:25px">Careers at EZ Texting</h2>
+<div id="iframeHeightDiv" name="HRM Direct Career Site iFrame Container" align="center" class="ez-texting-iframe">
+	<iframe data-unblazy allowtransparency="true" id="inlineframe" name="HRM Direct Career Site iFrame" src="//callfire.hrmdirect.com/employment/job-openings.php?search=true&amp;nohd=&amp;dept=-1&amp;city=-1&amp;state=-1" frameborder="0"></iframe>
+</div>

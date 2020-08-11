@@ -1,0 +1,952 @@
+<style>
+	.bg-darkblue {
+		background-color: #022853;
+	}
+	.bg-essential {
+		background-color: #163960;
+	}
+	.header-title {
+		border-radius: 5px 5px 0 0;
+	}
+	sup {
+		font-size: 60%;
+	}
+	.btn-pair {
+		max-width: 40%;
+	}
+	.btn-tryit {
+		background: white;
+		color:#2fca80;
+	}
+	.btn-tryit:hover {
+		background: transparent;
+		color: #2fca80;
+		border-color:#2fca80;
+	}
+
+	.title-bar, .title-bar-add-features {
+		background-color: #eaeaea;
+		padding: 0px;
+		height: 35px;
+	}
+	.title-bar-add-features:before {
+		content: '';
+		display: block;
+		width: 200vw;
+		height: 100%;
+		position: absolute;
+		left: -100vw;
+		top: 0;
+		background: #fff;
+		z-index: -1;
+	}
+	/* .title-bar-add-features:before {
+		content: '';
+		display: block;
+		width: 70vw;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #eaeaea;
+		z-index: 0;
+	} */
+	.title-bar-add-features:after {
+		content: '';
+		display: block;
+		width: calc(100% + 16px);
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: rgba(115,115,115,.15);
+	}
+	.title-bar-add-features {
+		z-index: 1;
+	}
+	.add-features-sect {
+		z-index: 1;
+	}
+	.add-features-sect:after {
+		content: '';
+		display: block;
+		width: 200vw;
+		height: 170%;
+		position: absolute;
+		left: -100vw;
+		top: 0;
+		background: #fff;
+		z-index: -1;
+	}
+	@media (min-width: 1250px) {
+		.add-features-sect-1:after {
+			height: 220%;
+		}
+	}
+	@media only screen and (max-width: 1249px) and (min-width: 992px) {
+		.add-features-sect:after {
+			height: 180%;
+		}
+		.add-features-sect-1:after {
+			height: 153%;
+		}
+	} 
+	@media (max-width: 768px) {
+		.add-features-sect:after {
+			height: 153%;
+		}
+	}
+	@media (max-width: 576px) {
+		.add-features-sect:after {
+			height: 140%;
+		}
+	}
+	.title-bar-blue {
+		background-color: #163960;
+		padding: 0;
+		height: 35px;
+	}
+	.price-card-header {
+		height: 300px;
+	}
+	.top-features {
+		height: 405px;
+	}
+	@media (min-width: 1480px) {
+		.add-features-sect {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: 991px) {
+		.height-decrease {
+			height: 240px;
+		}
+		.top-features, .add-features, .add-features-sect {
+			font-size: 13px;
+		}
+	}
+	@media (max-width: 768px) {
+		.top-features {
+			height: 385px;
+		}
+		.height-decrease {
+			height: 240px;
+		}
+	}
+	@media (max-width: 576px) {
+		.premium-height-decrease {
+			height: 325px;
+		}
+		.value-height-decrease {
+			height: 180px;
+		}
+	}
+
+	.add-features {
+		height: 195px;
+		border-radius: 0 0 5px 5px;
+	}
+	.pricing-wrapper {
+		position: absolute;
+	}
+	.pricing4 .pr-box .price-box:hover {
+		/* -webkit-box-shadow: none;
+		box-shadow: none; */
+		-webkit-transform: scale(1.02);
+		transform: scale(1.02);
+		/* -webkit-transition: none;
+		transition: none; */
+	}
+
+	.box-border {
+		border: 1px solid lightgray;
+	}
+	.box-border-transparent {
+		border: 1px solid transparent;
+	}
+	.bg-transparent {
+		background: transparent;
+	}
+	.z-index-up {
+		z-index: 100;
+	}
+	.position-rel {
+		position: relative;
+	}
+	@media (min-width: 992px) {
+		.pricing4 .pr-box {
+			max-width: 19vw;
+		}
+	}
+	@media (min-width: 1250px) {
+		.pricing4 .pr-box {
+			max-width: 17%;
+		}
+	}
+	.pr-features {
+		max-width: 15%;
+	}
+	.pr-gap {
+		max-width: 1.3%;
+		z-index: 1;
+	}
+	@media (max-width: 1249px) {
+		.pr-features {
+    		max-width: 19vw;
+		}
+		.pr-gap {
+			max-width: 0.5vw;
+		}
+	}
+	@media (max-width: 991px) {
+		.pr-features {
+    		max-width: 25%;
+		}
+		.pr-gap {
+			max-width: 3%;
+		}
+	}
+	@media (max-width: 576px) {
+		.pr-features {
+    		max-width: 40%;
+		}
+	}
+
+
+	.popular-tab {
+		position: absolute;
+		background-color: orange;
+		width: 70%;
+		top: -31px;
+		left: 50%;
+		margin-left: -34%;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.popover {
+		line-height: 1.2em;
+		font-weight: 600;
+		font-style: italic;
+		background-color: #a2a2a2;
+		border: 0;
+		border-radius: 10px;
+		padding: 15px;
+		color: white;
+	}
+	.popover .arrow {
+		display: none;
+	}
+	.popover-body {
+		padding: 0;
+		background: none;
+		color: white;
+		font-size: 13px;
+		font-weight: 600;
+	}
+	.popover-header {
+		padding: 0;
+		background: none;
+		margin: 0;
+		border: 0;
+		font-weight: 700;
+		font-size: 14px;
+		text-transform: uppercase;
+		padding-bottom: 8px;
+	}
+	.popover-header:before {
+		display: none !important;
+	}
+
+
+</style>
+
+<div class="row">
+    <div id="pricing-content" class="pricing4 w-100">
+		<div class="price-plan-toggle text-center text-sm-left mt-4 mb-4 ml-0 ml-sm-10 pl-6 pl-sm-6">
+			<button type="button" class="btn btn-toggle fw-400" data-toggle="button" aria-pressed="false" autocomplete="off">
+				<span class="month">Annually <span class="fw-700 text-warning">SAVE 20%</span></span><span class="year">Monthly</span>
+				<div class="handle"></div>
+				<!-- <img class="b-lazy" data-src="/sites/default/files/icons/save20.png" alt="save 20%"> -->
+			</button>
+		</div>
+		<!-- <a href="/volume-pricing" class="price-arrow price-arrow-right  position-absolute" title="Volume Pricing"></a> -->
+		<!-------------------------------->
+		<!--       NORMAL PRICING       -->
+		<!-------------------------------->
+		<div class="price-boxes d-flex justify-content-center justify-content-lg-start justify-content-xxl-start flex-xxl-nowrap flex-wrap hide-price-boxes">
+			<div class="col-5 col-sm-3 col-lg-3 py-3 pr-0 pl-0 pl-sm-0 pl-xl-2 pr-features fs-xs text-right">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar d-flex align-items-center justify-content-end fw-700 fs-17 lh-4 pr-2 pr-sm-3">Top Features</div>
+					<div class="top-features height-decrease value-height-decrease"></div>
+					<div class="title-bar-add-features position-rel d-flex align-items-center justify-content-end fw-700 fs-17 pr-2 pr-sm-3"><span>Additional Features</span></div>
+					<div class="add-features-sect add-features-sect-1 position-rel">
+						<div class="mt-3 pr-2 pr-sm-3">
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Messages" data-content="You can always send additional messages above and beyond your plan.">Additional Messages</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Opt-in Keywords" data-content="Pair a Keyword (like “PIZZA” or “SPRING”) with your textable number for an engaging way to grow your opt-in list.">Opt-in Keywords</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Keyword" data-content="Keywords are a great way to grow your opt-in list. Additional Keywords are available for an additional charge.">Additional Keyword</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Textable Business Number" data-content="Add additional 10-digit textable numbers to your account to increase your team’s productivity.">Textable Business Number</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Number" data-content="Add as many additional 10-digit textable numbers as you need.">Additional Number</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-7 col-sm-4 col-lg-3 py-3 px-0 pr-box z-index-up">
+				<!-- <div data-toggle="modal" data-target="#ModalForm" style="cursor: pointer;"> -->
+                    <div class="price-box box-border d-flex flex-column px-0">
+						<div class="price-card-header d-flex flex-column pb-0">
+							<div class="bg-darkblue header-title">
+								<h3 class="text-white fw-700 text-capitalize my-3 py-1">
+									Value
+								</h3>
+							</div>
+							<div class="pt-3 pb-1">
+								Starting at
+							</div>
+							<div class="py-0">
+								<span class="fw-700 fs-31"><sup>$</sup>24</span>
+							</div>
+							<div class="pt-1 pb-3 fs-12">
+								Per Month
+							</div>
+							<a href="/start?pid=value" class="pricing-button mt-auto mb-4 mt-auto mb-4">
+								<div class="btn btn-lg btn-ez-success text-uppercase fw-700 fs-13 px-5 py-1">
+									Sign Up
+								</div>
+							</a>
+						</div>
+						<div class="title-bar"></div>
+						<div class="top-features height-decrease value-height-decrease">
+							<div class="mt-3">
+								<a href="/features/contacts"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Contacts" data-content="Whether your organization is 20 people or 2000, you can add as many contacts to your account as you need to get the job done.">Unlimited Contacts</div></a>
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Inbound Messages" data-content="Inbound messages are unlimited, so you’ll never miss texts from customers, clients, or co-workers.">Unlimited Inbound Messages</div></a>						
+								<a href="/features/chat-two-way-sms-text-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited 1-on-1 Chat" data-content="Send and receive direct texts using your existing business phone number or a new textable 10-digit number.">Unlimited 1-on-1 Chat</div></a>						
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="200 Mass Messages Included (VALUE)" data-content="Mass Messaging allows you to send one text message to many contacts at once. The Value plan comes with 200 credits. 1 SMS message sent to 1 contact costs 1 credit and 1 message sent to 100 contacts equals 100 credits. MMS picture and video messages cost 3 credits each.">200 Mass Messages Included</div>								
+								<a href="/features/integrations"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Integrations" data-content="EZ Texting works seamlessly with marketing software including Constant Contact, HubSpot, Zapier, and more, so that you can operate at peak efficiency.">Integrations</div></a>
+							</div>
+						</div>
+						<div class="title-bar"></div>
+						<div class="add-features">
+							<div class="mt-3">
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$0.04/Message" data-content="Value plans include 200 messages per month. You can send additional messages at $0.04 per message.">$0.04/message</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="1" data-content="Value plans come with 1 Opt-in Keyword. You can add more Keywords to your plan for an additional $25 a month per Keyword.">1</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$25/month" data-content="Value plans come with 1 Opt-in Keyword. You can add more Keywords to your plan for an additional $25 a month per Keyword.">$25/month</div>
+								<div class="pt-3 pb-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="1" data-content="One additional 10-digit textable number can be added to your Value account.">1</div>
+								<div class="py-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$25/month" data-content="Additional 10-digit textable numbers can be added to your Value plan for $25 per month.">$25/month</div>
+							</div>
+						</div>
+					</div>
+				<!-- </div> -->
+			</div>
+			<div class="d-none d-sm-block col-12 col-sm-6 col-md-4 py-3 px-0 pr-0 pr-gap">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="top-features height-decrease value-height-decrease"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="add-features">
+						<div class="mt-3">
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 col-sm-3 col-md-2 d-block d-sm-none py-3 pt-5 pt-sm-3 pr-0 pl-0 pl-sm-3 pl-md-3 pl-lg-2 pl-xl-2 pr-features fs-xs text-right">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar d-flex align-items-center justify-content-end fw-700 fs-17 lh-4 pr-2 pr-sm-3">Top Features</div>
+					<div class="top-features height-decrease"></div>
+					<div class="title-bar-add-features position-rel d-flex align-items-center justify-content-end fw-700 fs-17 pr-2 pr-sm-3"><span>Additional Features</span></div>
+					<div class="add-features-sect position-rel">
+						<div class="mt-3 pr-2 pr-sm-3">
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Messages" data-content="You can always send additional messages above and beyond your plan.">Additional Messages</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Opt-in Keywords" data-content="Pair a Keyword (like “PIZZA” or “SPRING”) with your textable number for an engaging way to grow your opt-in list.">Opt-in Keywords</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Keyword" data-content="Keywords are a great way to grow your opt-in list. Additional Keywords are available for an additional charge.">Additional Keyword</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Textable Business Number" data-content="Add additional 10-digit textable numbers to your account to increase your team’s productivity.">Textable Business Number</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Number" data-content="Add as many additional 10-digit textable numbers as you need.">Additional Number</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-7 col-sm-4 col-lg-3 py-3 pt-5 pt-sm-3 px-0 pr-box z-index-up">
+                <!-- <a href="/start?pid=2793"> -->
+                    <div class="price-box box-border d-flex flex-column px-0 text-white">
+						<div class="price-card-header d-flex flex-column pb-0 bg-darkblue header-title">
+							<div class="popular-tab px-0 py-1 fw-700 text-uppercase">Most Popular</div>
+							<div class="bg-essential header-title">
+								<h3 class="text-white fw-700 text-capitalize my-3 py-1">
+									Essentials
+								</h3>
+							</div>
+							<div class="pt-3 pb-1">
+								Starting at
+							</div>
+							<div class="py-0">
+								<span class="fw-700 fs-31"><sup>$</sup>36</span>
+							</div>
+							<div class="pt-1 pb-3 fs-12">
+								Per Month
+							</div>
+							<div class="my-1">
+								<a href="/start?pid=essentials-trial" class="tryit-btn pricing-button mt-auto mb-4 mt-auto mb-4">
+									<div class="col-5 btn btn-lg btn-pair btn-tryit text-uppercase fw-700 fs-13 mx-1 px-0 py-1">
+										Try It
+									</div>
+								</a>
+								<a href="/start?pid=essentials" class="pricing-button mt-auto mb-4 mt-auto mb-4">
+									<div class="col-5 btn btn-lg btn-ez-success btn-pair text-uppercase fw-700 fs-13 mx-1 px-0 py-1">
+										Sign Up
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="title-bar-blue"></div>
+						<div class="top-features bg-darkblue height-decrease">
+							<div class="mt-3 text-white">
+								<a class="text-white" href="/features/contacts"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Contacts" data-content="Whether your organization is 20 people or 2000, you can add as many contacts to your account as you need to get the job done.">Unlimited Contacts</div></a>
+								<a class="text-white" href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Inbound Messages" data-content="Inbound messages are unlimited, so you’ll never miss texts from customers, clients, or co-workers.">Unlimited Inbound Messages</div></a>						
+								<a class="text-white" href="/features/chat-two-way-sms-text-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited 1-on-1 Chat" data-content="Send and receive direct texts using your existing business phone number or a new textable 10-digit number.">Unlimited 1-on-1 Chat</div></a>						
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="200 Mass Messages Included (ESSENTIALS)" data-content="Mass Messaging allows you to send one text message to many contacts at once. The Essentials plan comes with 200 credits. 1 SMS message sent to 1 contact costs 1 credit and 1 message sent to 100 contacts equals 100 credits. MMS picture and video messages cost 3 credits each.">200 Mass Messages Included</div>								
+								<a class="text-white" href="/features/integrations"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Integrations" data-content="EZ Texting works seamlessly with marketing software including Constant Contact, HubSpot, Zapier, and more, so that you can operate at peak efficiency.">Integrations</div></a>							
+								<a class="text-white" href="/features/reports"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Delivery Reports" data-content="Gain valuable audience insight and maximize campaign efficiency with message reporting.">Delivery Reports</div></a>						
+								<a class="text-white" href="/mms-marketing-for-business"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Picture &amp; Video Messaging" data-content="Let images bring your texts to life. With Multimedia Messaging System (MMS) you can include pictures, GIFs, and both audio and video files.">Picture &amp; Video Messaging</div></a>
+							</div>
+						</div>
+						<div class="title-bar-blue"></div>
+						<div class="add-features bg-darkblue">
+							<div class="mt-3">
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$0.04/Message" data-content="Essentials plans include 200 messages per month. You can send additional messages at $0.04 per message.">$0.04/message</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="3" data-content="Essentials plans come with 3 Opt-in Keywords. You can add more Keywords to your plan for an additional $25 a month per Keyword.">3</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$25/month" data-content="Essentials plans come with 3 Opt-in Keywords. You can add more Keywords to your plan for an additional $25 a month per Keyword.">$25/month</div>
+								<div class="pt-3 pb-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="2" data-content="Two additional 10-digit textable numbers can be added to your Essentials account.">2</div>
+								<div class="py-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$25/month" data-content="Additional 10-digit textable numbers can be added to your Essentials plan for $25 per month.">$25/month</div>
+							</div>
+						</div>
+					</div>
+				<!-- </a> -->
+			</div>
+			<div class="d-none d-lg-block col-12 col-sm-6 col-md-4 py-3 px-0 pr-0 pr-gap">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="top-features"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="add-features">
+						<div class="mt-3">
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 col-sm-3 col-lg-2 d-block d-lg-none mt-0 mt-sm-1 mt-lg-0 py-3 pt-6 pt-sm-6 pt-lg-3 pr-0 pl-0 pl-sm-0 pl-md-3 pl-lg-2 pl-xl-2 pr-features fs-xs text-right">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar d-flex align-items-center justify-content-end fw-700 fs-17 lh-4 pr-2 pr-sm-3">Top Features</div>
+					<div class="top-features premium-height-decrease"></div>
+					<div class="title-bar-add-features position-rel d-flex align-items-center justify-content-end fw-700 fs-17 pr-2 pr-sm-3"><span>Additional Features</span></div>
+					<div class="add-features-sect position-rel">
+						<div class="mt-3 pr-2 pr-sm-3">
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Messages" data-content="You can always send additional messages above and beyond your plan.">Additional Messages</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Opt-in Keywords" data-content="Pair a Keyword (like “PIZZA” or “SPRING”) with your textable number for an engaging way to grow your opt-in list.">Opt-in Keywords</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Keyword" data-content="Keywords are a great way to grow your opt-in list. Additional Keywords are available for an additional charge.">Additional Keyword</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Textable Business Number" data-content="Add additional 10-digit textable numbers to your account to increase your team’s productivity.">Textable Business Number</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Number" data-content="Add as many additional 10-digit textable numbers as you need.">Additional Number</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-7 col-sm-4 col-md-4 col-lg-3 mt-0 mt-sm-1 mt-lg-0 py-3 pt-6 pt-sm-6 pt-lg-3 px-0 pr-box z-index-up">
+                <!-- <a href="/start?pid=2792"> -->
+                    <div class="price-box box-border d-flex flex-column px-0">
+						<div class="price-card-header d-flex flex-column pb-0">
+							<div class="bg-darkblue header-title">
+								<h3 class="text-white fw-700 text-capitalize my-3 py-1">
+									Premium
+								</h3>
+							</div>
+							<div class="pt-3 pb-1">
+								Starting at
+							</div>
+							<div class="py-0">
+								<span class="fw-700 fs-31"><sup>$</sup>61</span>
+							</div>
+							<div class="pt-1 pb-3 fs-12">
+								Per Month
+							</div>
+							<a href="/start?pid=premium" class="pricing-button mt-auto mb-4 mt-auto mb-4">
+								<div class="btn btn-lg btn-ez-success text-uppercase fw-700 fs-13 px-5 py-1">
+									Sign Up
+								</div>
+							</a>
+						</div>
+						<div class="title-bar"></div>
+						<div class="top-features premium-height-decrease">
+							<div class="mt-3">							
+								<a href="/features/contacts"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Contacts" data-content="Whether your organization is 20 people or 2000, you can add as many contacts to your account as you need to get the job done.">Unlimited Contacts</div></a>
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Inbound Messages" data-content="Inbound messages are unlimited, so you’ll never miss texts from customers, clients, or co-workers.">Unlimited Inbound Messages</div></a>						
+								<a href="/features/chat-two-way-sms-text-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited 1-on-1 Chat" data-content="Send and receive direct texts using your existing business phone number or a new textable 10-digit number.">Unlimited 1-on-1 Chat</div></a>						
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="200 Mass Messages Included (PREMIUM)" data-content="Mass Messaging allows you to send one text message to many contacts at once. The Premium plan comes with 200 credits. 1 SMS message sent to 1 contact costs 1 credit and 1 message sent to 100 contacts equals 100 credits. MMS picture and video messages cost 3 credits each.">200 Mass Messages Included</div>								
+								<a href="/features/integrations"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Integrations" data-content="EZ Texting works seamlessly with marketing software including Constant Contact, HubSpot, Zapier, and more, so that you can operate at peak efficiency.">Integrations</div></a>							
+								<a href="/features/reports"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Delivery Reports" data-content="Gain valuable audience insight and maximize campaign efficiency with message reporting.">Delivery Reports</div></a>						
+								<a href="/mms-marketing-for-business"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Picture &amp; Video Messaging" data-content="Let images bring your texts to life. With Multimedia Messaging System (MMS) you can include pictures, GIFs, and both audio and video files.">Picture &amp; Video Messaging</div></a>							
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="3 Month Credit Rollover" data-content="Unused credit will remain on your account for three months.">3 Month Credit Rollover</div>								
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Automated Messaging" data-content="Don’t just plan ahead — schedule the texts you already know you want to send. Set it, forget it, and move on to other business.">Automated Messaging</div></a>						
+								<a href="/developers"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="API Access" data-content="Leverage the power of EZ Texting's flexible Bulk SMS API to allow your application to send text messages through our SMS gateway.">API Access</div></a>
+							</div>
+						</div>
+						<div class="title-bar"></div>
+						<div class="add-features">
+							<div class="mt-3">
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$0.04/Message" data-content="Premium plans include 200 messages per month. You can send additional messages at $0.04 per message.">$0.04/message</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="6" data-content="Premium plans come with 6 Opt-in Keywords. You can add more Keywords to your plan for an additional $20 a month per Keyword.">6</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$20/month" data-content="Premium plans come with 6 Opt-in Keywords. You can add more Keywords to your plan for an additional $20 a month per Keyword.">$20/month</div>
+								<div class="pt-3 pb-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="3" data-content="Three additional 10-digit textable numbers can be added to your Premium account.">3</div>
+								<div class="py-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$20/month" data-content="Additional 10-digit textable numbers can be added to your Premium plan for $20 per month.">$20/month</div>
+							</div>
+						</div>
+					</div>
+				<!-- </a> -->
+			</div>
+			<div class="d-none d-sm-block d-lg-block col-12 col-sm-6 col-md-4 mt-sm-1 mt-lg-0 py-3 pt-sm-6 pt-lg-3 px-0 pr-0 pr-gap">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="top-features"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="add-features">
+						<div class="mt-3">
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 col-sm-3 col-lg-3 d-block d-sm-none d-xl-none py-3 pt-5 pt-sm-6 pt-xl-3 pr-0 pl-0 pl-sm-3 pl-md-3 pl-lg-2 pl-xl-2 pr-features fs-xs text-right">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar d-flex align-items-center justify-content-end fw-700 fs-17 lh-4 pr-2 pr-sm-3">Top Features</div>
+					<div class="top-features"></div>
+					<div class="title-bar-add-features position-rel d-flex align-items-center justify-content-end fw-700 fs-17 pr-2 pr-sm-3"><span>Additional Features</span></div>
+					<div class="add-features-sect position-rel">
+						<div class="mt-3 pr-2 pr-sm-3">
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Messages" data-content="You can always send additional messages above and beyond your plan.">Additional Messages</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Opt-in Keywords" data-content="Pair a Keyword (like “PIZZA” or “SPRING”) with your textable number for an engaging way to grow your opt-in list.">Opt-in Keywords</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Keyword" data-content="Keywords are a great way to grow your opt-in list. Additional Keywords are available for an additional charge.">Additional Keyword</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Textable Business Number" data-content="Add additional 10-digit textable numbers to your account to increase your team’s productivity.">Textable Business Number</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Number" data-content="Add as many additional 10-digit textable numbers as you need.">Additional Number</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-7 col-sm-4 col-md-4 col-lg-3 mt-sm-1 mt-lg-0 py-3 pt-5 pt-sm-6 pt-lg-3 px-0 pr-box z-index-up">
+				<!-- <a href="/start?pid=2791"> -->
+					<div class="price-box box-border d-flex flex-column px-0">
+						<div class="price-card-header d-flex flex-column pb-0">
+							<div class="bg-darkblue header-title">
+								<h3 class="text-white fw-700 text-capitalize my-3 py-1">
+									Custom
+								</h3>
+							</div>
+							<div class="pt-3 pb-1">
+								Starting at
+							</div>
+							<div class="py-0">
+								<span class="fw-700 fs-31"><sup>$</sup>374</span>
+							</div>
+							<div class="pt-1 pb-3 fs-12">
+								Per Month
+							</div>
+							<!-- <div class="pricing-button mt-auto mb-4 mt-auto mb-4">
+								<div class="btn btn-lg btn-ez-success text-uppercase fw-700 fs-13 px-5 py-1">
+									Call Us
+								</div>
+							</div> -->
+							<div class="pricing-button mt-auto mb-4 mt-auto mb-4" data-toggle="modal" data-target="#ModalForm" style="cursor: pointer;">
+								<button data-toggle="modal" data-target="#ModalForm"
+									class="btn btn-lg btn-ez-success text-uppercase fw-700 fs-13 px-5 py-1">Call Us</button>
+							</div>
+						</div>
+						<div class="title-bar"></div>
+						<div class="top-features">
+							<div class="mt-3">
+								<a href="/features/contacts"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Contacts" data-content="Whether your organization is 20 people or 2000, you can add as many contacts to your account as you need to get the job done.">Unlimited Contacts</div></a>
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Inbound Messages" data-content="Inbound messages are unlimited, so you’ll never miss texts from customers, clients, or co-workers.">Unlimited Inbound Messages</div></a>						
+								<a href="/features/chat-two-way-sms-text-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited 1-on-1 Chat" data-content="Send and receive direct texts using your existing business phone number or a new textable 10-digit number.">Unlimited 1-on-1 Chat</div></a>						
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="50,000+ Mass Messages" data-content="Mass Messaging allows you to send one text message to many contacts at once. The Custom plan comes with more than 50,000 credits. 1 SMS message sent to 1 contact costs 1 credit and 1 message sent to 100 contacts equals 100 credits. MMS picture and video messages cost 3 credits each.">50,000+ Mass Messages</div>								
+								<a href="/features/integrations"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Integrations" data-content="EZ Texting works seamlessly with marketing software including Constant Contact, HubSpot, Zapier, and more, so that you can operate at peak efficiency.">Integrations</div></a>							
+								<a href="/features/reports"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Delivery Reports" data-content="Gain valuable audience insight and maximize campaign efficiency with message reporting.">Delivery Reports</div></a>						
+								<a href="/mms-marketing-for-business"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Picture &amp; Video Messaging" data-content="Let images bring your texts to life. With Multimedia Messaging System (MMS) you can include pictures, GIFs, and both audio and video files.">Picture &amp; Video Messaging</div></a>							
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="3 Month Credit Rollover" data-content="Unused credit will remain on your account for three months.">3 Month Credit Rollover</div>								
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Automated Messaging" data-content="Don’t just plan ahead — schedule the texts you already know you want to send. Set it, forget it, and move on to other business.">Automated Messaging</div></a>						
+								<a href="/developers"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="API Access" data-content="Leverage the power of EZ Texting's flexible Bulk SMS API to allow your application to send text messages through our SMS gateway.">API Access</div></a>					
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Dedicated Account Team" data-content="Account experts are ready to help get your first message sent confirmation, and will be there to help throughout your EZ Texting experience.">Dedicated Account Team</div>								
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Multi-User Platform" data-content="Streamline SMS text management for multiple separate accounts.">Multi-User Platform</div>
+							</div>
+						</div>
+						<div class="title-bar"></div>
+						<div class="add-features">
+							<div class="mt-3">
+								<div class="py-1">Custom Rates</div>
+								<div class="py-1">Custom</div>
+								<div class="py-1">N/A</div>
+								<div class="pt-3 pb-2 py-sm-1">Custom</div>
+								<div class="py-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$5/Month" data-content="Each additional 10-digit textable number can be added to your Custom account for $5 per month.">$5/month</div>
+							</div>
+						</div>
+					</div>
+				<!-- </a> -->
+			</div>
+		</div>
+        <!-------------------------------->
+        <!--       ANNUAL PRICING       -->
+		<!-------------------------------->
+		<div class="price-boxes d-flex justify-content-center justify-content-lg-start justify-content-xxl-start flex-xxl-nowrap flex-wrap">
+			<div class="col-5 col-sm-3 col-lg-3 py-3 pr-0 pl-0 pl-sm-0 pl-xl-2 pr-features fs-xs text-right">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar d-flex align-items-center justify-content-end fw-700 fs-17 lh-4 pr-2 pr-sm-3">Top Features</div>
+					<div class="top-features height-decrease value-height-decrease"></div>
+					<div class="title-bar-add-features position-rel d-flex align-items-center justify-content-end fw-700 fs-17 pr-2 pr-sm-3"><span>Additional Features</span></div>
+					<div class="add-features-sect add-features-sect-1 position-rel">
+						<div class="mt-3 pr-2 pr-sm-3">
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Messages" data-content="You can always send additional messages above and beyond your plan.">Additional Messages</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Opt-in Keywords" data-content="Pair a Keyword (like “PIZZA” or “SPRING”) with your textable number for an engaging way to grow your opt-in list.">Opt-in Keywords</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Keyword" data-content="Keywords are a great way to grow your opt-in list. Additional Keywords are available for an additional charge.">Additional Keyword</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Textable Business Number" data-content="Add additional 10-digit textable numbers to your account to increase your team’s productivity.">Textable Business Number</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Number" data-content="Add as many additional 10-digit textable numbers as you need.">Additional Number</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-7 col-sm-4 col-lg-3 py-3 px-0 pr-box z-index-up">
+				<!-- <div data-toggle="modal" data-target="#ModalForm" style="cursor: pointer;"> -->
+                    <div class="price-box box-border d-flex flex-column px-0">
+						<div class="price-card-header d-flex flex-column pb-0">
+							<div class="bg-darkblue header-title">
+								<h3 class="text-white fw-700 text-capitalize my-3 py-1">
+									Value
+								</h3>
+							</div>
+							<div class="pt-3 pb-1">
+								Starting at
+							</div>
+							<div class="py-0">
+								<span class="fw-700 fs-31"><sup>$</sup>19</span><span class="fs-12">/month</span>
+							</div>
+							<div class="pt-1 pb-3 fs-12">
+								$228 billed annually
+							</div>
+							<a href="/start?pid=value&prepaid=1" class="pricing-button mt-auto mb-4 mt-auto mb-4">
+								<div class="btn btn-lg btn-ez-success text-uppercase fw-700 fs-13 px-5 py-1">
+									Sign Up
+								</div>
+							</a>
+						</div>
+						<div class="title-bar"></div>
+						<div class="top-features height-decrease value-height-decrease">
+							<div class="mt-3">
+								<a href="/features/contacts"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Contacts" data-content="Whether your organization is 20 people or 2000, you can add as many contacts to your account as you need to get the job done.">Unlimited Contacts</div></a>
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Inbound Messages" data-content="Inbound messages are unlimited, so you’ll never miss texts from customers, clients, or co-workers.">Unlimited Inbound Messages</div></a>						
+								<a href="/features/chat-two-way-sms-text-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited 1-on-1 Chat" data-content="Send and receive direct texts using your existing business phone number or a new textable 10-digit number.">Unlimited 1-on-1 Chat</div></a>						
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="200 Mass Messages Included (VALUE)" data-content="Mass Messaging allows you to send one text message to many contacts at once. The Value plan comes with 200 credits. 1 SMS message sent to 1 contact costs 1 credit and 1 message sent to 100 contacts equals 100 credits. MMS picture and video messages cost 3 credits each.">200 Mass Messages Included</div>								
+								<a href="/features/integrations"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Integrations" data-content="EZ Texting works seamlessly with marketing software including Constant Contact, HubSpot, Zapier, and more, so that you can operate at peak efficiency.">Integrations</div></a>
+							</div>
+						</div>
+						<div class="title-bar"></div>
+						<div class="add-features">
+							<div class="mt-3">
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$0.04/Message" data-content="Value plans include 200 messages per month. You can send additional messages at $0.04 per message.">$0.04/message</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="1" data-content="Value plans come with 1 Opt-in Keyword. You can add more Keywords to your plan for an additional $25 a month per Keyword.">1</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$25/month" data-content="Value plans come with 1 Opt-in Keyword. You can add more Keywords to your plan for an additional $25 a month per Keyword.">$25/month</div>
+								<div class="pt-3 pb-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="1" data-content="One additional 10-digit textable number can be added to your Value account.">1</div>
+								<div class="py-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$25/month" data-content="Additional 10-digit textable numbers can be added to your Value plan for $25 per month.">$25/month</div>
+							</div>
+						</div>
+					</div>
+				<!-- </div> -->
+			</div>
+			<div class="d-none d-sm-block col-12 col-sm-6 col-md-4 py-3 px-0 pr-0 pr-gap">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="top-features height-decrease value-height-decrease"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="add-features">
+						<div class="mt-3">
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 col-sm-3 col-md-2 d-block d-sm-none py-3 pt-5 pt-sm-3 pr-0 pl-0 pl-sm-3 pl-md-3 pl-lg-2 pl-xl-2 pr-features fs-xs text-right">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar d-flex align-items-center justify-content-end fw-700 fs-17 lh-4 pr-2 pr-sm-3">Top Features</div>
+					<div class="top-features height-decrease"></div>
+					<div class="title-bar-add-features position-rel d-flex align-items-center justify-content-end fw-700 fs-17 pr-2 pr-sm-3"><span>Additional Features</span></div>
+					<div class="add-features-sect position-rel">
+						<div class="mt-3 pr-2 pr-sm-3">
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Messages" data-content="You can always send additional messages above and beyond your plan.">Additional Messages</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Opt-in Keywords" data-content="Pair a Keyword (like “PIZZA” or “SPRING”) with your textable number for an engaging way to grow your opt-in list.">Opt-in Keywords</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Keyword" data-content="Keywords are a great way to grow your opt-in list. Additional Keywords are available for an additional charge.">Additional Keyword</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Textable Business Number" data-content="Add additional 10-digit textable numbers to your account to increase your team’s productivity.">Textable Business Number</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Number" data-content="Add as many additional 10-digit textable numbers as you need.">Additional Number</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-7 col-sm-4 col-lg-3 py-3 pt-5 pt-sm-3 px-0 pr-box z-index-up">
+                <!-- <a href="/start?pid=2793"> -->
+                    <div class="price-box box-border d-flex flex-column px-0 text-white">
+						<div class="price-card-header d-flex flex-column pb-0 bg-darkblue header-title">
+							<div class="popular-tab px-0 py-1 fw-700 text-uppercase">Most Popular</div>
+							<div class="bg-essential header-title">
+								<h3 class="text-white fw-700 text-capitalize my-3 py-1">
+									Essentials
+								</h3>
+							</div>
+							<div class="pt-3 pb-1">
+								Starting at
+							</div>
+							<div class="py-0">
+								<span class="fw-700 fs-31"><sup>$</sup>29</span><span class="fs-12">/month</span>
+							</div>
+							<div class="pt-1 pb-3 fs-12">
+								$348 billed annually
+							</div>
+							<div class="my-1">
+								<a href="/start?pid=essentials-trial" class="tryit-btn pricing-button mt-auto mb-4 mt-auto mb-4">
+									<div class="col-5 btn btn-lg btn-pair btn-tryit text-uppercase fw-700 fs-13 mx-1 px-0 py-1">
+										Try It
+									</div>
+								</a>
+								<a href="/start?pid=essentials&prepaid=1" class="pricing-button mt-auto mb-4 mt-auto mb-4">
+									<div class="col-5 btn btn-lg btn-ez-success btn-pair text-uppercase fw-700 fs-13 mx-1 px-0 py-1">
+										Sign Up
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="title-bar-blue"></div>
+						<div class="top-features bg-darkblue height-decrease">
+							<div class="mt-3 text-white">
+								<a class="text-white" href="/features/contacts"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Contacts" data-content="Whether your organization is 20 people or 2000, you can add as many contacts to your account as you need to get the job done.">Unlimited Contacts</div></a>
+								<a class="text-white" href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Inbound Messages" data-content="Inbound messages are unlimited, so you’ll never miss texts from customers, clients, or co-workers.">Unlimited Inbound Messages</div></a>						
+								<a class="text-white" href="/features/chat-two-way-sms-text-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited 1-on-1 Chat" data-content="Send and receive direct texts using your existing business phone number or a new textable 10-digit number.">Unlimited 1-on-1 Chat</div></a>						
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="200 Mass Messages Included (ESSENTIALS)" data-content="Mass Messaging allows you to send one text message to many contacts at once. The Essentials plan comes with 200 credits. 1 SMS message sent to 1 contact costs 1 credit and 1 message sent to 100 contacts equals 100 credits. MMS picture and video messages cost 3 credits each.">200 Mass Messages Included</div>								
+								<a class="text-white" href="/features/integrations"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Integrations" data-content="EZ Texting works seamlessly with marketing software including Constant Contact, HubSpot, Zapier, and more, so that you can operate at peak efficiency.">Integrations</div></a>							
+								<a class="text-white" href="/features/reports"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Delivery Reports" data-content="Gain valuable audience insight and maximize campaign efficiency with message reporting.">Delivery Reports</div></a>						
+								<a class="text-white" href="/mms-marketing-for-business"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Picture &amp; Video Messaging" data-content="Let images bring your texts to life. With Multimedia Messaging System (MMS) you can include pictures, GIFs, and both audio and video files.">Picture &amp; Video Messaging</div></a>
+							</div>
+						</div>
+						<div class="title-bar-blue"></div>
+						<div class="add-features bg-darkblue">
+							<div class="mt-3">
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$0.04/Message" data-content="Essentials plans include 200 messages per month. You can send additional messages at $0.04 per message.">$0.04/message</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="3" data-content="Essentials plans come with 3 Opt-in Keywords. You can add more Keywords to your plan for an additional $25 a month per Keyword.">3</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$25/month" data-content="Essentials plans come with 3 Opt-in Keywords. You can add more Keywords to your plan for an additional $25 a month per Keyword.">$25/month</div>
+								<div class="pt-3 pb-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="2" data-content="Two additional 10-digit textable numbers can be added to your Essentials account.">2</div>
+								<div class="py-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$25/month" data-content="Additional 10-digit textable numbers can be added to your Essentials plan for $25 per month.">$25/month</div>
+							</div>
+						</div>
+					</div>
+				<!-- </a> -->
+			</div>
+			<div class="d-none d-lg-block col-12 col-sm-6 col-md-4 py-3 px-0 pr-0 pr-gap">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="top-features"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="add-features">
+						<div class="mt-3">
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 col-sm-3 col-lg-2 d-block d-lg-none mt-0 mt-sm-1 mt-lg-0 py-3 pt-6 pt-sm-6 pt-lg-3 pr-0 pl-0 pl-sm-0 pl-md-3 pl-lg-2 pl-xl-2 pr-features fs-xs text-right">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar d-flex align-items-center justify-content-end fw-700 fs-17 lh-4 pr-2 pr-sm-3">Top Features</div>
+					<div class="top-features premium-height-decrease"></div>
+					<div class="title-bar-add-features position-rel d-flex align-items-center justify-content-end fw-700 fs-17 pr-2 pr-sm-3"><span>Additional Features</span></div>
+					<div class="add-features-sect position-rel">
+						<div class="mt-3 pr-2 pr-sm-3">
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Messages" data-content="You can always send additional messages above and beyond your plan.">Additional Messages</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Opt-in Keywords" data-content="Pair a Keyword (like “PIZZA” or “SPRING”) with your textable number for an engaging way to grow your opt-in list.">Opt-in Keywords</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Keyword" data-content="Keywords are a great way to grow your opt-in list. Additional Keywords are available for an additional charge.">Additional Keyword</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Textable Business Number" data-content="Add additional 10-digit textable numbers to your account to increase your team’s productivity.">Textable Business Number</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Number" data-content="Add as many additional 10-digit textable numbers as you need.">Additional Number</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-7 col-sm-4 col-md-4 col-lg-3 mt-0 mt-sm-1 mt-lg-0 py-3 pt-6 pt-sm-6 pt-lg-3 px-0 pr-box z-index-up">
+                <!-- <a href="/start?pid=2792"> -->
+                    <div class="price-box box-border d-flex flex-column px-0">
+						<div class="price-card-header d-flex flex-column pb-0">
+							<div class="bg-darkblue header-title">
+								<h3 class="text-white fw-700 text-capitalize my-3 py-1">
+									Premium
+								</h3>
+							</div>
+							<div class="pt-3 pb-1">
+								Starting at
+							</div>
+							<div class="py-0">
+								<span class="fw-700 fs-31"><sup>$</sup>49</span><span class="fs-12">/month</span>
+							</div>
+							<div class="pt-1 pb-3 fs-12">
+								$588 billed annually
+							</div>
+							<a href="/start?pid=premium&prepaid=1" class="pricing-button mt-auto mb-4 mt-auto mb-4">
+								<div class="btn btn-lg btn-ez-success text-uppercase fw-700 fs-13 px-5 py-1">
+									Sign Up
+								</div>
+							</a>
+						</div>
+						<div class="title-bar"></div>
+						<div class="top-features premium-height-decrease">
+							<div class="mt-3">							
+								<a href="/features/contacts"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Contacts" data-content="Whether your organization is 20 people or 2000, you can add as many contacts to your account as you need to get the job done.">Unlimited Contacts</div></a>
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Inbound Messages" data-content="Inbound messages are unlimited, so you’ll never miss texts from customers, clients, or co-workers.">Unlimited Inbound Messages</div></a>						
+								<a href="/features/chat-two-way-sms-text-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited 1-on-1 Chat" data-content="Send and receive direct texts using your existing business phone number or a new textable 10-digit number.">Unlimited 1-on-1 Chat</div></a>						
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="200 Mass Messages Included (PREMIUM)" data-content="Mass Messaging allows you to send one text message to many contacts at once. The Premium plan comes with 200 credits. 1 SMS message sent to 1 contact costs 1 credit and 1 message sent to 100 contacts equals 100 credits. MMS picture and video messages cost 3 credits each.">200 Mass Messages Included</div>								
+								<a href="/features/integrations"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Integrations" data-content="EZ Texting works seamlessly with marketing software including Constant Contact, HubSpot, Zapier, and more, so that you can operate at peak efficiency.">Integrations</div></a>							
+								<a href="/features/reports"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Delivery Reports" data-content="Gain valuable audience insight and maximize campaign efficiency with message reporting.">Delivery Reports</div></a>						
+								<a href="/mms-marketing-for-business"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Picture &amp; Video Messaging" data-content="Let images bring your texts to life. With Multimedia Messaging System (MMS) you can include pictures, GIFs, and both audio and video files.">Picture &amp; Video Messaging</div></a>							
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="3 Month Credit Rollover" data-content="Unused credit will remain on your account for three months.">3 Month Credit Rollover</div>								
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Automated Messaging" data-content="Don’t just plan ahead — schedule the texts you already know you want to send. Set it, forget it, and move on to other business.">Automated Messaging</div></a>						
+								<a href="/developers"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="API Access" data-content="Leverage the power of EZ Texting's flexible Bulk SMS API to allow your application to send text messages through our SMS gateway.">API Access</div></a>
+							</div>
+						</div>
+						<div class="title-bar"></div>
+						<div class="add-features">
+							<div class="mt-3">
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$0.04/Message" data-content="Premium plans include 200 messages per month. You can send additional messages at $0.04 per message.">$0.04/message</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="6" data-content="Premium plans come with 6 Opt-in Keywords. You can add more Keywords to your plan for an additional $20 a month per Keyword.">6</div>
+								<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$20/month" data-content="Premium plans come with 6 Opt-in Keywords. You can add more Keywords to your plan for an additional $20 a month per Keyword.">$20/month</div>
+								<div class="pt-3 pb-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="3" data-content="Three additional 10-digit textable numbers can be added to your Premium account.">3</div>
+								<div class="py-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$20/month" data-content="Additional 10-digit textable numbers can be added to your Premium plan for $20 per month.">$20/month</div>
+							</div>
+						</div>
+					</div>
+				<!-- </a> -->
+			</div>
+			<div class="d-none d-sm-block d-lg-block col-12 col-sm-6 col-md-4 mt-sm-1 mt-lg-0 py-3 pt-sm-6 pt-lg-3 px-0 pr-0 pr-gap">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="top-features"></div>
+					<div class="title-bar fw-700 fs-17 py-2"></div>
+					<div class="add-features">
+						<div class="mt-3">
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+							<div class="py-1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 col-sm-3 col-lg-3 d-block d-sm-none d-xl-none py-3 pt-5 pt-sm-6 pt-xl-3 pr-0 pl-0 pl-sm-3 pl-md-3 pl-lg-2 pl-xl-2 pr-features fs-xs text-right">
+				<div class="price-box box-border-transparent d-flex flex-column bg-transparent px-0">
+					<div class="price-card-header d-flex flex-column bg-transparent pb-0"></div>
+					<div class="title-bar d-flex align-items-center justify-content-end fw-700 fs-17 lh-4 pr-2 pr-sm-3">Top Features</div>
+					<div class="top-features"></div>
+					<div class="title-bar-add-features position-rel d-flex align-items-center justify-content-end fw-700 fs-17 pr-2 pr-sm-3"><span>Additional Features</span></div>
+					<div class="add-features-sect position-rel">
+						<div class="mt-3 pr-2 pr-sm-3">
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Messages" data-content="You can always send additional messages above and beyond your plan.">Additional Messages</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Opt-in Keywords" data-content="Pair a Keyword (like “PIZZA” or “SPRING”) with your textable number for an engaging way to grow your opt-in list.">Opt-in Keywords</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Keyword" data-content="Keywords are a great way to grow your opt-in list. Additional Keywords are available for an additional charge.">Additional Keyword</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Textable Business Number" data-content="Add additional 10-digit textable numbers to your account to increase your team’s productivity.">Textable Business Number</div>
+							<div class="py-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Additional Number" data-content="Add as many additional 10-digit textable numbers as you need.">Additional Number</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-7 col-sm-4 col-md-4 col-lg-3 mt-sm-1 mt-lg-0 py-3 pt-5 pt-sm-6 pt-lg-3 px-0 pr-box z-index-up">
+				<!-- <a href="/start?pid=2791"> -->
+					<div class="price-box box-border d-flex flex-column px-0">
+						<div class="price-card-header d-flex flex-column pb-0">
+							<div class="bg-darkblue header-title">
+								<h3 class="text-white fw-700 text-capitalize my-3 py-1">
+									Custom
+								</h3>
+							</div>
+							<div class="pt-3 pb-1">
+								Starting at
+							</div>
+							<div class="py-0">
+								<span class="fw-700 fs-31"><sup>$</sup>299</span><span class="fs-12">/month</span>
+							</div>
+							<div class="pt-1 pb-3 fs-12">
+								$3,588 billed annually
+							</div>
+							<!-- <div class="pricing-button mt-auto mb-4 mt-auto mb-4">
+								<div class="btn btn-lg btn-ez-success text-uppercase fw-700 fs-13 px-5 py-1">
+									Call Us
+								</div>
+							</div> -->
+							<div class="pricing-button mt-auto mb-4 mt-auto mb-4" data-toggle="modal" data-target="#ModalForm" style="cursor: pointer;">
+								<button data-toggle="modal" data-target="#ModalForm"
+									class="btn btn-lg btn-ez-success text-uppercase fw-700 fs-13 px-5 py-1">Call Us</button>
+							</div>
+						</div>
+						<div class="title-bar"></div>
+						<div class="top-features">
+							<div class="mt-3">
+								<a href="/features/contacts"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Contacts" data-content="Whether your organization is 20 people or 2000, you can add as many contacts to your account as you need to get the job done.">Unlimited Contacts</div></a>
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited Inbound Messages" data-content="Inbound messages are unlimited, so you’ll never miss texts from customers, clients, or co-workers.">Unlimited Inbound Messages</div></a>						
+								<a href="/features/chat-two-way-sms-text-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Unlimited 1-on-1 Chat" data-content="Send and receive direct texts using your existing business phone number or a new textable 10-digit number.">Unlimited 1-on-1 Chat</div></a>						
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="50,000+ Mass Messages" data-content="Mass Messaging allows you to send one text message to many contacts at once. The Custom plan comes with more than 50,000 credits. 1 SMS message sent to 1 contact costs 1 credit and 1 message sent to 100 contacts equals 100 credits. MMS picture and video messages cost 3 credits each.">50,000+ Mass Messages</div>								
+								<a href="/features/integrations"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Integrations" data-content="EZ Texting works seamlessly with marketing software including Constant Contact, HubSpot, Zapier, and more, so that you can operate at peak efficiency.">Integrations</div></a>							
+								<a href="/features/reports"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Delivery Reports" data-content="Gain valuable audience insight and maximize campaign efficiency with message reporting.">Delivery Reports</div></a>						
+								<a href="/mms-marketing-for-business"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Picture &amp; Video Messaging" data-content="Let images bring your texts to life. With Multimedia Messaging System (MMS) you can include pictures, GIFs, and both audio and video files.">Picture &amp; Video Messaging</div></a>							
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="3 Month Credit Rollover" data-content="Unused credit will remain on your account for three months.">3 Month Credit Rollover</div>								
+								<a href="/features/advanced-messaging"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Automated Messaging" data-content="Don’t just plan ahead — schedule the texts you already know you want to send. Set it, forget it, and move on to other business.">Automated Messaging</div></a>						
+								<a href="/developers"><div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="API Access" data-content="Leverage the power of EZ Texting's flexible Bulk SMS API to allow your application to send text messages through our SMS gateway.">API Access</div></a>					
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Dedicated Account Team" data-content="Account experts are ready to help get your first message sent confirmation, and will be there to help throughout your EZ Texting experience.">Dedicated Account Team</div>								
+								<div class="py-1" data-offset="170" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="Multi-User Platform" data-content="Streamline SMS text management for multiple separate accounts.">Multi-User Platform</div>
+							</div>
+						</div>
+						<div class="title-bar"></div>
+						<div class="add-features">
+							<div class="mt-3">
+								<div class="py-1">Custom Rates</div>
+								<div class="py-1">Custom</div>
+								<div class="py-1">N/A</div>
+								<div class="pt-3 pb-2 py-sm-1">Custom</div>
+								<div class="py-2 py-sm-1" data-offset="200" data-animation="true" data-delay="300" data-placement="bottom" data-toggle="popover" data-trigger="hover" title="$5/Month" data-content="Each additional 10-digit textable number can be added to your Custom account for $5 per month.">$5/month</div>
+							</div>
+						</div>
+					</div>
+				<!-- </a> -->
+			</div>
+		</div>
+        <!-- bottom content -->
+
+    </div>
+</div>
