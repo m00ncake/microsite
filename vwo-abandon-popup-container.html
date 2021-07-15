@@ -1,0 +1,289 @@
+/* =============================================
+   THEME: Dark
+   ============================================= */
+/**
+ * General Styling for Survey Container Frame
+ */
+/* To edit styling of survey wrapper */
+#vwo-frame-wrapper {
+  position: fixed;
+  width: 350px;
+  z-index: 2147483647;
+  height: 215px;
+}
+
+/* To edit positioning of survey, if it is in right */
+#vwo-frame-wrapper.bottom-right {
+  bottom: 0;
+  right: 275px;
+}
+
+#vwo-frame-wrapper.bottom-right .minimized-survey {
+  right: 0;
+}
+
+/* To edit positioning of survey, if it is in left */
+#vwo-frame-wrapper.bottom-left {
+  bottom: 0;
+  left: 50px;
+}
+
+#vwo-frame-wrapper.bottom-left .minimized-survey {
+  left: 0;
+}
+
+/* To edit styling of minimized survey wrapper */
+#vwo-frame-wrapper.vwo-survey-minimized {
+  height: auto;
+}
+
+#vwo-frame-wrapper.vwo-survey-minimized iframe {
+  bottom: -202px;
+}
+
+#vwo-frame-wrapper.vwo-survey-minimized .survey-action-bar {
+  top: 217px;
+}
+
+#vwo-frame-wrapper.vwo-survey-minimized .minimized-survey {
+  -webkit-transition: all 0.2s ease 0.2s;
+  -moz-transition: all 0.2s ease 0.2s;
+  -ms-transition: all 0.2s ease 0.2s;
+  -o-transition: all 0.2s ease 0.2s;
+  transition: all 0.2s ease 0.2s;
+  bottom: 0;
+}
+
+/* To edit styling of survey container frame */
+#vwo-frame-wrapper iframe {
+  height: inherit;
+  border: 2px solid;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/* To edit position of survey action buttons */
+#vwo-frame-wrapper .survey-action-bar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/* To edit styling of survey action buttons */
+#vwo-frame-wrapper .survey-action-bar button {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+  background-color: transparent;
+  border: none;
+  width: 12px !important;
+  height: 12px !important;
+  cursor: pointer;
+  padding: 0 !important;
+  margin: 0 0 0 7px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  outline: 0;
+  outline-style: none;
+  outline-width: 0;
+  /* This is for solving a bug of overriding button css at a user's website */
+  display: inline-block;
+  position: static;
+  border-radius: 0;
+}
+
+#vwo-frame-wrapper .survey-action-bar button:after, #vwo-frame-wrapper .survey-action-bar button:before {
+  /* This is for solving a bug of overriding button:after pseudo css at a user's website */
+  content: none;
+}
+
+/* To edit styling of survey action button icons */
+#vwo-frame-wrapper .survey-action-bar .vwo-survey-close-icon,
+#vwo-frame-wrapper .survey-action-bar .vwo-survey-minimize-icon {
+  width: 12px;
+  height: 12px;
+  margin: auto;
+  fill: #4a4a4a;
+  /* !important is used for the backward compatibility of the code, Do not remove it */
+  display: block !important;
+}
+
+/* To edit styling of 'minimize' button icon */
+#vwo-frame-wrapper .survey-action-bar .vwo-survey-minimize-icon {
+  position: relative;
+  top: 1px;
+}
+
+/* To edit styling of minimized survey container */
+#vwo-frame-wrapper .minimized-survey {
+  height: 30px;
+  border: 2px solid;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  bottom: -32px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/* To edit styling of 'vwo-logo' in minimized state */
+#vwo-frame-wrapper .minimized-survey #vwo-logo {
+  height: 13px;
+  width: 36px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* To edit content displayed with the logo */
+#vwo-frame-wrapper .minimized-survey #survey-text {
+  padding: 0 30px 0 56px;
+  line-height: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  text-shadow: none;
+}
+
+/* To edit restore button styling if survey is in minimized state */
+#vwo-frame-wrapper .minimized-survey .vwo-survey-maximize {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 3px);
+  width: 12px;
+  height: 6px;
+  filter: FlipV;
+  -ms-filter: 'FlipV';
+  -webkit-transform: scaleY(-1);
+  -moz-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+#vwo-frame-wrapper .minimized-survey .vwo-survey-minimize-icon {
+  fill: #4a4a4a;
+  /* !important is used for the backward compatibility of the code, Do not remove it */
+  display: block !important;
+}
+
+/* To edit custom logo in minimized state */
+#vwo-frame-wrapper.custom-logo .minimized-survey::after {
+  content: '';
+}
+
+#vwo-frame-wrapper.custom-logo .minimized-survey::before {
+  right: 8px;
+}
+
+#vwo-frame-wrapper.custom-logo .minimized-survey #vwo-logo {
+  height: 22px;
+  width: 60px;
+  left: 3px;
+}
+
+/* To edit hidden logo in minimized state */
+#vwo-frame-wrapper.hide-logo .minimized-survey {
+  width: 32px;
+}
+
+#vwo-frame-wrapper.hide-logo .minimized-survey::after {
+  content: '';
+}
+
+#vwo-frame-wrapper.hide-logo .minimized-survey #vwo-logo {
+  display: none;
+}
+
+#vwo-frame-wrapper.hide-logo .minimized-survey #survey-text {
+  display: none;
+}
+
+/* To edit survey wrapper for responsive mobile devices */
+@media only screen and (max-width: 480px) {
+  #vwo-frame-wrapper.bottom-left {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  #vwo-frame-wrapper.bottom-right {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #vwo-frame-wrapper {
+    width: 300px;
+  }
+}
+
+/**
+ *  Theme-Specific Styling for Survey Container Frame
+ */
+/* To edit styling of survey container and its minimized state */
+#vwo-frame-wrapper iframe,
+#vwo-frame-wrapper .minimized-survey {
+  border-color: #c3cad3;
+  background-color: #393939;
+}
+
+/* To edit styling of minimized survey container */
+#vwo-frame-wrapper .minimized-survey {
+  color: #eeeeee;
+}
+
+#vwo-frame-wrapper .minimized-survey .vwo-survey-minimize-icon {
+  fill: #eeeeee;
+}
+
+#vwo-frame-wrapper .minimized-survey::after {
+  color: #eeeeee;
+}
+
+/* To edit styling of survey action button icons */
+#vwo-frame-wrapper .survey-action-bar .vwo-survey-close-icon,
+#vwo-frame-wrapper .survey-action-bar .vwo-survey-minimize-icon {
+  fill: #eeeeee;
+}
+
+/* To edit styling of 'vwo-logo' */
+#vwo-frame-wrapper:not(.custom-logo) #vwo-logo {
+  /* !important is used for the backward compatibility of the code, Do not remove it */
+  background-image: url("https://dev.visualwebsiteoptimizer.com/static/1.0/images/vwo@2x-2607086b3c1cd5bfaf68e2d57f1c058a.png") !important;
+}
+
+/* Created On 19-05-2021 10:19:59 */

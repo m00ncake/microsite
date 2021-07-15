@@ -1,0 +1,323 @@
+<!--------------------------------------------------->
+<!--             Navbar (Fixed)                -->
+<!--------------------------------------------------->
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+  font-family: "Open Sans", "proxima-nova", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.logo-container img {
+    max-width: 208px;
+}
+
+.layout-content.status .masthead-container.basic {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border-bottom: solid 1px #f4f4f4;
+}
+
+.masthead.has-logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px !important;
+    padding: 12px 0 !important;
+    align-items: center;
+    width: 1440px;
+}
+
+ul.nav-links {
+    display: flex;
+    padding-left: 15px;
+}
+ul.nav-links li {
+    padding: 0 15px;
+}
+ul.nav-links a {
+	    color: #333333;
+    transition: all .3s ease;
+}
+ul.nav-links a:hover {
+    color: #3498db;
+}
+
+a.report-incident-btn {
+    padding: 6px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px 0 15px auto;
+}
+
+a#show-updates-dropdown {
+    box-shadow: none;
+    border-radius: 30px;
+    background-color: #00A3E0;
+}
+.updates-dropdown-container {
+    top: 0px !important;
+    margin: 15px;
+}
+
+.updates-dropdown-container .show-updates-dropdown:after {
+    content: 'Subscribe To Updates';
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.flat-button, .layout-content.status .masthead-container .updates-dropdown-container .show-updates-dropdown {
+    box-shadow: none;
+    background-color: #00A3E0;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.updates-dropdown-container .updates-dropdown .updates-dropdown-section.phone .externalities-sms-container select,
+.updates-dropdown-container .updates-dropdown .updates-dropdown-section.email input[type='text'],
+input#phone-number {
+    border-radius: 30px;
+}
+
+.header-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+    height: 350px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.header-section h1 {
+	  font-size: 46px;
+    font-weight: 700;
+}
+.header-section h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 1440px;
+}
+@media (max-width: 978px) {
+    .header-section {
+        margin-top: 165px;
+    }
+}
+@media (max-width: 575px) {
+    a.report-incident-btn {
+        margin-left: 15px;
+    }
+    .header-section {
+        height: auto;
+    }
+}
+@media (max-width: 501px) {
+    .layout-content.status .masthead-container.basic {
+        width: 90%;
+        max-width: 1440px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .masthead.has-logo {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+    }
+    a.report-incident-btn {
+        margin: 15px;
+    }
+    .header-section {
+        margin-top: 0;
+    }
+}
+
+</style>
+
+<!-- <header id="header" class="header clearfix" role="banner" aria-label="Site header"> -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="https://www.eztexting.com/" title="Home" rel="home" class="navbar-brand">
+                <img src="https://www.eztexting.com/themes/custom/ezlight/logo.svg" alt="Home" class="navbar-brand-image">
+            </a>
+            <ul data-region="header_form" class="clearfix top-navbar nav navbar-nav">
+                <li class="solutions nav-item menu-item--expanded dropdown">
+                    <a href="https://www.eztexting.com">eztexting.com</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://answers.eztexting.com/hc/en-us">Contact Support</a>
+
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="login">
+                    <a class="btn btn-link  fw-700" href="http://app.eztexting.com" role="button">Log In</a>
+                </li>
+                <li class="subscribe">                    <a class="btn btn-link  fw-700" href="http://app.eztexting.com" role="button">Subscribe</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div class="header-section">
+  <h1>All Systems Status</h1>
+  <h2>Welcome to EZ Texting's home for network updates. See below for information pertaining to system performance, scheduled maintenance and outages with real-time updates.</h2>
+</div>
+<!-- </header> -->
+
+
+
+<script>
+    var navbar = document.querySelector('.masthead-container.basic');
+    var div = document.createElement('div');
+    div.setAttribute('class', "header-section");
+    div.innerHTML = '<h1>All Systems Status</h1><h2>Welcome to EZ Texting\'s home for network updates. See below for information pertaining to system performance, scheduled maintenance and outages with real-time updates.</h2>';
+    navbar.parentNode.insertBefore( div, navbar.nextSibling );
+
+    var logoImg = document.querySelector('.logo-container');
+    
+    var reportIncidentBTN = document.createElement('a');
+    reportIncidentBTN.setAttribute('class', "report-incident-btn");
+    reportIncidentBTN.setAttribute('href', "https://answers.eztexting.com/hc/en-us/requests/new");
+    reportIncidentBTN.innerHTML = 'Report an Incident';
+    logoImg.parentNode.insertBefore( reportIncidentBTN, logoImg.nextSibling );
+
+    var navUL = document.createElement('ul');
+    navUL.setAttribute('class', "nav-links");
+    navUL.innerHTML = '<li class="item-1"><a href="https://www.eztexting.com">eztexting.com</a></li><li class="item-2"><a href="https://answers.eztexting.com/hc/en-us">Contact Support</a></li>';
+    logoImg.parentNode.insertBefore( navUL, logoImg.nextSibling );
+</script>
+
+
+
+
+<!--------------------------------------------------->
+<!--             Navbar (Not Fixed)                -->
+<!--------------------------------------------------->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+  font-family: "Open Sans", "proxima-nova", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.logo-container img {
+    max-width: 208px;
+}
+
+.layout-content.status .masthead-container.basic {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+}
+
+.masthead.has-logo {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 0px !important;
+    padding: 11px 0 !important;
+    align-items: center;
+    width: 100%;
+}
+
+ul.nav-links {
+    display: flex;
+    padding-left: 15px;
+}
+ul.nav-links li {
+    padding: 0 15px;
+}
+ul.nav-links a {
+	    color: #333333;
+    transition: all .3s ease;
+}
+ul.nav-links a:hover {
+    color: #3498db;
+}
+
+a.report-incident-btn {
+    padding: 6px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px 0 15px auto;
+}
+
+a#show-updates-dropdown {
+    box-shadow: none;
+    border-radius: 30px;
+    background-color: #00A3E0;
+}
+.updates-dropdown-container {
+    top: 0px !important;
+    margin: 15px 0 15px 15px;
+}
+
+.updates-dropdown-container .show-updates-dropdown:after {
+    content: 'Subscribe To Updates';
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.flat-button, .layout-content.status .masthead-container .updates-dropdown-container .show-updates-dropdown {
+    box-shadow: none;
+    background-color: #00A3E0;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.updates-dropdown-container .updates-dropdown .updates-dropdown-section.phone .externalities-sms-container select,
+.updates-dropdown-container .updates-dropdown .updates-dropdown-section.email input[type='text'],
+input#phone-number {
+    border-radius: 30px;
+}
+
+.header-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+    height: 350px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-section h1 {
+	  font-size: 46px;
+    font-weight: 700;
+}
+.header-section h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 1440px;
+}
+
+@media (max-width: 575px) {
+    a.report-incident-btn {
+        margin-left: 15px;
+    }
+    .header-section {
+        height: auto;
+    }
+}
+</style>

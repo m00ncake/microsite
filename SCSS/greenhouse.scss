@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+#wrapper {
+    font-family: 'Open Sans', sans-serif;
+    color: #373a36;
+
+    #logo {
+        display: none;
+    }
+    h1 {
+        display: none;
+        color: #002e5d;
+    }
+    h2 {
+        font-size: 38px;
+        font-weight: 300;
+        color: #002e5d;
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        color: #002e5d;
+    }
+    .opening a {
+        color:#00a3e0;
+
+        &:hover {
+            color: #096fb3;
+        }
+    }
+}
+
+
+.accessible #content {
+    line-height: 1.7;
+}
+
+#app_body {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #373a36;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 1000px;
+    
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    h1.app-title {
+        display: block;
+        color: #002e5d;
+        font-size: 38px;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+    .company-name {
+        font-size: 20px;
+    }
+    .location {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    h3 strong {
+        color: #002e5d;
+        font-weight: 300;
+    }
+
+    #application .heading {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+}
+
+.accessible #submit_app {
+    background: #2fca80;
+    border: 1px solid #2fca80;
+    text-shadow: none;
+    &:hover {
+        background: transparent;
+        color: #2fca80;
+    }
+}

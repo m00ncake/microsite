@@ -1,0 +1,609 @@
+/* =============================================
+   THEME: Dark
+   ============================================= */
+/**
+ * General Styling for Survey Content Frame
+ */
+/* To edit styling of icons */
+@font-face {
+  font-family: 'vwoicons';
+  src: url("data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAU8AA0AAAAACKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAFIAAAABoAAAAcinIJ70dERUYAAAUEAAAAHAAAAB4AJwAQT1MvMgAAAZQAAAA/AAAAYA8TBOZjbWFwAAAB7AAAAFUAAAFeGFbX5mdhc3AAAAT8AAAACAAAAAgAAAAQZ2x5ZgAAAlwAAAF5AAAC/P3J7tFoZWFkAAABMAAAAC8AAAA2F+0nY2hoZWEAAAFgAAAAHAAAACQHwgPHaG10eAAAAdQAAAAWAAAAIAtVAEBsb2NhAAACRAAAABYAAAAWAtACJm1heHAAAAF8AAAAGAAAACAADgBYbmFtZQAAA9gAAADjAAABpz3wriJwb3N0AAAEvAAAAD4AAABtSlOClHjaY2BkYGAA4ieHfhbE89t8ZeBmYQCBW2kfixH0/wMsDMwHgFwOBiaQKAByTAyYAHjaY2BkYGA+8P8AAwMLAwgASUYGVMAGAExYApN42mNgZGBg4GIIY2BmAAEmBjQAAAoaAGd42mNgZt7GOIGBlYGBaSbTGQYGhn4IzfiawZiRkwEVMAqgCTA4MDC+YGU+8P8AgwMzEIPUIMkqMDACAFzxCwMAeNpjYYAAxlAIzQTELAxw4AAACOsAoQAAeNpjYGBgZoBgGQZGBhCIAPIYwXwWBhsgzcXAwcAEhIwMCi9Y///9/x+sSuEFI4T9/4kEC1gHFwMMMILMY2QDYmaoABOQYGJABUA7WBiGNwAAKDsNIwAAAAAAAAAACAAIABAAGABMAJYA7gFwAX4AAHjapVHBTsJAEJ1hCewSQqRAoZpAYLGARk2WLWggyMETKgkmcKJHL5h4xnjxzk9whl8wpsYf0f/AamlRIZgYdQ8zb2fezLzZBYSP4wM48sFPd8e+WX4gFmxAFkDDuFrOiooRlTrP5gKJbaEmovGAg3UnVnFyedLlQvDZNC/IVEmllNlU0TSFdMnVbDLPkN7c7jiJyTxNekoKVubsAcSc1tHlUTFdHmNFZFAVVdenMYgR3MWcfoC9vPga26D0lKXYDd2keEY11qLI7GuaCfNwmj4Qy+F8ynh9pBo9Z+yWMbwIhVpMY/YljUTo0+IFFpq24BAAZWEfCzrPBSMYDCTiyTQm1bKoNrBa2ZauKws3mIi7FJ5zCww/FEsj0xwMTHNUKi7j2Qnnw06n3+90hpwvY7TW2R5e53oYgKzo7f5DMXoc49v6P61zX5NGW00m1bYha3UpPSxl/feL2i/rXbzuzp8hNOGZWL7x/PdiWWySO7vpG9tNgHdmQpgXAAAAeNp9jbFKA0EURc8mm6gRRCwstJleWBL0FxRSxMLC2s1mWBbCDGw2CSn9AL/B1spP8lu8O7x6B+Zx3nlz3wBX/JLRn4xzboxHnPFgPJZ/Ns7FH8YTLvk0nsp/G8+440+pLL+QuU4beh7pr3vjsfyjcS5+NZ5wS2M8lf8ynvHEDweORM0r1cAODsfYVDGI3vDU7NlS0qr19X5bCgYiA6N3bWulmjRyLCiYS/t218TgFsV8MP6SVKdgrUUhLSvVezZya06qyxRc6fZvC4Vi6Fztg2/Lzm/c+uSWVVzFGAr+AT+4QssAeNpjYGLAD7gYGBiZGJgYmRmYGVkYWRnZGNkZOdjScyoLMgzZS/MyDQwMwLSrBZw2gtLGUNoESpsCAMoWD6oAAAABAAH//wAPeNpjYGRgYOABYjEgZmJgBEJOIGYB8xgABAEAOHjaY2BgYGQAgqtL1DlA9K20j8UwGgBDSQbyAAA=") format("woff"), url("data:application/font-ttf;charset=utf-8;base64,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") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* To edit styling of survey content frame */
+html {
+  overflow: hidden;
+}
+
+/* To edit styling of 'body' of survey content frame */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* To edit styling of survey body, if survey shows 'welcome' and 'thank you' message */
+body.welcome #form,
+body.thankyou #form {
+  bottom: 55px;
+}
+
+body.welcome #main,
+body.welcome #message,
+body.thankyou #main,
+body.thankyou #message {
+  margin: 0;
+}
+
+body.welcome #footer,
+body.thankyou #footer {
+  height: 55px;
+}
+
+body.welcome #footer > *,
+body.thankyou #footer > * {
+  top: 10px;
+}
+
+/* To edit styling of 'welcome' and 'consent' messages */
+body.welcome #form.has-consent-message #header {
+  max-height: 65px;
+  overflow-y: auto;
+}
+
+body.welcome #form.has-consent-message #message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 1.2;
+  font-size: 11px;
+  max-height: 28px;
+  overflow-y: auto;
+  margin: 10px 0;
+}
+
+/* To edit styling of 'form' containing various questions */
+#form {
+  position: absolute;
+  overflow-y: auto;
+  top: 30px;
+  bottom: 45px;
+  width: 100%;
+  margin: 0;
+}
+
+/* To edit styling of question statement 'header' and 'main' question content of survey */
+#main,
+#header {
+  overflow-y: hidden;
+  font-size: 13px;
+  padding: 0 15px;
+}
+
+/* To edit styling of survey 'header' */
+#header {
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+/* To break the content available inside survey 'header' and 'message' */
+#header,
+#message {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+/* To edit styling of 'main' question content of survey */
+#main {
+  margin: 5px 0 10px;
+}
+
+/* To edit the styling of text input element */
+#main textarea,
+#main input {
+  width: 100%;
+  cursor: text;
+  padding: 6px 8px;
+  outline: 0;
+  font-size: 12px;
+  color: #4a4a4a;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#main textarea::-webkit-input-placeholder,
+#main input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+#main textarea:-moz-placeholder,
+#main input:-moz-placeholder {
+  font-size: 12px;
+}
+
+#main textarea::-moz-placeholder,
+#main input::-moz-placeholder {
+  font-size: 12px;
+}
+
+#main textarea:-ms-input-placeholder,
+#main input:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+#main textarea[type='button'],
+#main input[type='button'] {
+  width: auto;
+}
+
+/* To edit styling of multi-line text box */
+#main textarea {
+  height: 75px;
+  resize: none;
+  font-family: inherit;
+}
+
+/* To edit styling of question list */
+#main .question {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* To edit styling the 'radio' and 'checkbox' type inputs */
+#main .question input[type='radio'],
+#main .question input[type='checkbox'] {
+  height: auto;
+  width: auto;
+  position: absolute;
+  visibility: hidden;
+}
+
+#main .question input[type='radio'] + label.choice::before,
+#main .question input[type='checkbox'] + label.choice::before {
+  font-family: 'vwoicons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1em;
+  display: inline-block;
+  speak: none;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#main .question input[type='radio']:checked + label.choice,
+#main .question input[type='checkbox']:checked + label.choice {
+  font-weight: 500;
+}
+
+#main .question input[type='checkbox'] + label.choice::before {
+  content: '\e801';
+}
+
+#main .question input[type='checkbox']:checked + label.choice::before {
+  content: '\e802';
+}
+
+#main .question input[type='radio'] + label.choice::before {
+  content: '\e803';
+}
+
+#main .question input[type='radio']:checked + label.choice::before {
+  content: '\e804';
+}
+
+/* To edit styling of question 'label' text */
+#main .question label {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* To edit styling of choice-based input options */
+#main .question li.choice {
+  margin-bottom: 5px;
+  padding: 0 10px;
+  position: relative;
+}
+
+#main .question li.choice label {
+  position: relative;
+  display: inline-block;
+  margin-left: 25px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+/* To edit styling of 'dropdown-select-box' options  */
+#main .question li.select-choice {
+  padding: 5px 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 25px;
+}
+
+#main .question li.select-choice:hover {
+  background: #e4e4e4;
+}
+
+#main .question li.select-choice.selected {
+  background: #cdcdcd;
+  font-weight: 500;
+}
+
+/* To edit styling of selected 'multi-choice' options  */
+#main .question.multiple .check-mark {
+  display: none;
+}
+
+#main .question.multiple li.select-choice.selected {
+  position: relative;
+  padding-right: 20px;
+}
+
+#main .question.multiple li.select-choice.selected .check-mark {
+  /* !important is used for the backward compatibility of the code, Do not remove it */
+  display: block !important;
+  position: absolute;
+  right: 8px;
+  top: calc(50% - 7px);
+  font-size: 14px;
+  width: 10px;
+  height: 14px;
+  line-height: 14px;
+}
+
+/* To edit styling of rating type question */
+#main .rating {
+  direction: rtl;
+  text-align: left;
+}
+
+#main .rating > span {
+  display: inline-block;
+  width: 27px;
+  height: 26px;
+  margin-right: 5px;
+  background: url("https://dev.visualwebsiteoptimizer.com/static/1.0/survey/images/blankstar-d057cdaebd85914fc8dd5cffd9d53f36.svg") center/contain no-repeat;
+}
+
+#main .rating > span.selected,
+#main .rating > span.selected ~ span, #main .rating > span:hover,
+#main .rating > span:hover ~ span {
+  background-image: url("https://dev.visualwebsiteoptimizer.com/static/1.0/survey/images/filledstar-b51bd0fb368e0b31b7c6ff882c15a5eb.svg");
+}
+
+#main .rating > span:first-child {
+  margin-right: 0;
+}
+
+/* To edit styling of nps-based question options */
+#main li.nps-choice {
+  float: left;
+  margin: 2px 0;
+  margin-right: 7.4px;
+  position: relative;
+  height: 22px;
+  width: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#main li.nps-choice:last-child {
+  margin-right: 0;
+}
+
+#main li.nps-choice input[type='radio'] {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+}
+
+#main li.nps-choice input[type='radio'] + label.nps-choice {
+  color: #393939;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+#main li.nps-choice input[type='radio']:checked + label.nps-choice {
+  color: #ffffff;
+}
+
+#main li.nps-choice input[type='radio']:checked + label.nps-choice::before {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  padding: 10px;
+  content: '';
+  border: 3px solid #ffd700;
+  background-color: #666666;
+  z-index: -1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* To edit styling of nps-based question information */
+#main .nps-info {
+  font-size: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+#main .nps-info .left-info {
+  float: left;
+  width: 60px;
+  margin-top: 10px;
+}
+
+#main .nps-info .right-info {
+  float: right;
+  width: 60px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* To hide select input element and replace with 'dropdown-select' input */
+#main select {
+  display: none;
+}
+
+/* To edit styling for 'submit-email' box */
+#main #submitEmail {
+  margin-top: 10px;
+}
+
+/* To hide 'other-option' input-box by default */
+#main .other-input-box {
+  display: none;
+  margin-top: 8px;
+}
+
+/* To edit the styling of 'dropdown-select-box' input */
+#main #dropdown-select-box {
+  cursor: pointer;
+  color: #4a4a4a;
+  font-size: 12px;
+  max-height: 75px;
+  overflow-y: auto;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#main #dropdown-select-box .selected-option-box {
+  position: relative;
+  padding: 6px 26px 6px 8px;
+}
+
+#main #dropdown-select-box .caret {
+  position: absolute;
+  right: 8px;
+  top: calc(50% - 5px);
+  font-family: 'vwoicons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1em;
+  display: inline-block;
+  speak: none;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+}
+
+#main #dropdown-select-box .caret::before {
+  font-size: 10px;
+  content: '\e805';
+}
+
+#main #dropdown-select-box > .question:not(.multiple) {
+  display: none;
+}
+
+#main #dropdown-select-box.is-selected > .selected-option-box {
+  display: none;
+}
+
+#main #dropdown-select-box.is-selected > .question:not(.multiple) {
+  display: block;
+}
+
+/* To edit the styling of footer containing logo and Next/Submit button */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+}
+
+/* To edit styling of buttons in the survey */
+#main input[type='button'],
+#footer input {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: #ffffff;
+  border: none;
+  font-size: 13px;
+  padding: 7px 24px;
+  outline: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 30px;
+}
+
+/* To edit styling of message shown in case of any error or information */
+#message {
+  padding: 0 15px;
+  font-size: 12px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+#message .info--critical,
+#message .error {
+  color: #f6607a;
+}
+
+/* To edit styling of 'vwo-logo' inside the survey content frame */
+.vwo-logo {
+  width: 45px;
+  height: 31px;
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* To edit styling of customized logo displayed */
+.vwo-logo.custom-logo {
+  width: 80px;
+  height: 25px;
+  bottom: 17px;
+}
+
+/* To edit styling of nps-based question for responsive mobile devices */
+@media only screen and (max-width: 300px) {
+  #main li.nps-choice {
+    height: 18px;
+    width: 18px;
+    margin-right: 6.8px;
+  }
+  #main li.nps-choice input[type='radio'] + label.nps-choice {
+    line-height: 18px;
+  }
+  #main li.nps-choice input[type='radio']:checked + label.nps-choice:before {
+    border: 2px solid #ffd700;
+    left: -3px;
+  }
+}
+
+/**
+ *  Theme-Specific Styling for Survey Content Frame
+ */
+/* To edit styling of survey header and 'main' question box */
+#main,
+#header {
+  color: #eeeeee;
+}
+
+/* To edit styling of survey body, if survey shows 'welcome' and 'thank you' message */
+body.welcome #form,
+body.thankyou #form {
+  top: 40px;
+}
+
+/* To edit styling of 'consent' message below 'welcome' message */
+body.welcome #message {
+  color: #eeeeee;
+}
+
+body.welcome #message a {
+  color: inherit;
+}
+
+/* To edit styling of button inputs in content and footer */
+#main input[type='button'],
+#footer input {
+  background: #017DBC;
+}
+
+/* To edit styling of radio and checkbox type inputs */
+#main .question input[type='radio'] + label.choice::before,
+#main .question input[type='radio']:checked + label.choice::before,
+#main .question input[type='checkbox'] + label.choice::before,
+#main .question input[type='checkbox']:checked + label.choice::before {
+  color: #eeeeee;
+}
+
+/* To edit border and background of textarea, input, dropdown-select-box and nps-choice options */
+#main input,
+#main textarea,
+#main #dropdown-select-box,
+#main li.nps-choice {
+  border: none;
+  background: #fafafa;
+}
+
+.vwo-logo:not(.custom-logo) {
+  /* !important is used for the backward compatibility of the code, Do not remove it */
+  background-image: url("https://dev.visualwebsiteoptimizer.com/static/1.0/survey/images/vwo@2x-2607086b3c1cd5bfaf68e2d57f1c058a.png") !important;
+}
+
+/* To edit styling of message shown in case of any error or information */
+#message {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#message .info--critical,
+#message .error {
+  color: #ffffff;
+}
+
+/* Created On 19-05-2021 10:19:59 */
