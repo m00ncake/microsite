@@ -1,0 +1,89 @@
+#signup-widget-container,
+.signup-widget-container {
+  max-width: 100%;
+  width: 455px; }
+  #signup-widget-container .signup-form-error,
+  .signup-widget-container .signup-form-error {
+    display: none;
+    font-size: 15px;
+    padding-left: 15px; }
+  #signup-widget-container .has-error .signup-form-error,
+  .signup-widget-container .has-error .signup-form-error {
+    display: block; }
+
+#signup-widget-container .signup-form-input-wrapper,
+.signup-widget-container .signup-form-input-wrapper {
+  position: relative; }
+
+#signup-widget-container select:-moz-focusring,
+.signup-widget-container select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000; }
+
+#signup-widget-container .signup-form-icon,
+.signup-widget-container .signup-form-icon {
+  position: absolute;
+  top: 4px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  fill: #8491a3; }
+
+#signup-widget-container .signup-form-eye,
+.signup-widget-container .signup-form-eye {
+  width: 100%;
+  height: 100%;
+  pointer-events: none; }
+
+#signup-widget-container .select-wrapper,
+.signup-widget-container .select-wrapper {
+  position: relative; }
+  #signup-widget-container .select-wrapper:before,
+  .signup-widget-container .select-wrapper:before {
+    font-family: 'ezlight';
+    content: "\e914";
+    font-size: 9px;
+    color: #9C9E9C;
+    position: absolute;
+    top: 14px;
+    right: 40px;
+    width: 0;
+    height: 0;
+    display: block;
+    pointer-events: none;
+    cursor: pointer; }
+
+#signup-widget-container .recaptcha-notice,
+.signup-widget-container .recaptcha-notice {
+  margin-left: 5px; }
+  #signup-widget-container .recaptcha-notice + .recaptcha-notice,
+  .signup-widget-container .recaptcha-notice + .recaptcha-notice {
+    display: none; }
+
+@media (max-width: 360px) {
+  #signup-widget-container .signup-form-icon,
+  .signup-widget-container .signup-form-icon {
+    top: 3px;
+    right: 8px; }
+  #signup-widget-container .select-wrapper:before,
+  .signup-widget-container .select-wrapper:before {
+    top: 12px;
+    right: 30px; } }
+
+/*# sourceMappingURL=new-signup-widget.css.map */
