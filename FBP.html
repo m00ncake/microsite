@@ -17,7 +17,7 @@
 </div>
 
 
-d-flex sub-links col-12 col-xxl-10
+d-flex sub-links col-12 col-xxl-10 px-1 px-md-3
 
 <style>
     @media (min-width: 1250px) {
@@ -42,13 +42,62 @@ d-flex sub-links col-12 col-xxl-10
         z-index: 0;
     }
 </style>
-<div class="d-flex flex-column flex-md-row col-12">
-    <div class="col-xl-4 ml-md-auto pb-5 pb-md-0">
+<div class="d-flex flex-column flex-md-row col-12 px-1 px-md-3">
+    <div class="col-xl-4 col-xxl-5 ml-md-auto pl-md-4 pr-md-0 pb-5 pb-md-0">
         <p class="text-align-center">Looking for a text solution for your client?<br />
         <a href="/agency-partner-program">Join our Agency&nbsp;Partner&nbsp;Program!</a></p>
     </div>
-    <div class="col-xl-4 mr-md-auto ml-md-4 pl-md-4">
+    <div class="col-xl-4 col-xxl-5 mr-md-auto ml-md-4 pl-md-4">
         <p class="text-align-center">We support Canada!<br />
+        <a href="/pricing/canada">Click here to see&nbsp;Canadian&nbsp;Pricing</a></p>
+    </div>
+</div>
+
+
+<!-- Variation 3 -->
+section class: mb-5 mb-xl-6 px-1 px-sm-0 pricing-container
+
+pricing v2 sub-links
+
+
+<style>
+    @media (min-width: 1250px) {
+        .pricing.v2 .pricing-item-headers .pricing-item__additional-features-label:before,
+        .pricing.v2 .pricing-item-headers .pricing-item__additional-features:before {
+            height: 101%;
+        }
+    }
+    .pricing.v2 .pricing-items {
+        padding-bottom: 0px;
+    }
+    .sub-links { padding-top: 0px; padding-bottom: 0px; }
+    .sub-links:before {
+        content: '';
+        display: block;
+        width: 200vw;
+        height: 100%;
+        position: absolute;
+        left: -100vw;
+        top: 0;
+        background: #fff;
+        z-index: 0;
+    }
+    .pricing-items.canada-link {
+        padding-top: 15px !important;
+    }
+    .contextual-region.paragraph.paragraph--type--pricing-table-item.paragraph--view-mode--default.grid-col-3-span-2 {
+        grid-column: span 2;
+    }
+</style>
+<div class="pricing-items canada-link">
+    <div class="pricing-item-headers grid-col-1">
+    </div>
+    <div class="contextual-region paragraph paragraph--type--pricing-table-item paragraph--view-mode--default grid-col-1">
+    </div>
+    <div class="contextual-region paragraph paragraph--type--pricing-table-item paragraph--view-mode--default grid-col-2">
+    </div>
+    <div class="contextual-region paragraph paragraph--type--pricing-table-item paragraph--view-mode--default grid-col-3-span-2">
+        <p class="text-align-right fs-sm">We support Canada!<br />
         <a href="/pricing/canada">Click here to see&nbsp;Canadian&nbsp;Pricing</a></p>
     </div>
 </div>

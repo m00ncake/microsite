@@ -1,0 +1,46 @@
+<div class="icon-arrow position-relative text-center d-none"></div>
+<style>
+/* icon-arrow{ width: 15px; height: 15px;}
+.icon-arrow:after{
+font-size: 12px;
+color: #aeb1b3;
+content: "\e914";
+font-family: 'ezlight';
+position: absolute;
+top: -15px;
+left: 0;
+right: 0;
+}*/
+.err-message{
+padding-left: 0.85rem;
+}
+.input-label{
+text-transform: lowercase;
+}
+</style>
+<script>
+  const inputFields = document.querySelectorAll('input[required=required]');
+  inputFields.forEach(function(inputItem) {
+  inputItem.addEventListener('blur', (e) => {
+    if (!e.target.value ) {
+      if (e.target.closest("fieldset").getElementsByClassName('err-message').length === 0){
+        e.target.closest("fieldset").insertAdjacentHTML('beforeend', '<div class="err-message text-danger fs-usm">Please enter a <span class="input-label">' + e.target.labels[0].innerHTML + '</span></div>');
+      }
+    } else {
+      e.target.closest("fieldset").querySelector(".err-message").remove();
+    }
+  });
+});
+const selectFields = document.querySelectorAll('select[required=required]');
+selectFields.forEach(function(inputItem) {
+  inputItem.addEventListener('blur', (e) => {
+    if (!e.target.value ) {
+      if (e.target.closest("fieldset").getElementsByClassName('err-message').length === 0){
+        e.target.closest("fieldset").insertAdjacentHTML('beforeend', '<div class="err-message text-danger fs-usm">Please select your <span class="input-label">' + e.target.labels[0].innerHTML + '</span></div>');
+      }
+    } else {
+      e.target.closest("fieldset").querySelector(".err-message").remove();
+    }
+  });
+});
+</script>
