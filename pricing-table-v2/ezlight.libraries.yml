@@ -1,0 +1,435 @@
+global-styling:
+  version: VERSION
+  js:
+    js/navbar-override.js: {}
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+    js/global.js: {}
+    js/init.js: {}
+    js/modernizr-custom.js: {}
+    js/create-cookies.js: {}
+  css:
+    component:
+      css/ez-basic.css: { weight: 101 }
+      css/style.css: { weight: 100 }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.ajax
+
+file:
+  css:
+    component:
+      css/components/file.css: { weight: -10 }
+
+accordion-block:
+  js:
+    js/accordion-block.js: {}
+  css:
+    theme:
+      css/accordion-block.min.css: {}
+
+front:
+  js:
+    js/front.js: {}
+    js/scrolling-features.js: {}
+  css:
+    theme:
+      css/front-else.min.css: { weight: 90 }
+  dependencies:
+     - core/drupal.dialog.ajax
+     - core/drupal.ajax
+     - ezlight/accordion-block
+
+map-paragraph:
+  css:
+    theme:
+      css/map_paragraph.min.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css: { type: external }
+  js:
+    js/map-paragraph.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js: { type: external }
+    https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js: { type: external }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+
+count:
+  js:
+    js/jquery.countTo.js: {}
+
+features:
+  js:
+    js/features.js: {}
+  css:
+    theme:
+      css/features.min.css: {}
+
+howitworks:
+  css:
+    theme:
+      css/howitworks.min.css: {}
+
+price:
+  css:
+    theme:
+      css/price.min.css: {}
+
+price2:
+  css:
+    theme:
+      css/price2.min.css: {}
+  js:
+    js/price2.js: {}
+
+match-height:
+  js:
+    /libraries/jquery-match-height/jquery.matchHeight-min.js: {}
+  dependencies:
+    - core/jquery
+
+pricing:
+  css:
+    theme:
+      css/pricing.min.css: {}
+  js:
+    js/pricing.js: {}
+
+pricing-table-v2:
+  css:
+    theme:
+      css/pricing_table_v2.min.css: {}
+  js:
+    js/pricing.js: {}
+
+custom:
+  js:
+    js/custom-page.js: {}
+
+section_nav_faq:
+  js:
+    js/section_nav_faq.js: {}
+  css:
+      theme:
+        css/section_nav_faq.min.css: {}
+  dependencies:
+    - ezlight/sticky_kit
+
+press:
+  css:
+    theme:
+      css/press.min.css: {}
+
+code_highlight:
+  js:
+    js/prettify.js: {}
+  css:
+    component:
+      css/prettify.min.css: {}
+
+hs_form_seo_page:
+  js:
+    js/seo-page.js: {}
+
+ttl:
+  css:
+    theme:
+      css/ttl.min.css: {}
+
+menu_select:
+  js:
+    js/menu-select-list.js: {}
+
+video-player:
+  js:
+    js/videojs.js: {}
+    js/video-item.js: {}
+    js/videojs-youtube.js: {}
+  css:
+    theme:
+      css/video-js.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - ezlight/video-item-referenced-paragraph
+
+sticky_kit:
+  js:
+    js/jquery.sticky-kit.min.js: {}
+
+quote-paragraph:
+  css:
+    theme:
+      css/quote-paragraph.min.css: {}
+
+counter-paragraph:
+  css:
+    theme:
+      css/counter.min.css: {}
+
+hero-header-paragraph:
+  css:
+    theme:
+      css/hero-header.min.css: {}
+
+icon-text-paragraph:
+  css:
+    theme:
+      css/icon-text.min.css: {}
+
+video-item-paragraph:
+  css:
+    theme:
+      css/video-item.min.css: {}
+
+node-case-study:
+  css:
+    theme:
+      css/node-case-study.min.css: {}
+
+accordion:
+  css:
+    theme:
+      css/accordion.min.css: {}
+  js:
+    js/accordion.js: {}
+
+accordion_plus:
+  css:
+    theme:
+      css/accordion-plus.css: {}
+  js:
+    /libraries/accordion-js/dist/accordion.min.js: {}
+    js/accordion-plus.js: {}
+
+sections_tracking_nav:
+  css:
+    theme:
+      css/sections_tracking_nav.min.css: {}
+  js:
+    js/sections_tracking_nav.js: {}
+  dependencies:
+    - ezlight/sticky_kit
+
+sticky_kit_global:
+  css:
+    theme:
+      css/sticky-kit-global.min.css: {}
+  js:
+    js/sticky-kit-global.js: {}
+  dependencies:
+    - ezlight/sticky_kit
+
+d-tabs:
+    a11y_paragraphs_tabs/assets:
+      js:
+        js/a11y-paragraphs-tabs.js: {}
+    css:
+      theme:
+        css/default-tabs.css: {}
+
+s-tabs:
+    css:
+      theme:
+        css/simple-tabs.css: {}
+    js:
+      js/a11y-accordion-tabs.js: {}
+      js/tabsarrow.js: {}
+
+industries:
+  js:
+    js/industries-page.js: {}
+  css:
+    theme:
+        css/industries.css: {}
+  dependencies:
+    - core/drupalSettings
+
+industries-overview:
+  js:
+    js/industries-overview.js: {}
+  css:
+    theme:
+      css/industries-overview.css: {}
+
+tabs_to_accordion:
+  css:
+    theme:
+      css/tabs_to_accordion.min.css: {}
+  js:
+    js/tabs-to-accordion.js: {}
+  dependencies:
+    - ezlight/sticky_kit
+
+plyr:
+  js:
+    js/plyr.min.js: {}
+    js/plyr-init.js: {}
+  css:
+    theme:
+        css/plyr.min.css: {}
+
+job_postings:
+  css:
+    theme:
+      css/job_postings.css: {}
+  js:
+    js/job_postings.js: {}
+
+profile_card:
+  css:
+    theme:
+      css/profile_card.css: {}
+  js:
+    js/profile-card.js: {}
+
+related_content:
+  css:
+    theme:
+      css/related_content.css: {}
+
+webform-styles:
+  css:
+    theme:
+      css/webform-styles.min.css: {}
+
+webform-basic:
+  css:
+    theme:
+      css/webform-basic.min.css: {}
+
+dynamic-grid:
+  css:
+    theme:
+      css/dynamic-grid.min.css: {}
+  js:
+    js/dynamic-grid.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+
+dynamic-timeline-image:
+  js:
+    js/dynamic-timeline-image.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+
+featured-card:
+  css:
+    theme:
+      css/featured-card.min.css: {}
+
+content-modal:
+  css:
+    theme:
+      css/content-modal.min.css: {}
+  js:
+    js/content-modal.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+d-resource:
+  css:
+    theme:
+      css/d-resource.min.css: {}
+
+pager:
+  css:
+    theme:
+      css/pager.min.css: {}
+
+facets:
+  css:
+    theme:
+      css/facet-style.css: {}
+  js:
+    js/facets.js: {}
+
+resources:
+    css:
+      theme:
+        css/resources.css: {}
+
+video-img-switch:
+  js:
+    js/video-img-switch.js: {}
+
+stat:
+  css:
+    theme:
+      css/stat.css: {}
+
+exit-popup:
+  js:
+    js/exit-popup.js: {}
+  css:
+    theme:
+      css/exit-popup.css: {}
+
+flip-card:
+  css:
+    theme:
+      css/flip-card.css: {}
+  js:
+    js/flip-card.js: { }
+
+form-field-validate:
+  css:
+    theme:
+      css/form-field-validate.css: { }
+  js:
+    js/form-field-validate.js: { }
+
+industry-overview:
+  css:
+    theme:
+      css/industry-overview.css: { }
+card:
+  css:
+    theme:
+      css/card.css: {}
+
+home:
+  js:
+    js/home.js: {}
+  css:
+    theme:
+      css/home.css: {}
+  dependencies:
+    - core/drupal.dialog.ajax
+    - core/drupal.ajax
+    - ezlight/accordion-block
+
+zapier:
+  css:
+    theme:
+      css/zapier.css: {}
+  js:
+    js/zapier-page.js: {}
+  dependencies:
+      - core/jquery.once
+
+carousel-industries:
+  css:
+    theme:
+      css/slick-theme.css: { weight: -200 }
+      css/carousel-industries.css: { }
+  js:
+    js/carousel-industries.js: {}
+  dependencies:
+    - slick/slick

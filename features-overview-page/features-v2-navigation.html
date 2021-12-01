@@ -1,0 +1,106 @@
+<style type="text/css">
+  a.ft-nav-link { color: #373a36; }
+  a.active {
+    background: #017dbc;
+    color: white;
+    border-radius: 4px 4px 0 0;
+  }
+  .menu-brand .nav-item a.active:hover {
+    color: white;
+  }
+  .menu-brand {
+    z-index: 1;
+  }
+  .menu-brand li,
+  .ft-menu-mobile li {
+    transform: scaleY(1) translateY(0);
+    transition: transform 0.3s ease;
+  }
+  .menu-brand li:hover,
+  .ft-menu-mobile li:hover {
+    transform: scaleY(1.1) translateY(-2px);
+  }
+  .menu-brand li a,
+  .ft-menu-mobile li a {
+    transform: scaleY(1) translateY(0);
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  .menu-brand li:hover a,
+  .ft-menu-mobile li:hover a {
+    transform: scaleY(0.94) translateY(-2px);
+    height: calc(100% + 3px);
+  }
+
+  @media (max-width: 991px) {
+    .menu-brand li:not(.active) {
+      display: none;
+    }
+    a.active {
+      background: none;
+      color: unset;
+    }
+    .menu-brand .nav-item a.active:hover {
+    color: #017dbc;
+    }
+    .menu-brand li a.active:after {
+      display: inline-block;
+      font-size: 8px;
+      color: #017dbc;
+      content: "\e914";
+      font-family: 'ezlight';
+    }
+  }
+</style>
+<div class="d-lg-flex justify-content-center sticky-element bg-white-smoke pt-0 pt-lg-2 fs-xs border-bottom">
+  <ul class="row no-gutters clearfix nav menu-brand position-relative">
+    <li class="col nav-item text-center bg-white mx-0 mx-lg-1 border border-bottom-0 rounded-top">
+      <a class="nav-link ft-nav-link nav-link-contact-management fw-400" href="#contact-management">Contact<br class="d-none d-lg-block" /> Management &nbsp;</a>
+    </li>
+    <li class="col nav-item text-center bg-white mx-0 mx-lg-1 border border-bottom-0 rounded-top">
+      <a class="nav-link ft-nav-link nav-link-text-messaging-tools fw-400" href="#text-messaging-tools">Text&nbsp;Messaging<br class="d-none d-lg-block" /> Tool &nbsp;</a>
+    </li>
+    <li class="col nav-item text-center bg-white mx-0 mx-lg-1 border border-bottom-0 rounded-top">
+      <a class="nav-link ft-nav-link nav-link-template-design-tools fw-400" href="#templates-design-tools">Template &amp;<br class="d-none d-lg-block" /> Design Tools &nbsp;</a>
+    </li>
+    <li class="col nav-item text-center bg-white mx-0 mx-lg-1 border border-bottom-0 rounded-top">
+      <a class="nav-link ft-nav-link nav-link-customer-list-growth-tools fw-400" href="#customer-list-growth-tools">Customer List<br class="d-none d-lg-block" /> Growth Tools &nbsp;</a>
+    </li>
+    <li class="col nav-item text-center bg-white mx-0 mx-lg-1 border border-bottom-0 rounded-top">
+      <a class="nav-link ft-nav-link nav-link-text-campaigns fw-400" href="#text-campaigns">Text Campaigns &nbsp;</a>
+    </li>
+    <li class="col nav-item text-center bg-white mx-0 mx-lg-1 border border-bottom-0 rounded-top">
+      <a class="nav-link ft-nav-link nav-link-integration-api fw-400" href="#integrations-api">Integrations &amp; API &nbsp;</a>
+    </li>
+    <li class="col nav-item text-center bg-white mx-0 mx-lg-1 border border-bottom-0 rounded-top">
+      <a class="nav-link ft-nav-link nav-link-integration-api fw-400" href="#analytics-reporting">Analytics &amp; Reporting &nbsp;</a>
+    </li>
+  </ul>
+    
+  <div class="collapse" id="feature-menu-mobile">
+    <ul class="row no-gutters clearfix nav ft-menu-mobile position-relative">
+      <li class="col-12 nav-item text-center bg-white border border-bottom-0">
+        <a class="nav-link ft-nav-link nav-link-contact-management fw-400" href="#contact-management">Contact Management</a>
+      </li>
+      <li class="col-12 nav-item text-center bg-white border border-bottom-0">
+        <a class="nav-link ft-nav-link nav-link-text-messaging-tools fw-400" href="#text-messaging-tools">Text Messaging Tool</a>
+      </li>
+      <li class="col-12 nav-item text-center bg-white border border-bottom-0">
+        <a class="nav-link ft-nav-link nav-link-template-design-tools fw-400" href="#templates-design-tools">Template Design Tools</a>
+      </li>
+      <li class="col-12 nav-item text-center bg-white border border-bottom-0">
+        <a class="nav-link ft-nav-link nav-link-customer-list-growth-tools fw-400" href="#customer-list-growth-tools">Customer List Growth Tools</a>
+      </li>
+      <li class="col-12 nav-item text-center bg-white border border-bottom-0">
+        <a class="nav-link ft-nav-link nav-link-text-campaigns fw-400" href="#text-campaigns">Text Campaigns</a>
+      </li>
+      <li class="col-12 nav-item text-center bg-white border border-bottom-0">
+        <a class="nav-link ft-nav-link nav-link-integration-api fw-400" href="#integrations-api">Integrations &amp; API</a>
+      </li>
+      <li class="col-12 nav-item text-center bg-white border border-bottom-0">
+        <a class="nav-link ft-nav-link nav-link-integration-api fw-400" href="#analytics-reporting">Analytics &amp; Reporting</a>
+      </li>
+    </ul>
+  </div>
+</div>
+    

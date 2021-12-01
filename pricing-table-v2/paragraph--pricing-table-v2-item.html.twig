@@ -1,0 +1,192 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - paragraph.getCreatedTime() will return the paragraph creation timestamp.
+ *   - paragraph.id(): The paragraph ID.
+ *   - paragraph.bundle(): The type of the paragraph, for example, "image" or "text".
+ *   - paragraph.getOwnerId(): The user ID of the paragraph author.
+ *   See Drupal\paragraphs\Entity\Paragraph for a full list of public properties
+ *   and methods for the paragraph object.
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - paragraphs: The current template type (also known as a "theming hook").
+ *   - paragraphs--type-[type]: The current paragraphs type. For example, if the paragraph is an
+ *     "Image" it would result in "paragraphs--type--image". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - paragraphs--view-mode--[view_mode]: The View Mode of the paragraph; for example, a
+ *     preview would result in: "paragraphs--view-mode--preview", and
+ *     default: "paragraphs--view-mode--default".
+ * - view_mode: View mode; for example, "preview" or "full".
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set monthly_url = content.field_pricing_item_sign_up_link[0]['#url']|render %}
+{% set annual_url = content.field_pricing_item_sign_up_link2[0]['#url']|render %}
+{% set addlink_url = content.field_pricing_item_sign_up_link[1]['#url']|render %}
+{% set monthly_target = content.field_pricing_item_sign_up_link[0]['#url'].external ? '_blank' : '_self' %}
+{% set annual_target = content.field_pricing_item_sign_up_link2[0]['#url'].external ? '_blank' : '_self' %}
+{% set addlink_target = content.field_pricing_item_sign_up_link[1]['#url'].external ? '_blank' : '_self' %}
+{% set id = content.field_pricing_item_id[0]['#context'].value|clean_class %}
+{% set link_id = content.field_pricing_item_link_id[0]['#context'].value|clean_class %}
+{% set link_id_2 = content.field_pricing_item_link_id[1]['#context'].value|clean_class %}
+{% set grid_col = 0 %}
+{% for key, item in paragraph.getParentEntity().field_pricing_table_item.value %}
+  {% if item.target_id == paragraph.id() %}
+    {% set grid_col = key + 1 %}
+  {% endif %}
+{% endfor %}
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished',
+  'pricing-item',
+  content.field_pricing_item_most_popular[0]['#markup'] == 1 ? 'most-popular',
+  'grid-col-' ~ grid_col
+]
+%}
+{% block paragraph %}
+  {% if grid_col == 1 %}
+    <div class="pricing-item-headers grid-col-{{ grid_col }}">
+      <div data-mh="title"></div>
+      <div class="pb-3 mb-1" data-mh="price"></div>
+      <div class="pricing-item__top-features-label text-right fw-600 fs-11" data-mh="top-features-label">
+        {# <span>{{ content.field_pricing_item_ideal_for['#title'] }}</span> #}
+        <div class="ribbon"></div>
+      </div>
+      <div class="pricing-item__top-features text-right" data-mh="top-features">
+        {{ paragraph.getParentEntity().field_pricing_table_tf_headers|view }}
+      </div>
+      <div class="pricing-item__additional-features-container collapse">
+        <div class="pricing-item__additional-features text-right" data-mh="additional-features">
+          {{ paragraph.getParentEntity().field_pricing_tbl_add_ft_hd_ext|view }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if content.field_pricing_item_most_popular[0]['#markup'] == 1 %}
+        <div class="pricing-item__most-popular text-uppercase">{{ content.field_pricing_item_most_popular['#title'] }}</div>
+      {% endif %}
+      <div class="pricing-item__title" data-mh="title">
+        <h3 {% if id %}id="{{ id }}"{% endif %} class="fw-700">{{ content.field_pricing_item_title[0] }}</h3>
+      </div>
+      <div class="pricing-item__price pb-3 mb-1" data-mh="price">
+        {{ content.contextual_links }}
+        <div class="pricing-item__monthly-price">
+          {{ content.field_pricing_item_monthly_price }}
+        </div>
+        <div class="pricing-item__annual-price">
+          {{ content.field_pricing_item_annual_price }}
+        </div>
+        <div class="pricing-item__sign-up-link {{ addlink_url ? 'alt' }}">
+          {% if content.field_pricing_item_sign_up_link3|render %}
+            {{ content.field_pricing_item_sign_up_link3 }}
+          {% else %}
+            {% if addlink_url %}
+              <a {% if id %}id="{{ link_id_2 }}"{% endif %} href="{{ addlink_url }}" target="{{ addlink_target }}" class="btn btn-warning text-white fw-700">
+                {{ content.field_pricing_item_sign_up_link[1]['#title'] }}
+              </a>
+            {% endif %}
+            <a {% if id %}id="{{ link_id }}"{% endif %} href="{{ annual_url }}" target="{{ annual_target }}" class="btn btn-primary sign-up-link fw-700"
+               data-toggle-url="{{ monthly_url }}" data-toggle-target="{{ monthly_target }}" >
+              {{ content.field_pricing_item_sign_up_link[0]['#title'] }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="pricing-item__top-features-label fw-600 fs-11" data-mh="top-features-label">
+        <span>{{ content.field_pricing_item_ideal_for }}</span>
+      </div>
+      {% set tf_headers = paragraph.getParentEntity().field_pricing_table_tf_headers|view %}
+      {% set top_features = content.field_pricing_item_top_features[0]['#text']|split('\r\n\r\n') %}
+      <div class="row pricing-item__top-features d-xl-none">
+        {% for tf_header in tf_headers[0]['#text']|split('\r\n\r\n') %}
+          <div class="feat-left-column col-6 col-sm-6 d-flex align-items-center justify-content-end text-right border-right">
+            {{ tf_header|raw }}
+          </div>
+          <div class="col-6 col-sm-6 d-flex align-items-center justify-content-center ">
+            {{ top_features[loop.index - 1]|raw }}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="pricing-item__top-features d-none d-xl-block px-0" data-mh="top-features">
+        {{ content.field_pricing_item_top_features }}
+      </div>
+      <div class="pricing-item__additional-features-container collapse">
+        <div class="pricing-item__features mx-0 collapse" id="features{{ paragraph.id() }}">
+          {% set af_headers = paragraph.getParentEntity().field_pricing_tbl_add_ft_hd_ext|view %}
+          {% set add_features = content.field_pricing_item_add_feat_ext[0]['#text']|split('\r\n\r\n') %}
+          <div class="row pricing-item__additional-features d-xl-none">
+            {% for af_header in af_headers|children %}
+              <div class="add-feat-title col-12 py-3 fs-12 fw-700"> 
+              {{ af_header['#paragraph'].field_title_formatted|view }}
+              </div>
+              {% set af_header_items = af_header['#paragraph'].field_wysiwyg|view %}
+              {% set add_features = content.field_pricing_item_add_feat_ext[loop.index - 1]['#text']|split('\r\n\r\n') %}
+              {% for af_header_item in af_header_items[0]['#text']|split('\r\n\r\n') %}
+              <div class="feat-left-column col-6 col-sm-6 d-flex align-items-center justify-content-end text-right border-right {{ loop.last ? 'last-row' }}">
+                {{ af_header_item|raw }}
+              </div>
+              <div class="col-6 col-sm-6 d-flex align-items-center justify-content-center  {{ loop.last ? 'last-row' }}">
+                {{ add_features[loop.index - 1]|raw }}
+              </div>
+              {% endfor %}
+              {# {{ dd(af_header_items[0]['#text']|split('\r\n\r\n')) }}
+              {{ dd(add_features) }} #}
+            {% endfor %}
+          </div>
+          <div class="pricing-item__additional-features d-none d-xl-block px-0" data-mh="additional-features">
+            {% for add_feature_item in content.field_pricing_item_add_feat_ext|children %}
+              <div class="bg-ribbon" data-mh="add_feat_title"></div>
+              {{ add_feature_item }}
+            {% endfor %}
+          </div>
+          <div class="pricing-item__title__bottom d-none d-xl-block bg-dark text-white py-2">
+            <h3 class="fw-700 my-2">{{ content.field_pricing_item_title[0] }}</h3>
+          </div>
+          <div class="pricing-item__sign-up-link__bottom d-none d-xl-block bg-dark pb-3 {{ addlink_url ? 'alt' }}">
+            {% if content.field_pricing_item_sign_up_link3|render %}
+              {{ content.field_pricing_item_sign_up_link3 }}
+            {% else %}
+              {% if addlink_url %}
+                <a href="{{ addlink_url }}" target="{{ addlink_target }}" class="btn btn-warning text-white fw-700 mr-1">
+                  {{ content.field_pricing_item_sign_up_link[1]['#title'] }}
+                </a>
+              {% endif %}
+              <a href="{{ annual_url }}" target="{{ annual_target }}" class="btn btn-primary sign-up-link fw-700 ml-1"
+                data-toggle-url="{{ monthly_url }}" data-toggle-target="{{ monthly_target }}" >
+                {{ content.field_pricing_item_sign_up_link[0]['#title'] }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+        <button class="d-flex justify-content-center btn btn-link pricing-item__features-btn fw-700 text-white bg-primary" type="button" data-toggle="collapse" data-target="#features{{ paragraph.id() }}"
+                aria-expanded="false" aria-controls="features{{ paragraph.id() }}">
+          <span class="show-features">{{ '+ Expand All Features'|t }}</span>
+          <span class="hide-features">{{ '- Collapse All Features'|t }}</span>
+        </button>
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
