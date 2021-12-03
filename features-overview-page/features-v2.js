@@ -35,6 +35,20 @@ window.addEventListener('load', () => {
       });
     }
   })
+
+  if($(window).outerWidth() < 992) { 
+    var active = false;
+    $('.menu-brand li a').each(function(){
+      if ($(this).hasClass('active')) {
+        active = true;
+      }
+    })
+    if (active == false) {
+      $('.menu-brand li').first().addClass('active');
+      $('.menu-brand li a').first().addClass('active');
+    }
+  }  
+
   $(window).resize(function() {
     if($(window).outerWidth() > 991) { 
       $('#feature-menu-mobile').collapse('hide');
