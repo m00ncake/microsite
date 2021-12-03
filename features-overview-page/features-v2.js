@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
     }
   })
 
-  if($(window).outerWidth() < 992) { 
+  if($(window).outerWidth() > 0) { 
     var active = false;
     $('.menu-brand li a').each(function(){
       if ($(this).hasClass('active')) {
