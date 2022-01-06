@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
     }
   })
 
-  if($(window).outerWidth() > 0) { 
+  function addActiveClass() {
     var active = false;
     $('.menu-brand li a').each(function(){
       if ($(this).hasClass('active')) {
@@ -47,7 +47,13 @@ window.addEventListener('load', () => {
       $('.menu-brand li').first().addClass('active');
       $('.menu-brand li a').first().addClass('active');
     }
-  }  
+  }
+
+  addActiveClass();
+ 
+  $(window).scroll(function() {
+    addActiveClass();
+  })
 
   $(window).resize(function() {
     if($(window).outerWidth() > 991) { 

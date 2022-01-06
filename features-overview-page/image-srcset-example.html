@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <img src="image-defaultdpi.png"
+            srcset="image-hidpi.png 2x, image-higherdpi.png 4x"
+            alt="Image description">
+        <img src="image-small.png"
+            srcset="image-small.png 320w, image-medium.png 800w, image-large.png 1200w"
+            sizes="80vw"
+            alt="Image description">
+        <img src="image-small.png"
+            srcset="image-small.png 320w, image-medium.png 800w, image-large.png 1200w"
+            sizes="(min-width: 60rem) 80vw,
+                (min-width: 40rem) 90vw,
+                100vw"
+            alt="Image description">
+        <picture>
+            <source media="(orientation: landscape) and (min-width: 1200px)" ... >
+            <source media="(orientation: landscape)" ... >
+        </picture>
+        <picture>
+            <source type="image/webp" srcset="illustration.webp">
+            <source type="image/svg+xml" srcset="illustration.svg"> 
+            <img src="illustration.png" alt="A hand-made illustration">
+        </picture>
+        
+        <!-- Details here: 
+        https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-use-html5-picture-for-responsive-images--cms-21015
+         -->
+    </body>
+</html>

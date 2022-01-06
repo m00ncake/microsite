@@ -1,0 +1,94 @@
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    <div class="container narrow">
+        <div class="row">
+            <div id="email-form">
+                <div class="form-wrap">
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+                        <input type=hidden name="orgid" value="00DA0000000JrjT">
+                        <input type=hidden name="retURL" value="https://www.eztexting.com/help">
+    
+                        <!--  ----------------------------------------------------------------------  -->
+                        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                        <!--  these lines if you wish to test in debug mode.                          -->
+                        <!--  <input type="hidden" name="debug" value=1>   -->
+                        <!--  <input type="hidden" name="debugEmail" value="nkolesnichenko@callfire.com">   -->
+                        <!--  ----------------------------------------------------------------------  -->
+    
+                        <div class="form-group">
+                            <label class="control-label" for="name">Name</label>
+                            <input class="form-control form-text" id="name" maxlength="80" name="name" size="20" type="text"
+                                required />
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control form-text" id="email" maxlength="80" name="email" size="20"
+                                type="text" required />
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="control-label" for="subject">Subject</label>
+                            <input class="form-control form-text" id="subject" maxlength="80" name="subject" size="20"
+                                type="text" required />
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="control-label" for="description">Description</label>
+                            <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+                                <textarea class="form-control form-textarea required" name="description" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="description">Category:</label>
+                            <div class="form-item webform-component webform-component-select webform-component--category">
+                                <select  class="form-control form-select required"  id="00N3q00000HIZ4Z" name="00N3q00000HIZ4Z" title="Category">
+                                    <option value="">--None--</option>
+                                    <option value="Account Recovery">Account Recovery</option>
+                                    <option value="Adding Contacts">Adding Contacts</option>
+                                    <option value="API">API</option>
+                                    <option value="Billing information and payments">Billing information and payments
+                                    </option>
+                                    <option value="Cancelation and refunds">Cancelation and refunds</option>
+                                    <option value="Compliance">Compliance</option>
+                                    <option value="Failed or past due payments">Failed or past due payments</option>
+                                    <option value="How to pay for messages">How to pay for messages</option>
+                                    <option value="I don&#39;t see my issue">I don&#39;t see my issue</option>
+                                    <option value="Integrations">Integrations</option>
+                                    <option value="Issues signing up">Issues signing up</option>
+                                    <option value="Keywords &amp; Campaigns">Keywords &amp; Campaigns</option>
+                                    <option value="Managing Contacts">Managing Contacts</option>
+                                    <option value="Messages">Messages</option>
+                                    <option value="MMS pricing">MMS pricing</option>
+                                    <option value="Mobile App Issues (iOS)">Mobile App Issues (iOS)</option>
+                                    <option value="Other">Other</option>
+                                    <option value="Phone Numbers">Phone Numbers</option>
+                                    <option value="Plans">Plans</option>
+                                    <option value="Reports">Reports</option>
+                                    <option value="Trial accounts or expired accounts">Trial accounts or expired accounts
+                                    </option>
+                                    <option value="Troubleshooting">Troubleshooting</option>
+                                    <option value="Unknown">Unknown</option>
+                                    <option value="What are credits?">What are credits?</option>
+                                    <option value="Why was I charged?">Why was I charged?</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="control-label" for="description">Username, if different than email:</label>
+                            <input  class="form-control form-text" id="00N3q00000HIZ4t" maxlength="255" name="00N3q00000HIZ4t" size="20" type="text" />
+                            <input  id="00N3q00000GUxPf" maxlength="80" name="00N3q00000GUxPf" size="20" value="Callfire" type="hidden" />
+                        </div>
+    
+                        <div>
+                            <input class="btn btn-lg btn-primary form-submit" type="submit" name="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
